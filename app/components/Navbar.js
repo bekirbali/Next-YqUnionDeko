@@ -35,6 +35,7 @@ export default function Navbar() {
             width={150}
             height={75}
             className="object-contain"
+            priority={true}
           />
         </div>
 
