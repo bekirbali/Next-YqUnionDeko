@@ -30,7 +30,7 @@ export default function ContactPage() {
     <div className="font-sans min-h-screen bg-white">
       {/* Hero Section */}
       <AnimatedSection animationType="fadeInUp" delay={0.1}>
-        <section className="relative primary-bg text-white py-20">
+        <section className="relative bg-gradient-to-br from-primary via-primary-light to-secondary text-white py-20">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">İletişim</h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
@@ -58,7 +58,7 @@ export default function ContactPage() {
               </a>
               <a
                 href="mailto:info@yqunion.com"
-                className="px-6 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-primary-color transition-all inline-flex items-center justify-center"
+                className="px-6 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-all inline-flex items-center justify-center"
               >
                 <svg
                   className="w-5 h-5 mr-2"
@@ -384,7 +384,7 @@ export default function ContactPage() {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all text-gray-900 placeholder-gray-500"
                         placeholder="Adınız ve soyadınız"
                       />
                     </div>
@@ -402,7 +402,7 @@ export default function ContactPage() {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all text-gray-900 placeholder-gray-500"
                         placeholder="ornek@email.com"
                       />
                     </div>
@@ -422,7 +422,7 @@ export default function ContactPage() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all text-gray-900 placeholder-gray-500"
                         placeholder="+90 555 123 45 67"
                       />
                     </div>
@@ -439,7 +439,7 @@ export default function ContactPage() {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all text-gray-900 placeholder-gray-500"
                         placeholder="Şirket adınız"
                       />
                     </div>
@@ -458,7 +458,7 @@ export default function ContactPage() {
                       required
                       value={formData.subject}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all text-gray-900"
                     >
                       <option value="">Konu seçin</option>
                       <option value="ithalat">İthalat Hizmetleri</option>
@@ -486,7 +486,7 @@ export default function ContactPage() {
                       rows="6"
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all resize-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all resize-none text-gray-900 placeholder-gray-500"
                       placeholder="Mesajınızı buraya yazın..."
                     ></textarea>
                   </div>
@@ -530,7 +530,7 @@ export default function ContactPage() {
               <div className="grid md:grid-cols-4 gap-6">
                 <a
                   href="tel:+905551234567"
-                  className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow border-l-4 border-secondary-color group"
+                  className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow border-l-4 border-[#dc143c] group"
                 >
                   <div className="w-16 h-16 secondary-bg rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                     <svg
@@ -553,7 +553,7 @@ export default function ContactPage() {
 
                 <a
                   href="mailto:info@yqunion.com"
-                  className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow border-l-4 border-primary-color group"
+                  className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow border-l-4 border-[#0a2562] group"
                 >
                   <div className="w-16 h-16 primary-bg rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                     <svg
