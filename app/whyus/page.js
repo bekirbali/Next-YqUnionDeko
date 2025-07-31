@@ -189,7 +189,7 @@ export default function WhyUsPage() {
       </AnimatedSection>
 
       {/* İstatistikler */}
-      <AnimatedSection animationType="fadeInUp" delay={0.3}>
+      {/* <AnimatedSection animationType="fadeInUp" delay={0.3}>
         <section className="py-16 primary-bg text-white">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -210,7 +210,7 @@ export default function WhyUsPage() {
             </div>
           </div>
         </section>
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       {/* Detaylı Faydalar */}
       <AnimatedSection animationType="fadeInUp" delay={0.4}>
@@ -320,10 +320,10 @@ export default function WhyUsPage() {
                 Hemen İletişime Geçin
               </a>
               <a
-                href="/services"
+                href="/about"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 inline-block"
               >
-                Hizmetlerimizi İnceleyin
+                Hakkımızda
               </a>
             </div>
           </div>

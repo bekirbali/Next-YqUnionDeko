@@ -9,8 +9,13 @@ export default function HeroSection() {
         alt="Liman ve Kargo Gemileri"
         fill
         className="object-cover object-center"
+        style={{
+          width: "100%",
+          height: "100%",
+        }}
         priority
         quality={90}
+        sizes="100vw"
       />
 
       {/* Overlay for better text readability */}
