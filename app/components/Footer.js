@@ -15,7 +15,8 @@ export default function Footer() {
                 alt="YqUnion Logo"
                 width={120}
                 height={60}
-                className="object-contain mb-4"
+                className="object-contain w-auto h-auto mb-4"
+                sizes="120px"
               />
               <p className="text-gray-300 text-sm text-center md:text-left leading-relaxed">
                 YqUnion olarak, güvenilir ve kaliteli hizmet anlayışımızla

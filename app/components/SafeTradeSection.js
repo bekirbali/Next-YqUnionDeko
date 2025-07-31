@@ -77,7 +77,12 @@ export default function SafeTradeSection() {
                 alt="Güvenli Ticaret"
                 fill
                 className="object-contain"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                }}
                 quality={90}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
               {/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div> */}
             </div>

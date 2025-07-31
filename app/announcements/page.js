@@ -1,73 +1,124 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { apiService } from "../lib/api";
+
 export default function AnnouncementsPage() {
-  const announcements = [
-    {
-      id: 1,
-      title: "Yeni İhracat Hizmetlerimiz",
-      content:
-        "Şirketimiz artık 15 ülkeye daha ihracat hizmeti vermektedir. Detaylı bilgi için iletişime geçiniz.",
-      date: "2024-01-15",
-      category: "Hizmet",
-      priority: "high",
-    },
-    {
-      id: 2,
-      title: "Ofis Saatleri Güncellemesi",
-      content:
-        "Yaz ayları boyunca çalışma saatlerimiz Pazartesi-Cuma 08:00-17:00 olarak güncellenmiştir.",
-      date: "2024-01-10",
-      category: "Genel",
-      priority: "medium",
-    },
-    {
-      id: 3,
-      title: "Yeni Tedarik Zinciiri Ortaklıkları",
-      content:
-        "Avrupa'da yeni tedarik zinciiri ortaklıkları kurarak hizmet kalitemizi artırmaya devam ediyoruz.",
-      date: "2024-01-05",
-      category: "İş Ortaklığı",
-      priority: "high",
-    },
-    {
-      id: 4,
-      title: "Müşteri Hizmetleri Geliştirmeleri",
-      content:
-        "24/7 müşteri hizmetleri hattımız artık 5 farklı dilde hizmet vermektedir.",
-      date: "2024-01-01",
-      category: "Hizmet",
-      priority: "medium",
-    },
-  ];
+  const [announcements, setAnnouncements] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchAnnouncements = async () => {
+      try {
+        setLoading(true);
+        const data = await apiService.getActiveAnnouncements();
+        // Django REST Framework pagination response'undan results array'ini çıkar
+        setAnnouncements(data.results || data);
+        setError(null);
+      } catch (err) {
+        setError("Duyurular yüklenirken bir hata oluştu.");
+        console.error("Error fetching announcements:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchAnnouncements();
+  }, []);
 
   const formatDate = (dateString) => {
     const options = { year: "numeric", month: "long", day: "numeric" };
     return new Date(dateString).toLocaleDateString("tr-TR", options);
   };
 
-  const getPriorityColor = (priority) => {
-    switch (priority) {
-      case "high":
-        return "bg-red-100 text-red-800 border-red-200";
-      case "medium":
-        return "bg-yellow-100 text-yellow-800 border-yellow-200";
-      case "low":
-        return "bg-green-100 text-green-800 border-green-200";
-      default:
-        return "bg-gray-100 text-gray-800 border-gray-200";
-    }
-  };
+  // Loading state
+  if (loading) {
+    return (
+      <main className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="bg-white shadow-sm">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div className="text-center">
+              <h1 className="text-4xl font-bold text-gray-900 mb-4">
+                Duyurular
+              </h1>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                YQ Union ile ilgili en güncel haberler, duyurular ve gelişmeler
+                hakkında bilgi alın
+              </p>
+            </div>
+          </div>
+        </div>
 
-  const getCategoryColor = (category) => {
-    switch (category) {
-      case "Hizmet":
-        return "bg-blue-100 text-blue-800";
-      case "Genel":
-        return "bg-purple-100 text-purple-800";
-      case "İş Ortaklığı":
-        return "bg-green-100 text-green-800";
-      default:
-        return "bg-gray-100 text-gray-800";
-    }
-  };
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="grid gap-8 lg:grid-cols-1">
+            {[1, 2, 3].map((i) => (
+              <div
+                key={i}
+                className="bg-white rounded-lg shadow-lg overflow-hidden animate-pulse"
+              >
+                <div className="p-8">
+                  <div className="h-6 bg-gray-200 rounded w-3/4 mb-4"></div>
+                  <div className="h-4 bg-gray-200 rounded w-1/4 mb-4"></div>
+                  <div className="h-4 bg-gray-200 rounded w-full mb-2"></div>
+                  <div className="h-4 bg-gray-200 rounded w-5/6"></div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </main>
+    );
+  }
+
+  // Error state
+  if (error) {
+    return (
+      <main className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="bg-white shadow-sm">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div className="text-center">
+              <h1 className="text-4xl font-bold text-gray-900 mb-4">
+                Duyurular
+              </h1>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                YQ Union ile ilgili en güncel haberler, duyurular ve gelişmeler
+                hakkında bilgi alın
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="text-center py-16">
+            <svg
+              className="w-16 h-16 mx-auto text-red-300 mb-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1}
+                d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <h3 className="text-xl font-medium text-gray-900 mb-2">
+              Bir hata oluştu
+            </h3>
+            <p className="text-gray-500 mb-4">{error}</p>
+            <button
+              onClick={() => window.location.reload()}
+              className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              Tekrar Dene
+            </button>
+          </div>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
@@ -101,24 +152,14 @@ export default function AnnouncementsPage() {
                     </h2>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <span
-                      className={`px-3 py-1 rounded-full text-sm font-medium ${getCategoryColor(
-                        announcement.category
-                      )}`}
-                    >
-                      {announcement.category}
+                    <span className="px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                      Duyuru
                     </span>
-                    <span
-                      className={`px-3 py-1 rounded-full text-sm font-medium border ${getPriorityColor(
-                        announcement.priority
-                      )}`}
-                    >
-                      {announcement.priority === "high"
-                        ? "Yüksek Öncelik"
-                        : announcement.priority === "medium"
-                        ? "Orta Öncelik"
-                        : "Düşük Öncelik"}
-                    </span>
+                    {announcement.is_active && (
+                      <span className="px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800 border border-green-200">
+                        Aktif
+                      </span>
+                    )}
                   </div>
                 </div>
 
@@ -138,21 +179,24 @@ export default function AnnouncementsPage() {
                     />
                   </svg>
                   <span className="text-sm">
-                    {formatDate(announcement.date)}
+                    {formatDate(announcement.created_at)}
                   </span>
                 </div>
 
                 {/* Content */}
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  {announcement.content}
-                </p>
+                <div className="text-gray-700 text-lg leading-relaxed">
+                  <div
+                    className="rich-text-content"
+                    dangerouslySetInnerHTML={{ __html: announcement.content }}
+                  />
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Empty State for Future */}
-        {announcements.length === 0 && (
+        {/* Empty State */}
+        {announcements.length === 0 && !loading && !error && (
           <div className="text-center py-16">
             <svg
               className="w-16 h-16 mx-auto text-gray-300 mb-4"
