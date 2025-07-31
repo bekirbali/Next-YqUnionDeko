@@ -1,5 +1,5 @@
 // 🔧 Geliştirme ayarı: true = mock data, false = localhost backend
-const USE_MOCK_DATA = false;
+const USE_MOCK_DATA = true;
 
 const API_BASE_URL = "http://localhost:8000/api";
 
@@ -11,6 +11,18 @@ const MOCK_ANNOUNCEMENTS = {
       title: "YQ Union Hizmetlerimiz Hakkında",
       content:
         "<p>YQ Union olarak ithalat ve ihracat alanında uzman ekibimizle size en kaliteli hizmeti sunmaya devam ediyoruz. Dünya genelindeki iş ortaklarımızla birlikte güvenli ticaret yapmanız için çalışıyoruz.</p>",
+      content_preview:
+        "YQ Union olarak ithalat ve ihracat alanında uzman ekibimizle size en kaliteli hizmeti sunmaya devam ediyoruz...",
+      main_image: "/assets/heroImage.jpg",
+      additional_images: [
+        {
+          id: 1,
+          image: "/assets/world.png",
+          caption: "Dünya ticareti",
+          order: 1,
+        },
+      ],
+      additional_images_count: 1,
       created_at: "2024-01-15T10:30:00Z",
       is_active: true,
     },
@@ -19,6 +31,11 @@ const MOCK_ANNOUNCEMENTS = {
       title: "Güvenli Ticaret Hizmetlerimiz",
       content:
         "<p>Uluslararası ticarette güvenlik en önemli faktörlerden biridir. YQ Union olarak tüm işlemlerinizde maksimum güvenlik sağlamak için gelişmiş sistemler kullanıyoruz.</p>",
+      content_preview:
+        "Uluslararası ticarette güvenlik en önemli faktörlerden biridir. YQ Union olarak tüm işlemlerinizde maksimum güvenlik sağlamak için...",
+      main_image: "/assets/exportimport.jpg",
+      additional_images: [],
+      additional_images_count: 0,
       created_at: "2024-01-10T14:20:00Z",
       is_active: true,
     },
@@ -27,6 +44,11 @@ const MOCK_ANNOUNCEMENTS = {
       title: "2024 Yılı Hedeflerimiz",
       content:
         "<p>2024 yılında daha fazla ülkeye hizmet vermeyi ve müşteri memnuniyetini en üst seviyeye çıkarmayı hedefliyoruz. Yeni iş ortaklıkları ve teknolojik yeniliklerle size daha iyi hizmet vermeye devam edeceğiz.</p>",
+      content_preview:
+        "2024 yılında daha fazla ülkeye hizmet vermeyi ve müşteri memnuniyetini en üst seviyeye çıkarmayı hedefliyoruz...",
+      main_image: null, // Resim olmayan test için
+      additional_images: [],
+      additional_images_count: 0,
       created_at: "2024-01-05T09:15:00Z",
       is_active: true,
     },

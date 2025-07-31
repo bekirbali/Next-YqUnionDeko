@@ -86,7 +86,7 @@ const HeroSlider = () => {
                 >
                   {slide.description}
                 </motion.p>
-                <Link href="/contact">
+                {/* <Link href="/contact">
                   <motion.button
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -97,7 +97,7 @@ const HeroSlider = () => {
                   >
                     Bize Ulaşın
                   </motion.button>
-                </Link>
+                </Link> */}
               </motion.div>
             </div>
           </div>
