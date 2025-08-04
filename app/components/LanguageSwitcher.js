@@ -16,12 +16,21 @@ export default function LanguageSwitcher() {
     return i18n.language === "tr" ? "TR" : "EN";
   };
 
+  const handleMouseEnter = () => {
+    setIsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <div className="relative">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 text-white hover:text-red-300 hover:cursor-pointer transition-colors duration-200 font-medium"
-      >
+    <div
+      className="relative group"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <button className="flex items-center space-x-2 text-white hover:text-red-300 hover:cursor-pointer transition-colors duration-200 font-medium">
         <svg
           className="w-4 h-4"
           fill="none"
@@ -54,23 +63,25 @@ export default function LanguageSwitcher() {
       </button>
 
       {isOpen && (
-        <div className="absolute top-full right-0 mt-2 w-32 bg-white rounded-lg shadow-lg border overflow-hidden z-50">
-          <button
-            onClick={() => changeLanguage("tr")}
-            className={`w-full text-left px-4 py-3 text-gray-800 hover:bg-gray-100 transition-colors duration-200 ${
-              i18n.language === "tr" ? "bg-gray-50 font-medium" : ""
-            }`}
-          >
-            🇹🇷 Türkçe
-          </button>
-          <button
-            onClick={() => changeLanguage("en")}
-            className={`w-full text-left px-4 py-3 text-gray-800 hover:bg-gray-100 transition-colors duration-200 ${
-              i18n.language === "en" ? "bg-gray-50 font-medium" : ""
-            }`}
-          >
-            🇺🇸 English
-          </button>
+        <div className="absolute top-full right-0 pt-2 w-32 z-50">
+          <div className="bg-white rounded-lg shadow-lg border overflow-hidden">
+            <button
+              onClick={() => changeLanguage("tr")}
+              className={`w-full text-left px-4 py-3 text-gray-800 hover:bg-gray-100 transition-colors duration-200 ${
+                i18n.language === "tr" ? "bg-gray-50 font-medium" : ""
+              }`}
+            >
+              🇹🇷 Türkçe
+            </button>
+            <button
+              onClick={() => changeLanguage("en")}
+              className={`w-full text-left px-4 py-3 text-gray-800 hover:bg-gray-100 transition-colors duration-200 ${
+                i18n.language === "en" ? "bg-gray-50 font-medium" : ""
+              }`}
+            >
+              🇺🇸 English
+            </button>
+          </div>
         </div>
       )}
     </div>
