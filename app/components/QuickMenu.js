@@ -1,7 +1,5 @@
 const menu = [
   { label: "Hakkımızda", href: "/about" },
-  { label: "Hizmetler", href: "/services" },
-  { label: "Güvence", href: "/assurance" },
   { label: "Duyurular", href: "/announcements" },
   { label: "İletişim", href: "/contact" },
 ];
