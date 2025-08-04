@@ -2,8 +2,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
+  const { t } = useTranslation("common");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isContactDropdownOpen, setIsContactDropdownOpen] = useState(false);
@@ -57,30 +60,30 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-8">
+        <div className="hidden md:flex gap-8 items-center">
           <Link
             href="/"
             className="text-white hover:text-red-300 transition-colors duration-200 font-medium"
           >
-            Ana Sayfa
+            {t("navigation.home")}
           </Link>
           <Link
             href="/about"
             className="text-white hover:text-red-300 transition-colors duration-200 font-medium"
           >
-            Hakkımızda
+            {t("navigation.about")}
           </Link>
           <Link
             href="/whyus"
             className="text-white hover:text-red-300 transition-colors duration-200 font-medium"
           >
-            Neden Bizimle Çalışmalısınız?
+            {t("navigation.whyUs")}
           </Link>
           <Link
             href="/announcements"
             className="text-white hover:text-red-300 transition-colors duration-200 font-medium"
           >
-            Duyurular
+            {t("navigation.announcements")}
           </Link>
 
           {/* İletişim Dropdown */}
@@ -93,7 +96,7 @@ export default function Navbar() {
               href="/contact"
               className="text-white hover:text-red-300 transition-colors duration-200 font-medium flex items-center"
             >
-              İletişim
+              {t("navigation.contact")}
               <svg
                 className="w-4 h-4 ml-1"
                 fill="none"
@@ -117,18 +120,21 @@ export default function Navbar() {
                     href="/office-locations"
                     className="block px-4 py-3 text-gray-800 hover:bg-gray-100 transition-colors duration-200"
                   >
-                    Ofis Lokasyonları
+                    {t("navigation.officeLocations")}
                   </Link>
                   <Link
                     href="/contact-form"
                     className="block px-4 py-3 text-gray-800 hover:bg-gray-100 transition-colors duration-200"
                   >
-                    İletişim Formu
+                    {t("navigation.contactForm")}
                   </Link>
                 </div>
               </div>
             )}
           </div>
+
+          {/* Language Switcher */}
+          <LanguageSwitcher />
         </div>
 
         {/* Mobile Menu Button */}
@@ -165,28 +171,28 @@ export default function Navbar() {
               className="text-white hover:text-red-300 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Ana Sayfa
+              {t("navigation.home")}
             </Link>
             <Link
               href="/about"
               className="text-white hover:text-red-300 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Hakkımızda
+              {t("navigation.about")}
             </Link>
             <Link
               href="/whyus"
               className="text-white hover:text-red-300 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Neden Bizimle Çalışmalısınız?
+              {t("navigation.whyUs")}
             </Link>
             <Link
               href="/announcements"
               className="text-white hover:text-red-300 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Duyurular
+              {t("navigation.announcements")}
             </Link>
 
             {/* Mobile İletişim Dropdown */}
@@ -195,7 +201,7 @@ export default function Navbar() {
                 onClick={toggleMobileContact}
                 className="text-white hover:text-red-300 w-full text-left px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 flex items-center justify-between"
               >
-                İletişim
+                {t("navigation.contact")}
                 <svg
                   className={`w-4 h-4 transition-transform duration-200 ${
                     isMobileContactOpen ? "rotate-180" : ""
@@ -221,24 +227,29 @@ export default function Navbar() {
                     className="text-white hover:text-red-300 block px-3 py-2 rounded-md text-base transition-colors duration-200"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    İletişim
+                    {t("navigation.contact")}
                   </Link>
                   <Link
                     href="/office-locations"
                     className="text-white hover:text-red-300 block px-3 py-2 rounded-md text-base transition-colors duration-200"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    Ofis Lokasyonları
+                    {t("navigation.officeLocations")}
                   </Link>
                   <Link
                     href="/contact-form"
                     className="text-white hover:text-red-300 block px-3 py-2 rounded-md text-base transition-colors duration-200"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    İletişim Formu
+                    {t("navigation.contactForm")}
                   </Link>
                 </div>
               )}
+            </div>
+
+            {/* Mobile Language Switcher */}
+            <div className="px-3 py-2">
+              <LanguageSwitcher />
             </div>
           </div>
         </div>

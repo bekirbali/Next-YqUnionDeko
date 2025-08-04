@@ -60,12 +60,15 @@ class ApiService {
     this.baseURL = API_BASE_URL;
   }
 
-  async request(endpoint, options = {}) {
-    const url = `${this.baseURL}${endpoint}`;
+  async request(endpoint, options = {}, language = "tr") {
+    // Dil parametresini URL'e ekle
+    const separator = endpoint.includes("?") ? "&" : "?";
+    const url = `${this.baseURL}${endpoint}${separator}lang=${language}`;
 
     const config = {
       headers: {
         "Content-Type": "application/json",
+        "Accept-Language": language,
         ...options.headers,
       },
       ...options,
@@ -87,31 +90,31 @@ class ApiService {
   }
 
   // Announcement API methods
-  async getAnnouncements() {
+  async getAnnouncements(language = "tr") {
     if (USE_MOCK_DATA) {
       console.log("📋 Mock data kullanılıyor");
       return MOCK_ANNOUNCEMENTS;
     }
-    return this.request("/announcements/");
+    return this.request("/announcements/", {}, language);
   }
 
-  async getActiveAnnouncements() {
+  async getActiveAnnouncements(language = "tr") {
     if (USE_MOCK_DATA) {
       console.log("📋 Mock data kullanılıyor");
       return MOCK_ANNOUNCEMENTS;
     }
-    return this.request("/announcements/active/");
+    return this.request("/announcements/active/", {}, language);
   }
 
-  async getLatestAnnouncements() {
+  async getLatestAnnouncements(language = "tr") {
     if (USE_MOCK_DATA) {
       console.log("📋 Mock data kullanılıyor");
       return MOCK_ANNOUNCEMENTS;
     }
-    return this.request("/announcements/latest/");
+    return this.request("/announcements/latest/", {}, language);
   }
 
-  async getAnnouncement(id) {
+  async getAnnouncement(id, language = "tr") {
     if (USE_MOCK_DATA) {
       console.log("📋 Mock data kullanılıyor");
       const announcement = MOCK_ANNOUNCEMENTS.results.find(
@@ -119,9 +122,53 @@ class ApiService {
       );
       return announcement || null;
     }
-    return this.request(`/announcements/${id}/`);
+    return this.request(`/announcements/${id}/`, {}, language);
   }
 }
 
 export const apiService = new ApiService();
+
+// Utility functions for slug handling
+export const createSlug = (title) => {
+  if (!title) return "";
+
+  const turkishChars = {
+    ç: "c",
+    ğ: "g",
+    ı: "i",
+    ö: "o",
+    ş: "s",
+    ü: "u",
+    Ç: "c",
+    Ğ: "g",
+    I: "i",
+    İ: "i",
+    Ö: "o",
+    Ş: "s",
+    Ü: "u",
+  };
+
+  return title
+    .replace(/[çğıöşüÇĞIİÖŞÜ]/g, (char) => turkishChars[char] || char)
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "") // Özel karakterleri kaldır
+    .replace(/\s+/g, "-") // Boşlukları tire ile değiştir
+    .replace(/-+/g, "-") // Çoklu tireleri tek tire yap
+    .replace(/^-|-$/g, ""); // Başta ve sonda tire varsa kaldır
+};
+
+export const findAnnouncementBySlug = async (slug, language = "tr") => {
+  try {
+    // Doğrudan slug ile backend'den getir
+    return await apiService.request(
+      `/announcements/by-slug/${slug}/`,
+      {},
+      language
+    );
+  } catch (error) {
+    console.error("Error finding announcement by slug:", error);
+    return null;
+  }
+};
+
 export default apiService;
