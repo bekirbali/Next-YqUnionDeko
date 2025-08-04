@@ -20,7 +20,7 @@ export default function WhyUsPage() {
     {
       title: "Uluslararası Deneyim",
       description:
-        "15+ yıllık Türkiye-Çin dış ticaret deneyimi ile güvenilir ortaklık. Kültürel köprü kurarak işlerinizi kolaylaştırıyoruz.",
+        "20+ yıllık Türkiye-Çin dış ticaret deneyimi ile güvenilir ortaklık. Kültürel köprü kurarak işlerinizi kolaylaştırıyoruz.",
       icon: <FaGlobe />,
       color: "from-blue-500 to-blue-600",
     },
@@ -105,12 +105,12 @@ export default function WhyUsPage() {
   const statistics = [
     { number: "1500+", label: "Başarılı Proje", icon: <FaAward /> },
     { number: "500+", label: "Mutlu Müşteri", icon: <FaUsers /> },
-    { number: "15+", label: "Yıl Deneyim", icon: <FaChartLine /> },
+    { number: "20+", label: "Yıl Deneyim", icon: <FaChartLine /> },
     { number: "7/24", label: "Destek Hizmeti", icon: <FaHeadset /> },
   ];
 
   const whyChooseUs = [
-    "15+ yıllık sektör deneyimi",
+    "20+ yıllık sektör deneyimi",
     "Çin ve Türkiye'de yerel ofisler",
     "ISO 9001 kalite sertifikası",
     "24/7 müşteri destek hizmeti",
