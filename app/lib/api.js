@@ -9,6 +9,7 @@ const MOCK_ANNOUNCEMENTS = {
     {
       id: 1,
       title: "YQ Union Hizmetlerimiz Hakkında",
+      slug: "yq-union-hizmetlerimiz-hakkinda",
       content:
         "<p>YQ Union olarak ithalat ve ihracat alanında uzman ekibimizle size en kaliteli hizmeti sunmaya devam ediyoruz. Dünya genelindeki iş ortaklarımızla birlikte güvenli ticaret yapmanız için çalışıyoruz.</p>",
       content_preview:
@@ -29,6 +30,7 @@ const MOCK_ANNOUNCEMENTS = {
     {
       id: 2,
       title: "Güvenli Ticaret Hizmetlerimiz",
+      slug: "guvenli-ticaret-hizmetlerimiz",
       content:
         "<p>Uluslararası ticarette güvenlik en önemli faktörlerden biridir. YQ Union olarak tüm işlemlerinizde maksimum güvenlik sağlamak için gelişmiş sistemler kullanıyoruz.</p>",
       content_preview:
@@ -42,6 +44,7 @@ const MOCK_ANNOUNCEMENTS = {
     {
       id: 3,
       title: "2024 Yılı Hedeflerimiz",
+      slug: "2024-yili-hedeflerimiz",
       content:
         "<p>2024 yılında daha fazla ülkeye hizmet vermeyi ve müşteri memnuniyetini en üst seviyeye çıkarmayı hedefliyoruz. Yeni iş ortaklıkları ve teknolojik yeniliklerle size daha iyi hizmet vermeye devam edeceğiz.</p>",
       content_preview:
@@ -158,6 +161,14 @@ export const createSlug = (title) => {
 };
 
 export const findAnnouncementBySlug = async (slug, language = "tr") => {
+  if (USE_MOCK_DATA) {
+    console.log("📋 Mock data kullanılıyor - slug arama");
+    const announcement = MOCK_ANNOUNCEMENTS.results.find(
+      (a) => a.slug === slug
+    );
+    return announcement || null;
+  }
+
   try {
     // Doğrudan slug ile backend'den getir
     return await apiService.request(
