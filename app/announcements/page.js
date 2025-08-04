@@ -2,12 +2,14 @@
 
 import { useState, useEffect } from "react";
 import { apiService } from "../lib/api";
+import { useTranslation } from "react-i18next";
 import Link from "next/link";
 
 // Backend URL configuration
 const BACKEND_URL = "http://localhost:8000";
 
 export default function AnnouncementsPage() {
+  const { i18n } = useTranslation();
   const [announcements, setAnnouncements] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -16,7 +18,8 @@ export default function AnnouncementsPage() {
     const fetchAnnouncements = async () => {
       try {
         setLoading(true);
-        const data = await apiService.getActiveAnnouncements();
+        const currentLanguage = i18n.language || "tr";
+        const data = await apiService.getActiveAnnouncements(currentLanguage);
         // Django REST Framework pagination response'undan results array'ini çıkar
         setAnnouncements(data.results || data);
         setError(null);
@@ -29,11 +32,13 @@ export default function AnnouncementsPage() {
     };
 
     fetchAnnouncements();
-  }, []);
+  }, [i18n.language]); // i18n.language değiştiğinde yeniden fetch et
 
   const formatDate = (dateString) => {
+    const currentLanguage = i18n.language || "tr";
+    const locale = currentLanguage === "en" ? "en-US" : "tr-TR";
     const options = { year: "numeric", month: "long", day: "numeric" };
-    return new Date(dateString).toLocaleDateString("tr-TR", options);
+    return new Date(dateString).toLocaleDateString(locale, options);
   };
 
   const getImageUrl = (imagePath) => {
@@ -132,12 +137,13 @@ export default function AnnouncementsPage() {
     <div className="font-sans min-h-screen bg-white">
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">
-          Haberler
+          {i18n.language === "en" ? "News" : "Haberler"}
         </h1>
         <div className="text-center mb-10">
           <p className="text-lg text-gray-600">
-            YQ Union ile ilgili en güncel haberler, duyurular ve gelişmeler
-            hakkında bilgi alın.
+            {i18n.language === "en"
+              ? "Get the latest news, announcements and developments about YQ Union."
+              : "YQ Union ile ilgili en güncel haberler, duyurular ve gelişmeler hakkında bilgi alın."}
           </p>
         </div>
 
@@ -197,10 +203,18 @@ export default function AnnouncementsPage() {
                   </div>
 
                   <div
-                    className="text-gray-600 mb-4 line-clamp-3"
+                    className="text-gray-600 mb-4 overflow-hidden leading-relaxed"
+                    style={{
+                      display: "-webkit-box",
+                      WebkitLineClamp: 3,
+                      WebkitBoxOrient: "vertical",
+                      textOverflow: "ellipsis",
+                    }}
                     dangerouslySetInnerHTML={{
                       __html:
-                        announcement.content_preview || "İçerik mevcut değil",
+                        announcement.content_preview ||
+                        announcement.content ||
+                        "İçerik mevcut değil",
                     }}
                   />
 
@@ -225,9 +239,12 @@ export default function AnnouncementsPage() {
                   )}
                 </div>
 
-                <button className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-center">
-                  Devamını Oku
-                </button>
+                <Link
+                  href={`/announcements/${announcement.slug}`}
+                  className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition-colors text-center"
+                >
+                  {i18n.language === "en" ? "Read More" : "Devamını Oku"}
+                </Link>
               </div>
             ))}
           </div>
@@ -247,10 +264,14 @@ export default function AnnouncementsPage() {
               />
             </svg>
             <h3 className="text-xl font-medium text-gray-900 mb-2">
-              Henüz haber bulunmuyor
+              {i18n.language === "en"
+                ? "No news yet"
+                : "Henüz haber bulunmuyor"}
             </h3>
             <p className="text-gray-500">
-              Yeni haberler eklendiğinde burada görünecektir.
+              {i18n.language === "en"
+                ? "New news will appear here when added."
+                : "Yeni haberler eklendiğinde burada görünecektir."}
             </p>
           </div>
         )}
@@ -258,17 +279,20 @@ export default function AnnouncementsPage() {
         {/* Contact CTA - Sayfanın altında */}
         <div className="mt-16 bg-blue-600 rounded-2xl p-8 text-center">
           <h3 className="text-2xl font-bold text-white mb-4">
-            Daha Fazla Bilgi İçin
+            {i18n.language === "en"
+              ? "For More Information"
+              : "Daha Fazla Bilgi İçin"}
           </h3>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-            Haberlerle ilgili sorularınız veya daha detaylı bilgi almak için
-            bizimle iletişime geçin
+            {i18n.language === "en"
+              ? "Contact us for questions about news or to get more detailed information"
+              : "Haberlerle ilgili sorularınız veya daha detaylı bilgi almak için bizimle iletişime geçin"}
           </p>
           <Link
             href="/contact"
             className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200 inline-block"
           >
-            İletişime Geç
+            {i18n.language === "en" ? "Contact Us" : "İletişime Geç"}
           </Link>
         </div>
       </div>
