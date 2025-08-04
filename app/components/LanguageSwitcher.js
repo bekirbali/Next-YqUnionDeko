@@ -20,7 +20,7 @@ export default function LanguageSwitcher() {
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center space-x-2 text-white hover:text-red-300 transition-colors duration-200 font-medium"
+        className="flex items-center space-x-2 text-white hover:text-red-300 hover:cursor-pointer transition-colors duration-200 font-medium"
       >
         <svg
           className="w-4 h-4"
