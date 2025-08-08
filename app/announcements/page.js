@@ -1,12 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { apiService } from "../lib/api";
+import { apiService, getImageUrl } from "../lib/api";
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
-
-// Backend URL configuration
-const BACKEND_URL = "http://localhost:8000";
 
 export default function AnnouncementsPage() {
   const { i18n } = useTranslation();
@@ -39,16 +36,6 @@ export default function AnnouncementsPage() {
     const locale = currentLanguage === "en" ? "en-US" : "tr-TR";
     const options = { year: "numeric", month: "long", day: "numeric" };
     return new Date(dateString).toLocaleDateString(locale, options);
-  };
-
-  const getImageUrl = (imagePath) => {
-    if (!imagePath) return "/assets/placeholder-news.svg";
-    if (imagePath.startsWith("http")) return imagePath;
-    // Frontend assets'leri olduğu gibi bırak
-    if (imagePath.startsWith("/assets/")) return imagePath;
-    // Backend media dosyaları için URL ekle
-    const fullUrl = `${BACKEND_URL}${imagePath}`;
-    return fullUrl;
   };
 
   // Loading state
