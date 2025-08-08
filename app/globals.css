@@ -99,6 +99,19 @@ body {
   font-size: 12px;
 }
 
+.latest-news-container .slick-dots {
+  bottom: -50px;
+}
+
+.latest-news-container .slick-dots li button:before {
+  color: #dc143c;
+  font-size: 12px;
+}
+
+.latest-news-container .slick-dots li.slick-active button:before {
+  color: #0a2562;
+}
+
 .testimonials-slider-container .slick-dots li.slick-active button:before {
   color: #dc143c;
 }

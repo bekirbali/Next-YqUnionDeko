@@ -15,6 +15,15 @@ const HeroSlider = () => {
     autoplaySpeed: 4000,
     fade: true,
     cssEase: "linear",
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 768, // mobil görünüm
+        settings: {
+          arrows: false, // mobilde okları gizle
+        },
+      },
+    ],
   };
 
   const slides = [
@@ -32,7 +41,15 @@ const HeroSlider = () => {
       subtitle: "Güvenilir ve Profesyonel Hizmet",
       description:
         "Her adımda yanınızdayız. Siparişten teslimata kadar tam kontrol.",
-      image: "/assets/heroImage.jpg",
+      image: "/assets/balonluheroslider.jpg",
+    },
+    {
+      id: 3,
+      title: "Yeni Nesil Elektrikli Araç Şarj Çözümleri",
+      subtitle: "Geleceğin Enerjisi, Bugünün Teknolojisi",
+      description:
+        "Elektrikli araç şarj istasyonları ve enerji çözümlerinde öncü teknolojilerimizle sürdürülebilir geleceği inşa ediyoruz.",
+      image: "/assets/electiriccarheroslider.JPG",
     },
   ];
 

@@ -131,6 +131,17 @@ class ApiService {
 
 export const apiService = new ApiService();
 
+// Image URL utility function
+export const getImageUrl = (imagePath) => {
+  if (!imagePath) return "/assets/placeholder-news.svg";
+  if (imagePath.startsWith("http")) return imagePath;
+  // Frontend assets'leri olduğu gibi bırak
+  if (imagePath.startsWith("/assets/")) return imagePath;
+  // Backend media dosyaları için URL ekle
+  const fullUrl = `http://localhost:8000${imagePath}`;
+  return fullUrl;
+};
+
 // Utility functions for slug handling
 export const createSlug = (title) => {
   if (!title) return "";
