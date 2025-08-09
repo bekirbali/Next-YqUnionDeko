@@ -218,17 +218,20 @@ export default function AnnouncementDetailPage() {
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {announcement.additional_images.map((image) => (
-                    <div key={image.id} className="relative">
+                    <div
+                      key={image.id}
+                      className="relative h-56 rounded-lg bg-gray-100"
+                    >
                       <img
                         src={getImageUrl(image.image)}
                         alt={image.caption || announcement.title}
-                        className="w-full h-48 object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                        className="w-full h-full object-contain rounded-lg shadow-md hover:shadow-lg transition-shadow"
                         onError={(e) => {
                           e.target.src = "/assets/placeholder-news.svg";
                         }}
                       />
                       {image.caption && (
-                        <p className="text-sm text-gray-600 mt-2 text-center">
+                        <p className="text-sm text-gray-600 mt-2 text-center absolute -bottom-7 left-0 right-0">
                           {image.caption}
                         </p>
                       )}

@@ -8,23 +8,47 @@ const MOCK_ANNOUNCEMENTS = {
   results: [
     {
       id: 1,
-      title: "YQ Union Hizmetlerimiz Hakkında",
-      slug: "yq-union-hizmetlerimiz-hakkinda",
+      title: "YQ Union Olarak Katıldığımız Fuarlar",
+      slug: "katildigimiz-fuarlar",
       content:
-        "<p>YQ Union olarak ithalat ve ihracat alanında uzman ekibimizle size en kaliteli hizmeti sunmaya devam ediyoruz. Dünya genelindeki iş ortaklarımızla birlikte güvenli ticaret yapmanız için çalışıyoruz.</p>",
+        "<p>Dünyanın dört bir yanındaki prestijli fuarlarda yer alarak sektördeki lider konumumuzu bir kez daha pekiştirdik.Katıldığımız fuarlarda, en son teknolojik çözümlerimizi, yenilikçi ürünlerimizi ve sürdürülebilirlik odaklı projelerimizi siz değerli iş ortaklarımız ve ziyaretçilerimizle buluşturduk.</p>",
       content_preview:
-        "YQ Union olarak ithalat ve ihracat alanında uzman ekibimizle size en kaliteli hizmeti sunmaya devam ediyoruz...",
-      main_image: "/assets/heroImage.jpg",
+        "Dünyanın dört bir yanındaki prestijli fuarlarda yer alarak sektördeki lider konumumuzu bir kez daha pekiştirdik...",
+      main_image: "/assets/fair.jpg",
       additional_images: [
         {
           id: 1,
-          image: "/assets/world.png",
+          image: "/assets/exhibition/sergi1.png",
+          caption: "Dünya ticareti",
+          order: 1,
+        },
+        {
+          id: 1,
+          image: "/assets/exhibition/sergi2.png",
+          caption: "Dünya ticareti",
+          order: 1,
+        },
+        {
+          id: 1,
+          image: "/assets/exhibition/sergi3.png",
+          caption: "Dünya ticareti",
+          order: 1,
+        },
+        {
+          id: 1,
+          image: "/assets/exhibition/sergi4.png",
+          caption: "Dünya ticareti",
+          order: 1,
+        },
+        {
+          id: 1,
+          image: "/assets/exhibition/sergi5.png",
           caption: "Dünya ticareti",
           order: 1,
         },
       ],
       additional_images_count: 1,
-      created_at: "2024-01-15T10:30:00Z",
+      created_at: "2025-01-15T10:30:00Z",
       is_active: true,
     },
     {
@@ -43,13 +67,13 @@ const MOCK_ANNOUNCEMENTS = {
     },
     {
       id: 3,
-      title: "2024 Yılı Hedeflerimiz",
-      slug: "2024-yili-hedeflerimiz",
+      title: "2025 Yılı Hedeflerimiz",
+      slug: "2025-yili-hedeflerimiz",
       content:
-        "<p>2024 yılında daha fazla ülkeye hizmet vermeyi ve müşteri memnuniyetini en üst seviyeye çıkarmayı hedefliyoruz. Yeni iş ortaklıkları ve teknolojik yeniliklerle size daha iyi hizmet vermeye devam edeceğiz.</p>",
+        "<p>2025 yılında daha fazla ülkeye hizmet vermeyi ve müşteri memnuniyetini en üst seviyeye çıkarmayı hedefliyoruz. Yeni iş ortaklıkları ve teknolojik yeniliklerle size daha iyi hizmet vermeye devam edeceğiz.</p> <p>2025 yılında, küresel çapta daha fazla bölgeye ulaşarak hizmet ağımızı genişletmeyi ve müşteri odaklı yaklaşımımızı güçlendirmeyi planlıyoruz. Yenilikçi teknolojiler ve stratejik iş birlikleriyle, kullanıcı deneyimini daha da iyileştirecek çözümler sunmayı taahhüt ediyoruz. Siz değerli müşterilerimizin ihtiyaçlarına en uygun, güvenilir ve hızlı hizmetleri sağlamak için durmaksızın çalışmaya devam edeceğiz.</p>",
       content_preview:
-        "2024 yılında daha fazla ülkeye hizmet vermeyi ve müşteri memnuniyetini en üst seviyeye çıkarmayı hedefliyoruz...",
-      main_image: null, // Resim olmayan test için
+        "2025 yılında daha fazla ülkeye hizmet vermeyi ve müşteri memnuniyetini en üst seviyeye çıkarmayı hedefliyoruz...",
+      main_image: "/assets/electiriccarheroslider.jpg", // Resim olmayan test için
       additional_images: [],
       additional_images_count: 0,
       created_at: "2024-01-05T09:15:00Z",

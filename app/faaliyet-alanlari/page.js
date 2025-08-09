@@ -188,8 +188,80 @@ export default function FaaliyetAlanlariPage() {
         </section>
       </AnimatedSection>
 
+      {/* Tanıtım Videosu Section */}
+      <AnimatedSection animationType="fadeInUp" delay={0.3}>
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            {/* <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-gray-800 mb-4">
+                <span className="secondary-text">YqUnion</span> ile Nasıl
+                Çalışıyoruz?
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Türkiye-Çin dış ticaret süreçlerimizi ve kaliteli hizmet
+                anlayışımızı videomuzda keşfedin
+              </p>
+            </div> */}
+
+            <div className="max-w-4xl mx-auto">
+              <div className="relative bg-gray-100 rounded-xl overflow-hidden shadow-lg">
+                {/* Video Container */}
+                <div className="relative" style={{ paddingBottom: "56.25%" }}>
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/N7ySbuZW5uk"
+                    title="DEKO Electrics - The Rising Star of Turkey in LV Industry"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+
+                {/* Video Bilgi - YouTube için overlay yerine alt kısım */}
+                <div className="bg-gray-50 p-6 rounded-b-xl">
+                  <div className="text-center">
+                    <h3 className="text-xl font-bold text-gray-800 mb-2">
+                      DEKO Electrics - Türkiye'nin Yükselen Yıldızı
+                    </h3>
+                    <p className="text-gray-600">
+                      Alçak gerilim endüstrisinde 20+ yıllık deneyimimiz ve
+                      profesyonel hizmet anlayışımız
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Video Alt Bilgi */}
+              {/* <div className="text-center mt-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="bg-gray-50 rounded-lg p-4">
+                    <div className="text-2xl font-bold text-primary mb-2">
+                      20+
+                    </div>
+                    <div className="text-gray-600">Yıllık Deneyim</div>
+                  </div>
+                  <div className="bg-gray-50 rounded-lg p-4">
+                    <div className="text-2xl font-bold text-primary mb-2">
+                      1000+
+                    </div>
+                    <div className="text-gray-600">Başarılı Proje</div>
+                  </div>
+                  <div className="bg-gray-50 rounded-lg p-4">
+                    <div className="text-2xl font-bold text-primary mb-2">
+                      7/24
+                    </div>
+                    <div className="text-gray-600">Müşteri Desteği</div>
+                  </div>
+                </div>
+              </div> */}
+            </div>
+          </div>
+        </section>
+      </AnimatedSection>
+
       {/* İletişim Call to Action */}
-      <AnimatedSection animationType="scaleIn" delay={0.5}>
+      <AnimatedSection animationType="scaleIn" delay={0.3}>
         <section className="py-20 bg-gradient-to-r from-primary to-secondary text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold mb-6">

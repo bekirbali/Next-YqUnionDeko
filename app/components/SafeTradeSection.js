@@ -9,12 +9,12 @@ export default function SafeTradeSection() {
     mission: {
       title: "Misyon",
       content:
-        "Müşterilerimize yüksek maliyet/fayda oranıyla güvenilir ürünler ve çözümler sunmak misyonumuz. Teknoloji ve ürün kalitesini her gün artırarak bunu başarıyoruz.",
+        "Çin'den ithalat yapmak isteyen girişimciler ve firmalara, ürün araştırmasından kalite kontrolüne, fiyat pazarlığından lojistiğe kadar her aşamada profesyonel destek sunmak.",
     },
     vision: {
       title: "Vizyon",
       content:
-        "Türkiye-Çin dış ticaretinde lider konuma gelmek ve her iki ülke arasında güvenilir ticaret köprüsü olmak vizyonumuz.",
+        "Türkiye'deki ithalatçıların Çin'den ürün tedarik ederken zaman kaybetmeden, güvenle ve en uygun şartlarla işlem yapabildiği bir sistemin parçası olmak.",
     },
     values: {
       title: "Değerler",

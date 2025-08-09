@@ -23,45 +23,77 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-bold primary-text mb-8 text-center">
                 Şirket Hikayemiz
               </h2>
-              <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="grid md:grid-cols-2 gap-8 text-justify">
                 <div>
                   <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-                    YqUnion Dış Ticaret, Türkiye ve Çin arasındaki ticari
-                    köprüyü güçlendirmek amacıyla kurulmuş bir dış ticaret
-                    firmasıdır. Yılların getirdiği deneyim ve sektörel bilgi
-                    birikimimizle, müşterilerimize en kaliteli hizmeti sunmayı
-                    hedefliyoruz.
+                    Firmamız, Çin ile Türkiye arasında dış ticaret faaliyetleri
+                    yürütmek amacıyla kurulmuş, güvenilir ve çözüm odaklı bir
+                    ithalat–ihracat şirketidir. Hem Türkiye'de hem de Çin'de
+                    aktif olarak faaliyet gösteren, eğitimli ve profesyonel
+                    ekiplerimiz ile her iki ülkede de ofislerimiz bulunmaktadır.
                   </p>
                   <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-                    Güvenilir tedarik zinciri çözümleri, kalite kontrol
-                    süreçleri ve rekabetçi fiyat avantajlarımızla sektörde öncü
-                    konumdayız. Her projede müşteri memnuniyetini en üst
-                    seviyede tutarak, uzun vadeli iş ortaklıkları kuruyoruz.
+                    Ayrıca Türkiye'de yatırımlara sahip güçlü bir ortaklık
+                    yapımız vardır. Bu ortaklıkların başında Deko Otomasyon
+                    Elektrik ve Elektronik Sanayi ve Ticaret A.Ş. gelmektedir.
+                    Deko Elk.te Alçak gerilim devre kesilerin üretimi yapılmakta
+                    ve Türkiye ve dünyaya pazarlanmaktadır.
+                  </p>
+                  <p className="text-lg mb-6 text-gray-700 leading-relaxed">
+                    Amacımız; Çin'den yüksek kaliteye sahip ürünleri rekabetçi
+                    fiyatlarla temin ederek Türk pazarına değer katmak, aynı
+                    zamanda yerli üretimlerimizi dünya pazarına taşıyarak
+                    ihracatta sürdürülebilir büyüme sağlamaktır.
                   </p>
                 </div>
-                <div className="primary-lighter-bg p-8 rounded-lg">
-                  <h3 className="text-2xl font-bold primary-text mb-4">
-                    Temel İlkelerimiz
-                  </h3>
-                  <ul className="space-y-3">
-                    <li className="flex items-center">
-                      <span className="w-3 h-3 secondary-bg rounded-full mr-3"></span>
-                      <span className="text-gray-700">Güvenilirlik</span>
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-3 h-3 secondary-bg rounded-full mr-3"></span>
-                      <span className="text-gray-700">Kalite</span>
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-3 h-3 secondary-bg rounded-full mr-3"></span>
-                      <span className="text-gray-700">Müşteri Odaklılık</span>
-                    </li>
-                    <li className="flex items-center">
-                      <span className="w-3 h-3 secondary-bg rounded-full mr-3"></span>
-                      <span className="text-gray-700">İnovasyon</span>
-                    </li>
-                  </ul>
+                <div>
+                  <p className="text-lg mb-6 text-gray-700 leading-relaxed">
+                    Gelişen küresel ticaret dinamiklerine hızla uyum sağlayan
+                    yapımız sayesinde; tedarik, kalite kontrol, lojistik ve
+                    gümrük işlemleri dahil olmak üzere tüm süreçlerde iş
+                    ortaklarımıza uçtan uca profesyonel hizmet sunuyoruz.
+                    Çin'deki güçlü üretici ağımız ve yerel iş birliklerimiz ile
+                    güvenli, hızlı ve verimli tedarik zinciri çözümleri
+                    oluşturuyoruz.
+                  </p>
+                  <p className="text-lg mb-6 text-gray-700 leading-relaxed">
+                    Müşteri memnuniyetini temel prensip olarak benimseyerek,
+                    şeffaflık, dürüstlük ve süreklilik ilkeleri doğrultusunda
+                    hareket ediyoruz. Hedefimiz; iş ortaklarımızla uzun vadeli
+                    ve güvene dayalı ilişkiler kurmak, Çin ile yapılan ticarette
+                    karşılaşılan riskleri minimize ederek onlara rekabet
+                    avantajı sağlamaktır.
+                  </p>
+                  <p className="text-lg mb-6 text-gray-700 leading-relaxed">
+                    Çin'den ithalat veya ihracat yapmak isteyen tüm firmalara,
+                    doğru yönlendirme ve sorunsuz operasyon süreçleriyle
+                    güvenilir çözüm ortağı olmayı taahhüt ediyoruz.
+                  </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </AnimatedSection>
+
+      {/* Video Section */}
+      <AnimatedSection animationType="fadeInUp" delay={0.25}>
+        <section className="pb-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl font-bold primary-text mb-8">
+                Tanıtım Videomuz
+              </h2>
+              <div className="relative bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+                <video
+                  className="w-full h-auto"
+                  controls
+                  preload="metadata"
+                  // poster="/assets/heroImage.jpg"
+                >
+                  <source src="/assets/yqunionvideo.MP4" type="video/mp4" />
+                  Tarayıcınız video elementini desteklemiyor.
+                </video>
               </div>
             </div>
           </div>
@@ -96,10 +128,14 @@ export default function AboutPage() {
                     </h3>
                   </div>
                   <p className="text-gray-700 leading-relaxed">
-                    Türkiye ve Çin arasındaki ticari işbirliğini güçlendirerek,
-                    müşterilerimize en kaliteli ürünleri en uygun fiyatlarla
-                    ulaştırmak. Güvenilir tedarik zinciri çözümleriyle iş
-                    ortaklarımızın başarısına katkıda bulunmak.
+                    Çin'den ithalat yapmak isteyen girişimciler ve firmalara,
+                    ürün araştırmasından kalite kontrolüne, fiyat pazarlığından
+                    lojistiğe kadar her aşamada profesyonel destek sunmak.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed mt-4">
+                    Güvenilir üreticilere doğrudan erişim sağlayarak, iş
+                    ortaklarımızın hem yurtiçinde hem de yurtdışında rekabet
+                    gücünü artırmalarına katkı sağlıyoruz.
                   </p>
                 </div>
                 <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -130,10 +166,14 @@ export default function AboutPage() {
                     </h3>
                   </div>
                   <p className="text-gray-700 leading-relaxed">
-                    Türkiye-Çin dış ticaretinde öncü firma olmak ve bölgesel
-                    ticaretin gelişimine katkıda bulunmak. İnovatif çözümlerle
-                    sektörde standartları belirleyen güvenilir bir marka haline
-                    gelmek.
+                    Türkiye'deki ithalatçıların Çin'den ürün tedarik ederken
+                    zaman kaybetmeden, güvenle ve en uygun şartlarla işlem
+                    yapabildiği bir sistemin parçası olmak.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed mt-4">
+                    Çin pazarındaki bilgi birikimimiz ve geniş üretici ağımızla,
+                    ithalatı herkes için kolay ve sürdürülebilir hale getirmeyi
+                    hedefliyoruz.
                   </p>
                 </div>
               </div>
