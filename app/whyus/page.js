@@ -156,13 +156,19 @@ export default function WhyUsPage() {
                       Ürün Tespiti ve Numune
                     </h3>
                     <ul className="text-gray-600 space-y-2 text-sm">
-                      <li>• Ürün numunesini veya teknik verilerini alıyoruz</li>
                       <li>
-                        • Çin ofisimizle bağlantıya geçip birebir aynısını
-                        buluyoruz
+                        • Sizden istediğiniz ürünün numunesini veya teknik
+                        verilerini alıyoruz.
                       </li>
                       <li>
-                        • İlk numunenin görselini hazırlatıp onayınıza sunuyoruz
+                        • Elimizdeki veriler doğrultusunda Çin’ ofisimizle
+                        bağlantıya geçip ürünün birebir aynısını, en yakın
+                        alternatifi veya daha kaliteli bir versiyonunu tespit
+                        ediyoruz.
+                      </li>
+                      <li>
+                        • İlk numunenin görselini hazırlatıp onayınıza
+                        sunuyoruz.
                       </li>
                     </ul>
                   </div>
@@ -179,10 +185,17 @@ export default function WhyUsPage() {
                     </h3>
                     <ul className="text-gray-600 space-y-2 text-sm">
                       <li>
-                        • Ürün fiyatı, vergiler ve maliyetler netleştiriliyor
+                        • Ürün fiyatı, vergiler ve diğer maliyetler gümrüksel
+                        işleyiş netleştiriliyor.
                       </li>
-                      <li>• İthalat işlemlerini siz yürütün</li>
-                      <li>• Ya da tüm ithalatı biz gerçekleştirelim</li>
+                      <li>
+                        • İsterseniz İthalat işlemlerini siz yürütürsünüz
+                        tamamen.
+                      </li>
+                      <li>
+                        • Ya da Tüm ithalatı biz gerçekleştirir, ürünlerinizi
+                        deponuza teslim size ulaştırıyoruz.
+                      </li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -198,13 +211,17 @@ export default function WhyUsPage() {
                     </h3>
                     <ul className="text-gray-600 space-y-2 text-sm">
                       <li>
-                        • Numuneyi inceliyor, onaylıyor veya revize talep
-                        ediyorsunuz
+                        • Numuneyi inceliyor, onaylıyor veya ek taleplerinizi
+                        bize iletiyorsunuz.
                       </li>
                       <li>
-                        • Özel istekleriniz doğrultusunda revize hazırlanıyor
+                        • Özel istekleriniz doğrultusunda revize numune
+                        hazırlanıyor ve tekrar size sunuluyor.
                       </li>
-                      <li>• Onayınızla üretim süreci başlıyor</li>
+                      <li>
+                        • “Tamam, bu ürün” dediğiniz anda üretim süreci
+                        başlıyor.
+                      </li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -220,9 +237,13 @@ export default function WhyUsPage() {
                     </h3>
                     <ul className="text-gray-600 space-y-2 text-sm">
                       <li>
-                        • Çin'deki ekibimiz üretimin her aşamasını denetler
+                        • Çin’deki profesyonel ekibimiz üretimin her aşamasını
+                        denetler.
                       </li>
-                      <li>• Fotoğraf ve videolarla sizi bilgilendiririz</li>
+                      <li>
+                        • Üretici izin verdiği ölçüde fotoğraf ve videolarla
+                        sizi bilgilendiririz.
+                      </li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -238,9 +259,14 @@ export default function WhyUsPage() {
                     </h3>
                     <ul className="text-gray-600 space-y-2 text-sm">
                       <li>
-                        • Hacimli siparişlerde kendi markanız kullanılabilir
+                        • Hacimli siparişlerde kendi markanız, ürün kodunuz ve
+                        barkodunuz kullanılabilir.
                       </li>
-                      <li>• Etiket, kutu tasarımları hazırlanır</li>
+                      <li>
+                        • Etiket, kutu ve koli tasarımlarınızı isterseniz bizim
+                        grafikerimiz hazırlar, isterseniz kendi tasarımcınızdan
+                        alıp bize iletebilirsiniz.
+                      </li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -256,9 +282,12 @@ export default function WhyUsPage() {
                     </h3>
                     <ul className="text-gray-600 space-y-2 text-sm">
                       <li>
-                        • Güvenilir uluslararası nakliye firmalarıyla yüklenir
+                        • Ürünler, güvenilir ve uygun maliyetli uluslararası
+                        nakliye firmalarıyla yüklenir.
                       </li>
-                      <li>• Yükleme aşamaları fotoğraf/video ile iletilir</li>
+                      <li>
+                        • Yükleme aşamaları size fotoğraf ve video ile iletilir.
+                      </li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -273,11 +302,12 @@ export default function WhyUsPage() {
                       Türkiye Gümrük İşlemleri
                     </h3>
                     <ul className="text-gray-600 space-y-2 text-sm">
+                      <li>• Yükünüz Türkiye’deki limana ulaştığında:</li>
                       <li>
-                        • Tüm gümrük işlemlerini biz tamamlar, deponuza teslim
-                        ederiz
+                        • İsterseniz tüm gümrük işlemlerini biz tamamlar ve
+                        deponuza teslim ederiz.
                       </li>
-                      <li>• İsterseniz işlemleri siz yürütürsünüz</li>
+                      <li>• İsterseniz işlemleri siz yürütürsünüz.</li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -294,9 +324,12 @@ export default function WhyUsPage() {
                     <ul className="text-gray-600 space-y-2 text-sm">
                       <li>
                         • Her türlü sorun ve şikayetinizde tek muhatabınız biz
-                        oluruz
+                        oluruz.
                       </li>
-                      <li>• Değişim ve iade işlemlerini biz çözeriz</li>
+                      <li>
+                        • Ürünün yapısal veya teknik sorunlarında değişim ve
+                        iade işlemlerini biz çözeriz.
+                      </li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -311,8 +344,10 @@ export default function WhyUsPage() {
                       Yüz Yüze Görüşme
                     </h3>
                     <ul className="text-gray-600 space-y-2 text-sm">
-                      <li>• Tüm ayrıntıları netleştirmek isterseniz</li>
-                      <li>• Türkiye veya Çin ofislerimizde ağırlayabiliriz</li>
+                      <li>
+                        • Tüm ayrıntıları netleştirmek isterseniz sizi Türkiye
+                        veya Çin ofislerimizde ağırlayabilir misafir edebiliriz.
+                      </li>
                     </ul>
                   </div>
                 </AnimatedSection>
