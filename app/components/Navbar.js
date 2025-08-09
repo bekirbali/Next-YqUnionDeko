@@ -80,6 +80,12 @@ export default function Navbar() {
             {t("navigation.whyUs")}
           </Link>
           <Link
+            href="/faaliyet-alanlari"
+            className="text-white hover:text-red-300 transition-colors duration-200 font-medium"
+          >
+            {t("navigation.activityAreas")}
+          </Link>
+          <Link
             href="/announcements"
             className="text-white hover:text-red-300 transition-colors duration-200 font-medium"
           >
@@ -186,6 +192,13 @@ export default function Navbar() {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               {t("navigation.whyUs")}
+            </Link>
+            <Link
+              href="/faaliyet-alanlari"
+              className="text-white hover:text-red-300 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {t("navigation.activityAreas")}
             </Link>
             <Link
               href="/announcements"

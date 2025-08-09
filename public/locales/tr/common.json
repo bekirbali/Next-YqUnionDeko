@@ -1,0 +1,66 @@
+{
+  "navigation": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "whyUs": "Neden Bizimle Çalışmalısınız?",
+    "activityAreas": "Faaliyet Alanları",
+    "announcements": "Duyurular",
+    "contact": "İletişim",
+    "officeLocations": "Ofis Lokasyonları",
+    "contactForm": "İletişim Formu"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Bir hata oluştu",
+    "success": "İşlem başarılı",
+    "cancel": "İptal",
+    "confirm": "Onayla",
+    "save": "Kaydet",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "back": "Geri",
+    "next": "İleri",
+    "previous": "Önceki",
+    "submit": "Gönder",
+    "search": "Ara",
+    "readMore": "Devamını Oku",
+    "learnMore": "Daha Fazla Bilgi",
+    "close": "Kapat",
+    "open": "Aç",
+    "yes": "Evet",
+    "no": "Hayır"
+  },
+  "language": {
+    "turkish": "Türkçe",
+    "english": "English",
+    "changeLanguage": "Dil Değiştir"
+  },
+  "business": {
+    "import": "İthalat",
+    "export": "İhracat",
+    "trading": "Ticaret",
+    "logistics": "Lojistik",
+    "consultation": "Danışmanlık",
+    "services": "Hizmetler",
+    "experience": "Deneyim",
+    "quality": "Kalite",
+    "trust": "Güven",
+    "partnership": "Ortaklık"
+  },
+  "contact": {
+    "address": "Adres",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "website": "Web Sitesi",
+    "followUs": "Bizi Takip Edin",
+    "getInTouch": "İletişime Geçin"
+  },
+  "time": {
+    "today": "Bugün",
+    "yesterday": "Dün",
+    "tomorrow": "Yarın",
+    "thisWeek": "Bu Hafta",
+    "thisMonth": "Bu Ay",
+    "thisYear": "Bu Yıl"
+  }
+}

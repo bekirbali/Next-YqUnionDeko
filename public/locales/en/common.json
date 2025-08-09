@@ -1,0 +1,66 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "whyUs": "Why Work With Us?",
+    "activityAreas": "Activity Areas",
+    "announcements": "Announcements",
+    "contact": "Contact",
+    "officeLocations": "Office Locations",
+    "contactForm": "Contact Form"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Operation successful",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "search": "Search",
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "close": "Close",
+    "open": "Open",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "language": {
+    "turkish": "Türkçe",
+    "english": "English",
+    "changeLanguage": "Change Language"
+  },
+  "business": {
+    "import": "Import",
+    "export": "Export",
+    "trading": "Trading",
+    "logistics": "Logistics",
+    "consultation": "Consultation",
+    "services": "Services",
+    "experience": "Experience",
+    "quality": "Quality",
+    "trust": "Trust",
+    "partnership": "Partnership"
+  },
+  "contact": {
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "website": "Website",
+    "followUs": "Follow Us",
+    "getInTouch": "Get In Touch"
+  },
+  "time": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "tomorrow": "Tomorrow",
+    "thisWeek": "This Week",
+    "thisMonth": "This Month",
+    "thisYear": "This Year"
+  }
+}
