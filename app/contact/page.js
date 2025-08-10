@@ -341,7 +341,9 @@ export default function ContactPage() {
                           <p className="font-semibold text-gray-800">
                             E-posta:
                           </p>
-                          <p className="text-gray-600">turkiye@yqunion.com</p>
+                          <p className="text-gray-600">
+                            suat.kucuk@yqunion.com.tr
+                          </p>
                         </div>
                       </div>
 
@@ -422,9 +424,9 @@ export default function ContactPage() {
                         <div>
                           <p className="font-semibold text-gray-800">Adres:</p>
                           <p className="text-gray-600">
-                            6 Floor, A Building, Hongbao Mansion, No.198-208
+                            No.241-245 Longxianger RD North Baixiang
                             <br />
-                            Chezhan Road, Liushi, Yueqing, Zhejiang, China
+                            Yueqing, Zhejiang, China
                           </p>
                         </div>
                       </div>
@@ -447,7 +449,9 @@ export default function ContactPage() {
                           <p className="font-semibold text-gray-800">
                             Telefon:
                           </p>
-                          <p className="text-gray-600">+86 755 8888 9999</p>
+                          <p className="text-gray-600">
+                            +86 577 627 16066 / 62867666
+                          </p>
                         </div>
                       </div>
 
@@ -469,7 +473,7 @@ export default function ContactPage() {
                           <p className="font-semibold text-gray-800">
                             E-posta:
                           </p>
-                          <p className="text-gray-600">china@yqunion.com</p>
+                          <p className="text-gray-600">union@unionele.com</p>
                         </div>
                       </div>
 
