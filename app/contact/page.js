@@ -240,7 +240,7 @@ export default function ContactPage() {
                   {/* Fotoğraf Header */}
                   <div className="relative h-48 overflow-hidden">
                     <img
-                      src="/assets/cinofis.png"
+                      src="/assets/trofis.png"
                       alt="Türkiye Ofisi - YQ Union"
                       className="w-full h-full object-cover"
                     />
