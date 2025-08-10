@@ -29,7 +29,7 @@ export default function OfficeLocationsPage() {
                   {/* Fotoğraf Header */}
                   <div className="relative h-48 overflow-hidden">
                     <img
-                      src="/assets/cinofis.png"
+                      src="/assets/trofis.png"
                       alt="Türkiye Ofisi - YQ Union"
                       className="w-full h-full object-cover"
                     />
@@ -102,7 +102,8 @@ export default function OfficeLocationsPage() {
                           <p className="font-semibold text-gray-800">
                             Telefon:
                           </p>
-                          <p className="text-gray-600">+90 555 123 45 67</p>
+                          <p className="text-gray-600">+90 532 473 48 97</p>
+                          <p className="text-gray-600">+90 216 771 49 11</p>
                         </div>
                         <img
                           src="/assets/barkod.jpg"
