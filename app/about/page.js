@@ -23,53 +23,46 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl font-bold primary-text mb-8 text-center">
                 Şirket Hikayemiz
               </h2>
-              <div className="grid md:grid-cols-2 gap-8 text-justify">
-                <div>
-                  <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-                    Firmamız, Çin ile Türkiye arasında dış ticaret faaliyetleri
-                    yürütmek amacıyla kurulmuş, güvenilir ve çözüm odaklı bir
-                    ithalat–ihracat şirketidir. Hem Türkiye'de hem de Çin'de
-                    aktif olarak faaliyet gösteren, eğitimli ve profesyonel
-                    ekiplerimiz ile her iki ülkede de ofislerimiz bulunmaktadır.
-                  </p>
-                  <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-                    Ayrıca Türkiye'de yatırımlara sahip güçlü bir ortaklık
-                    yapımız vardır. Bu ortaklıkların başında Deko Otomasyon
-                    Elektrik ve Elektronik Sanayi ve Ticaret A.Ş. gelmektedir.
-                    Deko Elk.te Alçak gerilim devre kesilerin üretimi yapılmakta
-                    ve Türkiye ve dünyaya pazarlanmaktadır.
-                  </p>
-                  <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-                    Amacımız; Çin'den yüksek kaliteye sahip ürünleri rekabetçi
-                    fiyatlarla temin ederek Türk pazarına değer katmak, aynı
-                    zamanda yerli üretimlerimizi dünya pazarına taşıyarak
-                    ihracatta sürdürülebilir büyüme sağlamaktır.
-                  </p>
-                </div>
-                <div>
-                  <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-                    Gelişen küresel ticaret dinamiklerine hızla uyum sağlayan
-                    yapımız sayesinde; tedarik, kalite kontrol, lojistik ve
-                    gümrük işlemleri dahil olmak üzere tüm süreçlerde iş
-                    ortaklarımıza uçtan uca profesyonel hizmet sunuyoruz.
-                    Çin'deki güçlü üretici ağımız ve yerel iş birliklerimiz ile
-                    güvenli, hızlı ve verimli tedarik zinciri çözümleri
-                    oluşturuyoruz.
-                  </p>
-                  <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-                    Müşteri memnuniyetini temel prensip olarak benimseyerek,
-                    şeffaflık, dürüstlük ve süreklilik ilkeleri doğrultusunda
-                    hareket ediyoruz. Hedefimiz; iş ortaklarımızla uzun vadeli
-                    ve güvene dayalı ilişkiler kurmak, Çin ile yapılan ticarette
-                    karşılaşılan riskleri minimize ederek onlara rekabet
-                    avantajı sağlamaktır.
-                  </p>
-                  <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-                    Çin'den ithalat veya ihracat yapmak isteyen tüm firmalara,
-                    doğru yönlendirme ve sorunsuz operasyon süreçleriyle
-                    güvenilir çözüm ortağı olmayı taahhüt ediyoruz.
-                  </p>
-                </div>
+              <div className="text-justify">
+                <p className="text-lg mb-6 text-gray-700 leading-relaxed">
+                  Firmamız, Çin ile Türkiye arasında dış ticaret faaliyetleri
+                  yürütmek amacıyla kurulmuş, güvenilir ve çözüm odaklı bir
+                  ithalat–ihracat şirketidir. Hem Türkiye'de hem de Çin'de aktif
+                  olarak faaliyet gösteren, eğitimli ve profesyonel ekiplerimiz
+                  ile her iki ülkede de ofislerimiz bulunmaktadır. Ayrıca
+                  Türkiye'de yatırımlara sahip güçlü bir ortaklık yapımız
+                  vardır. Bu ortaklıkların başında Deko Otomasyon Elektrik ve
+                  Elektronik Sanayi ve Ticaret A.Ş. gelmektedir. Deko Elk.te
+                  Alçak gerilim devre kesilerin üretimi yapılmakta ve Türkiye ve
+                  dünyaya pazarlanmaktadır.
+                </p>
+                <p className="text-lg mb-6 text-gray-700 leading-relaxed">
+                  Amacımız; Çin'den yüksek kaliteye sahip ürünleri rekabetçi
+                  fiyatlarla temin ederek Türk pazarına değer katmak, aynı
+                  zamanda yerli üretimlerimizi dünya pazarına taşıyarak
+                  ihracatta sürdürülebilir büyüme sağlamaktır.
+                </p>
+                <p className="text-lg mb-6 text-gray-700 leading-relaxed">
+                  Gelişen küresel ticaret dinamiklerine hızla uyum sağlayan
+                  yapımız sayesinde; tedarik, kalite kontrol, lojistik ve gümrük
+                  işlemleri dahil olmak üzere tüm süreçlerde iş ortaklarımıza
+                  uçtan uca profesyonel hizmet sunuyoruz. Çin'deki güçlü üretici
+                  ağımız ve yerel iş birliklerimiz ile güvenli, hızlı ve verimli
+                  tedarik zinciri çözümleri oluşturuyoruz.
+                </p>
+                <p className="text-lg mb-6 text-gray-700 leading-relaxed">
+                  Müşteri memnuniyetini temel prensip olarak benimseyerek,
+                  şeffaflık, dürüstlük ve süreklilik ilkeleri doğrultusunda
+                  hareket ediyoruz. Hedefimiz; iş ortaklarımızla uzun vadeli ve
+                  güvene dayalı ilişkiler kurmak, Çin ile yapılan ticarette
+                  karşılaşılan riskleri minimize ederek onlara rekabet avantajı
+                  sağlamaktır.
+                </p>
+                <p className="text-lg mb-6 text-gray-700 leading-relaxed">
+                  Çin'den ithalat veya ihracat yapmak isteyen tüm firmalara,
+                  doğru yönlendirme ve sorunsuz operasyon süreçleriyle güvenilir
+                  çözüm ortağı olmayı taahhüt ediyoruz.
+                </p>
               </div>
             </div>
           </div>

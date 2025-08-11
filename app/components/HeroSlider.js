@@ -43,14 +43,14 @@ const HeroSlider = () => {
         "Her adımda yanınızdayız. Siparişten teslimata kadar tam kontrol.",
       image: "/assets/balonluheroslider.jpg",
     },
-    {
-      id: 3,
-      title: "Yeni Nesil Elektrikli Araç Şarj Çözümleri",
-      subtitle: "Geleceğin Enerjisi, Bugünün Teknolojisi",
-      description:
-        "Elektrikli araç şarj istasyonları ve enerji çözümlerinde öncü teknolojilerimizle sürdürülebilir geleceği inşa ediyoruz.",
-      image: "/assets/electiriccarheroslider.JPG",
-    },
+    // {
+    //   id: 3,
+    //   title: "Yeni Nesil Elektrikli Araç Şarj Çözümleri",
+    //   subtitle: "Geleceğin Enerjisi, Bugünün Teknolojisi",
+    //   description:
+    //     "Elektrikli araç şarj istasyonları ve enerji çözümlerinde öncü teknolojilerimizle sürdürülebilir geleceği inşa ediyoruz.",
+    //   image: "/assets/electiriccarheroslider.jpg",
+    // },
   ];
 
   return (

@@ -1,5 +1,6 @@
 "use client";
 import { FaTrophy, FaBolt, FaBullseye, FaThumbsUp } from "react-icons/fa";
+import Image from "next/image";
 
 export default function AdvantagesSection() {
   const advantages = [
@@ -34,8 +35,16 @@ export default function AdvantagesSection() {
       <div className="container mx-auto px-4">
         {/* Başlık */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
-            Neden <span className="secondary-text">YqUnion</span>?
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4 flex items-center justify-center gap-3">
+            Neden{" "}
+            <Image
+              src="/assets/yqunionlogo.png"
+              alt="YqUnion Logo"
+              width={170}
+              height={40}
+              className="inline-block invert"
+            />
+            ?
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Dış ticaret süreçlerinizde size değer katacak avantajlarımızı
