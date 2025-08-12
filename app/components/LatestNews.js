@@ -154,7 +154,7 @@ const LatestNews = () => {
                   {/* İçerik */}
                   <div className="p-4 flex-1 flex flex-col justify-between">
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-2 text-lg leading-tight line-clamp-2">
+                      <h3 className="font-semibold text-gray-800 mb-2 text-xl leading-tight line-clamp-2">
                         {announcement.title}
                       </h3>
 
@@ -178,7 +178,7 @@ const LatestNews = () => {
                       </div>
 
                       <div
-                        className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-1 rich-text-content"
+                        className="text-gray-600 leading-relaxed mb-4 line-clamp-1 rich-text-content"
                         dangerouslySetInnerHTML={{
                           __html:
                             announcement.content_preview ||
@@ -192,7 +192,7 @@ const LatestNews = () => {
 
                     <Link
                       href={`/announcements/${announcement.slug}`}
-                      className="inline-block text-center px-3 py-1.5 primary-bg text-white rounded text-sm font-medium hover:primary-light-bg transition-colors duration-200 w-fit"
+                      className="inline-block text-center px-3 py-1.5 primary-bg text-white rounded  font-medium hover:primary-light-bg transition-colors duration-200 w-fit"
                     >
                       {i18n.language === "en" ? "Read More" : "Devamını Oku"}
                     </Link>

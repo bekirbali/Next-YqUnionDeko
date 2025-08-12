@@ -153,19 +153,6 @@ export default function AnnouncementsPage() {
                 />
 
                 <div className="flex-1">
-                  {/* <div className="flex items-center justify-between mb-3">
-                    <span className="px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
-                      {announcement.additional_images_count > 0
-                        ? "Haber"
-                        : "Duyuru"}
-                    </span>
-                    {announcement.is_active && (
-                      <span className="px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800 border border-green-200">
-                        Aktif
-                      </span>
-                    )}
-                  </div> */}
-
                   <h2 className="text-xl font-semibold mb-3 text-gray-800">
                     {announcement.title}
                   </h2>

@@ -17,6 +17,7 @@ import {
   FaTachometerAlt,
   FaPowerOff,
 } from "react-icons/fa";
+import Link from "next/link";
 
 export default function FaaliyetAlanlariPage() {
   const faaliyetAlanlari = [
@@ -271,7 +272,7 @@ export default function FaaliyetAlanlariPage() {
                       <h4 className="font-semibold text-gray-700 mb-3">
                         Başlıca Ürünler:
                       </h4>
-                      <ul className="text-sm text-gray-600 space-y-1">
+                      <ul className="text-gray-600 space-y-1">
                         {alan.details.map((detail, detailIndex) => (
                           <li key={detailIndex} className="flex items-center">
                             <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0"></span>
@@ -373,18 +374,18 @@ export default function FaaliyetAlanlariPage() {
               bizimle iletişime geçin.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <Link
                 href="/contact"
                 className="bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors duration-300 inline-block"
               >
                 Özel Teklif İsteyin
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/whyus"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 inline-block"
               >
                 Neden YqUnion?
-              </a>
+              </Link>
             </div>
           </div>
         </section>

@@ -8,6 +8,7 @@ import {
   FaClock,
   FaCheckCircle,
 } from "react-icons/fa";
+import Link from "next/link";
 
 export default function WhyUsPage() {
   const mainAdvantages = [
@@ -106,7 +107,7 @@ export default function WhyUsPage() {
                   alt="YqUnion Logo"
                   width={250}
                   height={105}
-                  className="object-contain  w-32 h-16 sm:w-32 sm:h-16 lg:w-[250px] lg:h-[105px]"
+                  className="object-contain w-32 h-16 sm:w-32 sm:h-16 lg:w-[250px] lg:h-[105px]"
                 />
                 ?
               </span>
@@ -135,27 +136,35 @@ export default function WhyUsPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-800 mb-4">
-                <span className="secondary-text">YqUnion</span> ile İthalat
-                Süreciniz
+              <h2 className="text-5xl font-bold text-gray-800 mb-4 flex items-center justify-center gap-3">
+                <span className="flex items-center gap-2 sm:gap-4">
+                  <Image
+                    src="/assets/yqunionlogo.png"
+                    alt="YqUnion Logo"
+                    width={210}
+                    height={80}
+                    className="inline-block invert"
+                  />
+                  ile İthalat Süreciniz
+                </span>
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Adım adım yol haritası
               </p>
             </div>
 
-            <div className="max-w-5xl mx-auto">
+            <div className="">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {/* 1. Ürün Tespiti ve Numune */}
                 <AnimatedSection animationType="fadeInUp" delay={0.1}>
-                  <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 h-full">
+                  <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col items-center">
                     <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
                       1
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
                       Ürün Tespiti ve Numune
                     </h3>
-                    <ul className="text-gray-600 space-y-2 text-sm">
+                    <ul className="text-gray-600 space-y-2 text-[14px]">
                       <li>
                         • Sizden istediğiniz ürünün numunesini veya teknik
                         verilerini alıyoruz.
@@ -176,14 +185,14 @@ export default function WhyUsPage() {
 
                 {/* 2. Fiyatlandırma ve Teklif */}
                 <AnimatedSection animationType="fadeInUp" delay={0.2}>
-                  <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 h-full">
+                  <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col items-center">
                     <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
                       2
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
                       Fiyatlandırma ve Teklif
                     </h3>
-                    <ul className="text-gray-600 space-y-2 text-sm">
+                    <ul className="text-gray-600 space-y-2 text-[16px]">
                       <li>
                         • Ürün fiyatı, vergiler ve diğer maliyetler gümrüksel
                         işleyiş netleştiriliyor.
@@ -202,14 +211,14 @@ export default function WhyUsPage() {
 
                 {/* 3. Numune Onayı */}
                 <AnimatedSection animationType="fadeInUp" delay={0.3}>
-                  <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-6 h-full">
+                  <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col items-center">
                     <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
                       3
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
                       Numune Onayı ve Revizyon
                     </h3>
-                    <ul className="text-gray-600 space-y-2 text-sm">
+                    <ul className="text-gray-600 space-y-2 text-[18px]">
                       <li>
                         • Numuneyi inceliyor, onaylıyor veya ek taleplerinizi
                         bize iletiyorsunuz.
@@ -228,14 +237,14 @@ export default function WhyUsPage() {
 
                 {/* 4. Üretim Takibi */}
                 <AnimatedSection animationType="fadeInUp" delay={0.1}>
-                  <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-6 h-full">
+                  <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col">
                     <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
                       4
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
                       Üretim Süreci Takibi
                     </h3>
-                    <ul className="text-gray-600 space-y-2 text-sm">
+                    <ul className="text-gray-600 space-y-2 text-[16px]">
                       <li>
                         • Çin’deki profesyonel ekibimiz üretimin her aşamasını
                         denetler.
@@ -250,14 +259,14 @@ export default function WhyUsPage() {
 
                 {/* 5. Özel Marka */}
                 <AnimatedSection animationType="fadeInUp" delay={0.2}>
-                  <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-6 h-full">
+                  <div className="bg-gradient-to-br from-red-50 to-red-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col">
                     <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
                       5
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
                       Özel Marka ve Ambalaj
                     </h3>
-                    <ul className="text-gray-600 space-y-2 text-sm">
+                    <ul className="text-gray-600 space-y-2 text-[16px]">
                       <li>
                         • Hacimli siparişlerde kendi markanız, ürün kodunuz ve
                         barkodunuz kullanılabilir.
@@ -273,14 +282,14 @@ export default function WhyUsPage() {
 
                 {/* 6. Nakliye */}
                 <AnimatedSection animationType="fadeInUp" delay={0.3}>
-                  <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl p-6 h-full">
+                  <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col">
                     <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
                       6
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
                       Yükleme ve Nakliye
                     </h3>
-                    <ul className="text-gray-600 space-y-2 text-sm">
+                    <ul className="text-gray-600 space-y-2 text-[16px]">
                       <li>
                         • Ürünler, güvenilir ve uygun maliyetli uluslararası
                         nakliye firmalarıyla yüklenir.
@@ -294,14 +303,14 @@ export default function WhyUsPage() {
 
                 {/* 7. Gümrük */}
                 <AnimatedSection animationType="fadeInUp" delay={0.1}>
-                  <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-6 h-full">
+                  <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col">
                     <div className="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
                       7
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
                       Türkiye Gümrük İşlemleri
                     </h3>
-                    <ul className="text-gray-600 space-y-2 text-sm">
+                    <ul className="text-gray-600 space-y-2 text-[16px]">
                       <li>• Yükünüz Türkiye’deki limana ulaştığında:</li>
                       <li>
                         • İsterseniz tüm gümrük işlemlerini biz tamamlar ve
@@ -314,14 +323,14 @@ export default function WhyUsPage() {
 
                 {/* 8. Satış Sonrası */}
                 <AnimatedSection animationType="fadeInUp" delay={0.2}>
-                  <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-6 h-full">
+                  <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col">
                     <div className="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
                       8
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
                       Satış Sonrası Destek
                     </h3>
-                    <ul className="text-gray-600 space-y-2 text-sm">
+                    <ul className="text-gray-600 space-y-2 text-[16px]">
                       <li>
                         • Her türlü sorun ve şikayetinizde tek muhatabınız biz
                         oluruz.
@@ -336,14 +345,14 @@ export default function WhyUsPage() {
 
                 {/* 9. Yüz Yüze Görüşme */}
                 <AnimatedSection animationType="fadeInUp" delay={0.3}>
-                  <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl p-6 h-full">
+                  <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col">
                     <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
                       9
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
                       Yüz Yüze Görüşme
                     </h3>
-                    <ul className="text-gray-600 space-y-2 text-sm">
+                    <ul className="text-gray-600 space-y-2 text-[16px]">
                       <li>
                         • Tüm ayrıntıları netleştirmek isterseniz sizi Türkiye
                         veya Çin ofislerimizde ağırlayabilir misafir edebiliriz.
@@ -448,9 +457,7 @@ export default function WhyUsPage() {
                             <h4 className="font-semibold text-gray-800 mb-1">
                               {item.title}
                             </h4>
-                            <p className="text-gray-600 text-sm">
-                              {item.description}
-                            </p>
+                            <p className="text-gray-600">{item.description}</p>
                           </div>
                         </div>
                       ))}
@@ -476,18 +483,18 @@ export default function WhyUsPage() {
               farkı yaşayın.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <Link
                 href="/contact"
                 className="bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors duration-300 inline-block"
               >
                 Hemen İletişime Geçin
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/about"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 inline-block"
               >
                 Hakkımızda
-              </a>
+              </Link>
             </div>
           </div>
         </section>

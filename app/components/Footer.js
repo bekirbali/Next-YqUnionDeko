@@ -18,7 +18,7 @@ export default function Footer() {
                 className="object-contain w-auto h-auto mb-4"
                 sizes="120px"
               />
-              <p className="text-gray-300 text-sm text-center md:text-left leading-relaxed">
+              <p className="text-gray-300  text-center md:text-left leading-relaxed">
                 YqUnion olarak, güvenilir ve kaliteli hizmet anlayışımızla
                 müşterilerimize en iyi çözümleri sunmaya devam ediyoruz.
               </p>
@@ -27,14 +27,14 @@ export default function Footer() {
 
           {/* Hızlı Linkler */}
           <div className="md:col-span-1">
-            <h3 className="text-lg font-semibold mb-4 text-white">
+            <h3 className="text-xl font-semibold mb-4 text-white">
               Hızlı Linkler
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/"
-                  className="text-gray-300 hover:text-red-300 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-red-300 transition-colors duration-200 "
                 >
                   Ana Sayfa
                 </Link>
@@ -42,7 +42,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="text-gray-300 hover:text-red-300 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-red-300 transition-colors duration-200 "
                 >
                   Hakkımızda
                 </Link>
@@ -50,7 +50,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/whyus"
-                  className="text-gray-300 hover:text-red-300 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-red-300 transition-colors duration-200 "
                 >
                   Neden Bizimle Çalışmalısınız?
                 </Link>
@@ -58,7 +58,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/announcements"
-                  className="text-gray-300 hover:text-red-300 transition-colors duration-200 text-sm"
+                  className="text-gray-300 hover:text-red-300 transition-colors duration-200 "
                 >
                   Duyurular
                 </Link>
@@ -68,8 +68,8 @@ export default function Footer() {
 
           {/* İletişim Bilgileri */}
           <div className="md:col-span-1">
-            <h3 className="text-lg font-semibold mb-4 text-white">İletişim</h3>
-            <div className="space-y-3 text-sm">
+            <h3 className="text-xl font-semibold mb-4 text-white">İletişim</h3>
+            <div className="space-y-3 ">
               <div className="flex items-start space-x-3">
                 <svg
                   className="w-5 h-5 text-red-300 mt-0.5 flex-shrink-0"
@@ -83,11 +83,11 @@ export default function Footer() {
                   />
                 </svg>
                 <p className="text-gray-300 leading-relaxed">
-                  Aydınlı SB Mahallesi, İstanbul Endüstri Ve
+                  Finanskent Mah. Finans Cad. Sarphan Finans Park Sitesi
                   <br />
-                  Ticaret Serbest Bölgesi, Orjin Cad. No: 2/
+                  B / Blok No:5/B İç Kapı No:353
                   <br />
-                  Tuzla/İSTANBUL
+                  Ümraniye / İstanbul
                 </p>
               </div>
               <div className="flex items-center space-x-3">
@@ -116,7 +116,7 @@ export default function Footer() {
 
           {/* Sosyal Medya ve Ek Bilgiler */}
           <div className="md:col-span-1">
-            <h3 className="text-lg font-semibold mb-4 text-white">
+            <h3 className="text-xl font-semibold mb-4 text-white">
               Bizi Takip Edin
             </h3>
             <div className="flex space-x-4 mb-6">
@@ -160,7 +160,7 @@ export default function Footer() {
             <div className="mb-4">
               <Link
                 href="/contact"
-                className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-colors duration-200 text-sm font-medium inline-block"
+                className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-colors duration-200 font-medium inline-block"
               >
                 Bizimle İletişime Geçin
               </Link>
