@@ -8,68 +8,25 @@ import {
   FaChargingStation,
   FaPlug,
   FaBuilding,
+  FaSolarPanel,
+  FaIndustry,
+  FaCogs,
+  FaLightbulb,
+  FaCubes,
+  FaServer,
+  FaTachometerAlt,
+  FaPowerOff,
 } from "react-icons/fa";
 
 export default function FaaliyetAlanlariPage() {
   const faaliyetAlanlari = [
-    {
-      title: "Makineler",
-      description:
-        "Endüstriyel makineler, üretim ekipmanları ve otomasyonel sistemler. Yüksek kaliteli Çin üretimi makinelerle üretim verimliliğinizi artırın.",
-      icon: <FaCog />,
-      color: "from-blue-500 to-blue-600",
-      details: [
-        "CNC Makineleri",
-        "Paketleme Makineleri",
-        "Tekstil Makineleri",
-        "Gıda İşleme Makineleri",
-      ],
-    },
-    {
-      title: "Elektrik - Elektronik Ürünler",
-      description:
-        "Modern elektrik ve elektronik sistemleri, kontrol panelleri ve otomasyon çözümleri. Teknolojinin son hali ile işlerinizi modernleştirin.",
-      icon: <FaBolt />,
-      color: "from-yellow-500 to-yellow-600",
-      details: [
-        "Kontrol Panelleri",
-        "PLC Sistemleri",
-        "Elektronik Kartlar",
-        "Sensör Teknolojileri",
-      ],
-    },
-    {
-      title: "Yedek Parçalar",
-      description:
-        "Makine ve ekipmanlarınız için orijinal ve kaliteli yedek parçalar. Kesintisiz üretim için güvenilir yedek parça tedariki.",
-      icon: <FaWrench />,
-      color: "from-green-500 to-green-600",
-      details: [
-        "Makine Yedek Parçaları",
-        "Elektronik Bileşenler",
-        "Motor ve Dişli Sistemleri",
-        "Filtre ve Consumables",
-      ],
-    },
-    {
-      title: "Araç Şarj İstasyonları",
-      description:
-        "Elektrikli araçlar için modern şarj çözümleri. Hızlı, güvenli ve verimli şarj istasyonları ile geleceğin mobilite çözümlerini sunuyoruz.",
-      icon: <FaChargingStation />,
-      color: "from-purple-500 to-purple-600",
-      details: [
-        "AC Şarj İstasyonları",
-        "DC Hızlı Şarj Ünitleri",
-        "Akıllı Şarj Sistemleri",
-        "Ev Tipi Şarj Çözümleri",
-      ],
-    },
     {
       title: "Alçak-Orta-Yüksek Gerilim Devre Kesiciler",
       description:
         "Güvenli elektrik dağıtımı için profesyonel devre kesici sistemleri. Endüstriyel ve ticari tesisler için güvenlik odaklı çözümler.",
       icon: <FaPlug />,
       color: "from-red-500 to-red-600",
+      cardbg: "from-red-50 to-red-100",
       details: [
         "Alçak Gerilim Devre Kesiciler",
         "Orta Gerilim Sistemleri",
@@ -78,16 +35,157 @@ export default function FaaliyetAlanlariPage() {
       ],
     },
     {
+      title: "Makineler",
+      description:
+        "Endüstriyel makineler, üretim ekipmanları ve otomasyonel sistemler. Yüksek kaliteli Çin üretimi makinelerle üretim verimliliğinizi artırın.",
+      icon: <FaCog />,
+      color: "from-blue-500 to-blue-600",
+      cardbg: "from-blue-50 to-blue-100",
+      details: [
+        "CNC Makineleri",
+        "Paketleme Makineleri",
+        "Tekstil Makineleri",
+        "Gıda İşleme Makineleri",
+      ],
+    },
+    {
+      title: "Elektrikli Araç Şarj Üniteleri",
+      description:
+        "Elektrikli araçlar için modern şarj çözümleri. Hızlı, güvenli ve verimli şarj istasyonları ile geleceğin mobilite çözümlerini sunuyoruz.",
+      icon: <FaChargingStation />,
+      color: "from-purple-500 to-purple-600",
+      cardbg: "from-purple-50 to-purple-100",
+      details: [
+        "AC Şarj İstasyonları",
+        "DC Hızlı Şarj Ünitleri",
+        "Akıllı Şarj Sistemleri",
+        "Ev Tipi Şarj Çözümleri",
+      ],
+    },
+    {
+      title: "Güneş Enerjisi Sistemleri",
+      description:
+        "Yenilenebilir enerji çözümleri ile sürdürülebilir gelecek. Yüksek verimli güneş panelleri ve tam entegre sistemler ile enerji maliyetlerinizi düşürün.",
+      icon: <FaSolarPanel />,
+      color: "from-amber-500 to-amber-600",
+      cardbg: "from-amber-50 to-amber-100",
+      details: [
+        "Güneş Panelleri (Monokristal/Polykristal)",
+        "Solar İnverterler",
+        "Akü Sistemleri",
+        "Montaj ve Kurulum Ekipmanları",
+      ],
+    },
+    {
       title: "Yapısal Malzemeler",
       description:
         "İnşaat ve endüstriyel projeler için dayanıklı yapısal malzemeler. Kaliteli çelik, beton ve kompozit malzemelerle projelerinizi güçlendirin.",
       icon: <FaBuilding />,
       color: "from-gray-500 to-gray-600",
+      cardbg: "from-teal-50 to-teal-100",
       details: [
         "Çelik Konstrüksiyon",
         "Prefabrik Sistemler",
         "İzolasyon Malzemeleri",
         "Kompozit Yapı Elemanları",
+      ],
+    },
+    {
+      title: "Jeneratörler ve Trafolar",
+      description:
+        "Güvenilir enerji üretimi ve dağıtımı için profesyonel çözümler. Endüstriyel jeneratörler ve trafo sistemleri ile kesintisiz enerji sağlayın.",
+      icon: <FaIndustry />,
+      color: "from-indigo-500 to-indigo-600",
+      cardbg: "from-indigo-50 to-indigo-100",
+      details: [
+        "Dizel ve Benzinli Jeneratörler",
+        "Güç Trafoları",
+        "Dağıtım Trafoları",
+        "Jeneratör Yedek Parçaları",
+      ],
+    },
+    {
+      title: "Elektrik Motorları",
+      description:
+        "Endüstriyel uygulamalar için yüksek performanslı elektrik motorları. AC/DC motorlar, servo motorlar ve özel motor çözümleri ile üretim verimliliğinizi artırın.",
+      icon: <FaCogs />,
+      color: "from-cyan-500 to-cyan-600",
+      cardbg: "from-cyan-50 to-cyan-100",
+      details: [
+        "AC Asenkron Motorlar",
+        "DC Motorlar",
+        "Servo Motorlar",
+        "Motor Kontrol Sistemleri",
+      ],
+    },
+    {
+      title: "Aydınlatma Ürünleri",
+      description:
+        "Modern ve enerji tasarruflu aydınlatma çözümleri. LED teknolojisi ile endüstriyel, ticari ve konut aydınlatma ihtiyaçlarınızı karşılayın.",
+      icon: <FaLightbulb />,
+      color: "from-yellow-400 to-yellow-500",
+      cardbg: "from-yellow-50 to-yellow-100",
+      details: [
+        "Endüstriyel LED Aydınlatma",
+        "Sokak ve Park Aydınlatması",
+        "Ticari Aydınlatma Sistemleri",
+        "Aydınlatma Kontrol Sistemleri",
+      ],
+    },
+    {
+      title: "Demir-Çelik Malzemeleri",
+      description:
+        "Yapısal ve endüstriyel projeler için kaliteli demir-çelik ürünleri. Çeşitli profiller, saclar ve özel kesim malzemelerle projelerinizi güçlendirin.",
+      icon: <FaCubes />,
+      color: "from-slate-500 to-slate-600",
+      cardbg: "from-slate-50 to-slate-100",
+      details: [
+        "Çelik Profiller ve Kirişler",
+        "Sac ve Levhalar",
+        "Çelik Borular",
+        "Özel Kesim ve İşleme",
+      ],
+    },
+    {
+      title: "Güç Dağıtım Panoları",
+      description:
+        "Güvenli ve verimli elektrik dağıtımı için profesyonel panel sistemleri. Endüstriyel ve ticari tesisler için özel tasarım güç dağıtım çözümleri.",
+      icon: <FaServer />,
+      color: "from-emerald-500 to-emerald-600",
+      cardbg: "from-emerald-50 to-emerald-100",
+      details: [
+        "Ana Dağıtım Panoları",
+        "Alt Dağıtım Panoları",
+        "Güç Faktörü Düzeltici Panolar",
+        "Otomasyon Entegrasyonlu Panolar",
+      ],
+    },
+    {
+      title: "Elektrik Test Cihazları",
+      description:
+        "Profesyonel elektrik ölçüm ve test ekipmanları. Güvenlik ve kalite kontrol için gerekli tüm test cihazları ile elektrik sistemlerinizi güvenle test edin.",
+      icon: <FaTachometerAlt />,
+      color: "from-rose-500 to-rose-600",
+      cardbg: "from-rose-50 to-rose-100",
+      details: [
+        "Multimetreler ve Ampermetreler",
+        "Topraklama Test Cihazları",
+        "İzolasyon Test Cihazları",
+        "Güç Analizörleri",
+      ],
+    },
+    {
+      title: "Sanayi Tipi Fişler ve Prizler",
+      description:
+        "Endüstriyel uygulamalar için güvenli ve dayanıklı elektrik bağlantı elemanları. Yüksek akım kapasiteli fiş-priz sistemleri ile güvenli elektrik bağlantıları kurun.",
+      icon: <FaPowerOff />,
+      color: "from-violet-500 to-violet-600",
+      cardbg: "from-violet-50 to-violet-100",
+      details: [
+        "Endüstriyel Fiş-Priz Sistemleri",
+        "Yüksek Akım Bağlantı Elemanları",
+        "Su Geçirmez Fiş-Prizler",
+        "Özel Uygulama Bağlantıları",
       ],
     },
   ];
@@ -150,10 +248,12 @@ export default function FaaliyetAlanlariPage() {
                 <AnimatedSection
                   key={index}
                   animationType="scaleIn"
-                  delay={0.1 * index}
+                  delay={0.1}
                   className="h-full"
                 >
-                  <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col">
+                  <div
+                    className={`bg-gradient-to-br ${alan.cardbg} rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col`}
+                  >
                     <div
                       className={`w-16 h-16 rounded-full bg-gradient-to-r ${alan.color} flex items-center justify-center text-white text-2xl mb-6 mx-auto`}
                     >
