@@ -1,4 +1,5 @@
 import AnimatedSection from "../components/AnimatedSection";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -213,7 +214,7 @@ export default function AboutPage() {
                       Sürekli Gelişim
                     </h3>
                   </div>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600">
                     Değişen pazar koşullarına uyum sağlayarak, sürekli öğrenme
                     ve gelişme anlayışıyla hizmet kalitemizi artırıyoruz.
                   </p>
@@ -239,7 +240,7 @@ export default function AboutPage() {
                     </div>
                     <h3 className="text-lg font-bold primary-text">Cesaret</h3>
                   </div>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600">
                     Yeni fırsatları değerlendirme konusunda cesur davranarak,
                     müşterilerimiz için en iyi çözümleri buluyoruz.
                   </p>
@@ -267,7 +268,7 @@ export default function AboutPage() {
                       Sorumluluk
                     </h3>
                   </div>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600">
                     Verdiğimiz taahhütleri yerine getirmekte kararlıyız ve tüm
                     süreçlerde tam sorumluluk alıyoruz.
                   </p>
@@ -295,7 +296,7 @@ export default function AboutPage() {
                       Kapsayıcılık
                     </h3>
                   </div>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600">
                     Farklı görüşlere saygı göstererek, çeşitliliği destekleyen
                     ve herkesi kucaklayan bir yaklaşım sergiliyoruz.
                   </p>
@@ -321,7 +322,7 @@ export default function AboutPage() {
                     </div>
                     <h3 className="text-lg font-bold primary-text">Güven</h3>
                   </div>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600">
                     Şeffaflık ve dürüstlük ilkesiyle hareket ederek,
                     müşterilerimizle uzun vadeli güven ilişkileri kuruyoruz.
                   </p>
@@ -355,7 +356,7 @@ export default function AboutPage() {
                       İş Birliği
                     </h3>
                   </div>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600">
                     Ortak hedefler doğrultusunda iş ortaklarımızla güçlü
                     işbirlikleri kurarak başarıyı birlikte yakalıyoruz.
                   </p>
@@ -529,18 +530,18 @@ export default function AboutPage() {
                 hazırız
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
+                <Link
                   href="/contact"
                   className="px-8 py-4 secondary-bg text-white rounded-lg font-semibold hover:opacity-90 transition-opacity"
                 >
                   İletişim Bilgileri
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/whyus"
                   className="px-8 py-4 border-2 border-primary-color primary-text rounded-lg font-semibold hover:primary-bg hover:text-white transition-all"
                 >
                   Neden Bizimle Çalışmalısınız?
-                </a>
+                </Link>
               </div>
             </div>
           </div>

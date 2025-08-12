@@ -49,7 +49,7 @@ export default function SafeTradeSection() {
                   <button
                     key={key}
                     onClick={() => setActiveTab(key)}
-                    className={`py-3 px-1 border-b-2 font-medium text-sm transition-colors duration-200 ${
+                    className={`py-3 px-1 border-b-2 font-medium transition-colors duration-200 ${
                       activeTab === key
                         ? "border-secondary-color secondary-text"
                         : "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
@@ -63,7 +63,7 @@ export default function SafeTradeSection() {
 
             {/* Tab İçeriği */}
             <div className="pt-6">
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-gray-700 leading-relaxed text-lg">
                 {tabs[activeTab].content}
               </p>
             </div>

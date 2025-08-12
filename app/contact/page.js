@@ -530,7 +530,7 @@ export default function ContactPage() {
                     <div>
                       <label
                         htmlFor="name"
-                        className="block text-sm font-medium text-gray-700 mb-2"
+                        className="block font-medium text-gray-700 mb-2"
                       >
                         Ad Soyad *
                       </label>
@@ -548,7 +548,7 @@ export default function ContactPage() {
                     <div>
                       <label
                         htmlFor="email"
-                        className="block text-sm font-medium text-gray-700 mb-2"
+                        className="block font-medium text-gray-700 mb-2"
                       >
                         E-posta *
                       </label>
@@ -569,7 +569,7 @@ export default function ContactPage() {
                     <div>
                       <label
                         htmlFor="phone"
-                        className="block text-sm font-medium text-gray-700 mb-2"
+                        className="block font-medium text-gray-700 mb-2"
                       >
                         Telefon
                       </label>
@@ -586,7 +586,7 @@ export default function ContactPage() {
                     <div>
                       <label
                         htmlFor="company"
-                        className="block text-sm font-medium text-gray-700 mb-2"
+                        className="block font-medium text-gray-700 mb-2"
                       >
                         Şirket
                       </label>
@@ -605,7 +605,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="subject"
-                      className="block text-sm font-medium text-gray-700 mb-2"
+                      className="block font-medium text-gray-700 mb-2"
                     >
                       Konu *
                     </label>
@@ -632,7 +632,7 @@ export default function ContactPage() {
                   <div>
                     <label
                       htmlFor="message"
-                      className="block text-sm font-medium text-gray-700 mb-2"
+                      className="block font-medium text-gray-700 mb-2"
                     >
                       Mesaj *
                     </label>
@@ -650,9 +650,9 @@ export default function ContactPage() {
 
                   {/* Resim Yükleme Alanı */}
                   <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                    <label className="block font-medium text-gray-700 mb-2">
                       Ürün Resimleri
-                      <span className="text-gray-500 text-xs ml-2">
+                      <span className="text-gray-500 text-sm ml-2">
                         (Opsiyonel, en fazla 5 dosya)
                       </span>
                     </label>

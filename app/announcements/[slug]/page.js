@@ -205,7 +205,7 @@ export default function AnnouncementDetailPage() {
 
           {/* Content */}
           <div
-            className="prose prose-lg max-w-none mb-8 text-gray-700 leading-relaxed"
+            className="prose prose-lg max-w-none mb-8 text-gray-700 leading-relaxed text-lg"
             dangerouslySetInnerHTML={{ __html: announcement.content }}
           />
 
