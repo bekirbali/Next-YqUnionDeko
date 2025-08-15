@@ -1,31 +1,29 @@
 "use client";
 import { FaTrophy, FaBolt, FaBullseye, FaThumbsUp } from "react-icons/fa";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function AdvantagesSection() {
+  const { t } = useTranslation();
   const advantages = [
     {
-      title: "Güvenilir Marka",
-      description:
-        "Sektörde güvenilir ve saygın konumumuzla müşterilerimize kaliteli hizmet sunuyoruz. Uzun yıllardır sürdürdüğümüz başarılı işbirlikleri güvencemizdir.",
+      title: t("homePage.whyUsSection_Card_1_Title"),
+      description: t("homePage.whyUsSection_Card_1_Text"),
       icon: <FaTrophy />,
     },
     {
-      title: "Verimlilik",
-      description:
-        "Etkin süreç yönetimi ve teknoloji kullanımıyla hızlı, verimli çözümler sunuyoruz. Zamanınızı ve kaynaklarınızı en doğru şekilde değerlendiriyoruz.",
+      title: t("homePage.whyUsSection_Card_2_Title"),
+      description: t("homePage.whyUsSection_Card_2_Text"),
       icon: <FaBolt />,
     },
     {
-      title: "Danışmanlık",
-      description:
-        "Uzman danışman kadromuzla her aşamada yanınızdayız. Sektörel deneyimimizi sizinle paylaşarak en doğru kararları almanızı sağlıyoruz.",
+      title: t("homePage.whyUsSection_Card_3_Title"),
+      description: t("homePage.whyUsSection_Card_3_Text"),
       icon: <FaBullseye />,
     },
     {
-      title: "Müşteri Memnuniyeti",
-      description:
-        "Müşterilerimizden aldığımız olumlu geri bildirimler ve referanslar, kaliteli hizmetimizin en büyük kanıtıdır. Memnuniyet önceliğimizdir.",
+      title: t("homePage.whyUsSection_Card_4_Title"),
+      description: t("homePage.whyUsSection_Card_4_Text"),
       icon: <FaThumbsUp />,
     },
   ];
@@ -36,7 +34,7 @@ export default function AdvantagesSection() {
         {/* Başlık */}
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4 flex items-center justify-center gap-3">
-            Neden{" "}
+            {t("homePage.whyUsSection_Title")}{" "}
             <Image
               src="/assets/yqunionlogo.png"
               alt="YqUnion Logo"
@@ -47,8 +45,7 @@ export default function AdvantagesSection() {
             ?
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Dış ticaret süreçlerinizde size değer katacak avantajlarımızı
-            keşfedin
+            {t("homePage.whyUsSection_Text")}
           </p>
         </div>
 
@@ -76,11 +73,10 @@ export default function AdvantagesSection() {
         <div className="text-center mt-12">
           <div className="bg-gradient-to-r from-primary to-secondary rounded-lg p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">
-              Bizimle Çalışmanın Avantajını Yaşayın
+              {t("homePage.whyUsSectionSubCardTitle")}
             </h3>
             <p className="text-lg opacity-90">
-              Profesyonel ekibimiz ve kanıtlanmış deneyimimizle dış ticaret
-              hedeflerinize ulaşın
+              {t("homePage.whyUsSectionSubCardText")}
             </p>
           </div>
         </div>

@@ -2,8 +2,10 @@
 import React from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const TestimonialsSlider = () => {
+  const { t } = useTranslation();
   const settings = {
     dots: true,
     infinite: true,
@@ -65,10 +67,10 @@ const TestimonialsSlider = () => {
           className="text-center mb-8 sm:mb-12"
         >
           <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold primary-text mb-4">
-            Müşterilerimiz Ne Diyor?
+            {t("homePage.testimonialsSectionTitle")}
           </h2>
           <p className="text-center sm:text-lg max-w-sm md:max-w-2xl mx-auto text-gray-600">
-            Güvenlerini kazandığımız müşterilerimizin deneyimleri
+            {t("homePage.testimonialsSectionText")}
           </p>
         </motion.div>
 
