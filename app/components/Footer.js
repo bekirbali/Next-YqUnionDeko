@@ -13,10 +13,10 @@ export default function Footer() {
               <Image
                 src="/assets/yqunionlogo.png"
                 alt="YqUnion Logo"
-                width={120}
+                width={180}
                 height={60}
                 className="object-contain w-auto h-auto mb-4"
-                sizes="120px"
+                sizes="180px"
               />
               <p className="text-gray-300  text-center md:text-left leading-relaxed">
                 YqUnion olarak, güvenilir ve kaliteli hizmet anlayışımızla
