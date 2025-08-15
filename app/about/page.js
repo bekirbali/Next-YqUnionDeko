@@ -1,68 +1,35 @@
+"use client";
 import AnimatedSection from "../components/AnimatedSection";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 export default function AboutPage() {
+  const { t } = useTranslation("common");
   return (
     <div className="font-sans min-h-screen bg-white">
-      {/* Hero Section */}
-      {/* <AnimatedSection animationType="fadeInUp" delay={0.1}>
-        <section className="relative primary-bg text-white py-20">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Hakkımızda</h1>
-            <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-              Türkiye-Çin dış ticaretinde güvenilir çözüm ortağınız
-            </p>
-          </div>
-        </section>
-      </AnimatedSection> */}
-
       {/* Şirket Hikayesi */}
       <AnimatedSection animationType="fadeInUp" delay={0.2}>
         <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold primary-text mb-8 text-center">
-                Şirket Hikayemiz
+                {t("about.ourStory")}
               </h2>
               <div className="text-justify">
                 <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-                  Firmamız, Çin ile Türkiye arasında dış ticaret faaliyetleri
-                  yürütmek amacıyla kurulmuş, güvenilir ve çözüm odaklı bir
-                  ithalat–ihracat şirketidir. Hem Türkiye'de hem de Çin'de aktif
-                  olarak faaliyet gösteren, eğitimli ve profesyonel ekiplerimiz
-                  ile her iki ülkede de ofislerimiz bulunmaktadır. Ayrıca
-                  Türkiye'de yatırımlara sahip güçlü bir ortaklık yapımız
-                  vardır. Bu ortaklıkların başında Deko Otomasyon Elektrik ve
-                  Elektronik Sanayi ve Ticaret A.Ş. gelmektedir. Deko Elk.te
-                  Alçak gerilim devre kesilerin üretimi yapılmakta ve Türkiye ve
-                  dünyaya pazarlanmaktadır.
+                  {t("about.ourStoryParagraph_1")}
                 </p>
                 <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-                  Amacımız; Çin'den yüksek kaliteye sahip ürünleri rekabetçi
-                  fiyatlarla temin ederek Türk pazarına değer katmak, aynı
-                  zamanda yerli üretimlerimizi dünya pazarına taşıyarak
-                  ihracatta sürdürülebilir büyüme sağlamaktır.
+                  {t("about.ourStoryParagraph_2")}
                 </p>
                 <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-                  Gelişen küresel ticaret dinamiklerine hızla uyum sağlayan
-                  yapımız sayesinde; tedarik, kalite kontrol, lojistik ve gümrük
-                  işlemleri dahil olmak üzere tüm süreçlerde iş ortaklarımıza
-                  uçtan uca profesyonel hizmet sunuyoruz. Çin'deki güçlü üretici
-                  ağımız ve yerel iş birliklerimiz ile güvenli, hızlı ve verimli
-                  tedarik zinciri çözümleri oluşturuyoruz.
+                  {t("about.ourStoryParagraph_3")}
                 </p>
                 <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-                  Müşteri memnuniyetini temel prensip olarak benimseyerek,
-                  şeffaflık, dürüstlük ve süreklilik ilkeleri doğrultusunda
-                  hareket ediyoruz. Hedefimiz; iş ortaklarımızla uzun vadeli ve
-                  güvene dayalı ilişkiler kurmak, Çin ile yapılan ticarette
-                  karşılaşılan riskleri minimize ederek onlara rekabet avantajı
-                  sağlamaktır.
+                  {t("about.ourStoryParagraph_4")}
                 </p>
                 <p className="text-lg mb-6 text-gray-700 leading-relaxed">
-                  Çin'den ithalat veya ihracat yapmak isteyen tüm firmalara,
-                  doğru yönlendirme ve sorunsuz operasyon süreçleriyle güvenilir
-                  çözüm ortağı olmayı taahhüt ediyoruz.
+                  {t("about.ourStoryParagraph_5")}
                 </p>
               </div>
             </div>
@@ -76,7 +43,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold primary-text mb-8">
-                Tanıtım Videomuz
+                {t("about.videoTitle")}
               </h2>
               <div className="relative bg-gray-100 rounded-lg overflow-hidden shadow-lg">
                 <video
@@ -86,7 +53,7 @@ export default function AboutPage() {
                   // poster="/assets/heroImage.jpg"
                 >
                   <source src="/assets/yqunionvideo.MP4" type="video/mp4" />
-                  Tarayıcınız video elementini desteklemiyor.
+                  {t("about.videoDoesNotSupport")}
                 </video>
               </div>
             </div>
@@ -118,18 +85,14 @@ export default function AboutPage() {
                       </svg>
                     </div>
                     <h3 className="text-2xl font-bold primary-text">
-                      Misyonumuz
+                      {t("about.mission")}
                     </h3>
                   </div>
                   <p className="text-gray-700 leading-relaxed">
-                    Çin'den ithalat yapmak isteyen girişimciler ve firmalara,
-                    ürün araştırmasından kalite kontrolüne, fiyat pazarlığından
-                    lojistiğe kadar her aşamada profesyonel destek sunmak.
+                    {t("about.missionParagraph_1")}
                   </p>
                   <p className="text-gray-700 leading-relaxed mt-4">
-                    Güvenilir üreticilere doğrudan erişim sağlayarak, iş
-                    ortaklarımızın hem yurtiçinde hem de yurtdışında rekabet
-                    gücünü artırmalarına katkı sağlıyoruz.
+                    {t("about.missionParagraph_2")}
                   </p>
                 </div>
                 <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -156,18 +119,14 @@ export default function AboutPage() {
                       </svg>
                     </div>
                     <h3 className="text-2xl font-bold primary-text">
-                      Vizyonumuz
+                      {t("about.vision")}
                     </h3>
                   </div>
                   <p className="text-gray-700 leading-relaxed">
-                    Türkiye'deki ithalatçıların Çin'den ürün tedarik ederken
-                    zaman kaybetmeden, güvenle ve en uygun şartlarla işlem
-                    yapabildiği bir sistemin parçası olmak.
+                    {t("about.visionParagraph_1")}
                   </p>
                   <p className="text-gray-700 leading-relaxed mt-4">
-                    Çin pazarındaki bilgi birikimimiz ve geniş üretici ağımızla,
-                    ithalatı herkes için kolay ve sürdürülebilir hale getirmeyi
-                    hedefliyoruz.
+                    {t("about.visionParagraph_2")}
                   </p>
                 </div>
               </div>
@@ -182,14 +141,10 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold primary-text mb-8 text-center">
-                Değerlerimiz
+                {t("about.values")}
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed text-center max-w-4xl mx-auto mb-12">
-                Güvenilirlik, şeffaflık, müşteri odaklılık ve sürekli gelişim
-                temel değerlerimizdir. Bu değerler, her projede yol göstericimiz
-                olur ve iş ortaklarımızla kurduğumuz güçlü ilişkilerin temelini
-                oluşturur. Sektördeki tüm faaliyetlerimizde bu ilkelerle hareket
-                ederek, kaliteli ve güvenilir hizmet sunmayı hedefliyoruz.
+                {t("about.valuesText")}
               </p>
               <div className="grid md:grid-cols-3 gap-6">
                 {/* Sürekli Gelişim */}
@@ -211,12 +166,11 @@ export default function AboutPage() {
                       </svg>
                     </div>
                     <h3 className="text-lg font-bold primary-text">
-                      Sürekli Gelişim
+                      {t("about.valuesCard_1_title")}
                     </h3>
                   </div>
                   <p className="text-gray-600">
-                    Değişen pazar koşullarına uyum sağlayarak, sürekli öğrenme
-                    ve gelişme anlayışıyla hizmet kalitemizi artırıyoruz.
+                    {t("about.valuesCard_1_text")}
                   </p>
                 </div>
 
@@ -238,11 +192,12 @@ export default function AboutPage() {
                         ></path>
                       </svg>
                     </div>
-                    <h3 className="text-lg font-bold primary-text">Cesaret</h3>
+                    <h3 className="text-lg font-bold primary-text">
+                      {t("about.valuesCard_2_title")}
+                    </h3>
                   </div>
                   <p className="text-gray-600">
-                    Yeni fırsatları değerlendirme konusunda cesur davranarak,
-                    müşterilerimiz için en iyi çözümleri buluyoruz.
+                    {t("about.valuesCard_2_text")}
                   </p>
                 </div>
 
@@ -265,12 +220,11 @@ export default function AboutPage() {
                       </svg>
                     </div>
                     <h3 className="text-lg font-bold primary-text">
-                      Sorumluluk
+                      {t("about.valuesCard_3_title")}
                     </h3>
                   </div>
                   <p className="text-gray-600">
-                    Verdiğimiz taahhütleri yerine getirmekte kararlıyız ve tüm
-                    süreçlerde tam sorumluluk alıyoruz.
+                    {t("about.valuesCard_3_text")}
                   </p>
                 </div>
 
@@ -293,12 +247,11 @@ export default function AboutPage() {
                       </svg>
                     </div>
                     <h3 className="text-lg font-bold primary-text">
-                      Kapsayıcılık
+                      {t("about.valuesCard_4_title")}
                     </h3>
                   </div>
                   <p className="text-gray-600">
-                    Farklı görüşlere saygı göstererek, çeşitliliği destekleyen
-                    ve herkesi kucaklayan bir yaklaşım sergiliyoruz.
+                    {t("about.valuesCard_4_text")}
                   </p>
                 </div>
 
@@ -320,11 +273,12 @@ export default function AboutPage() {
                         ></path>
                       </svg>
                     </div>
-                    <h3 className="text-lg font-bold primary-text">Güven</h3>
+                    <h3 className="text-lg font-bold primary-text">
+                      {t("about.valuesCard_5_title")}
+                    </h3>
                   </div>
                   <p className="text-gray-600">
-                    Şeffaflık ve dürüstlük ilkesiyle hareket ederek,
-                    müşterilerimizle uzun vadeli güven ilişkileri kuruyoruz.
+                    {t("about.valuesCard_5_text")}
                   </p>
                 </div>
 
@@ -353,12 +307,11 @@ export default function AboutPage() {
                       </svg>
                     </div>
                     <h3 className="text-lg font-bold primary-text">
-                      İş Birliği
+                      {t("about.valuesCard_6_title")}
                     </h3>
                   </div>
                   <p className="text-gray-600">
-                    Ortak hedefler doğrultusunda iş ortaklarımızla güçlü
-                    işbirlikleri kurarak başarıyı birlikte yakalıyoruz.
+                    {t("about.valuesCard_6_text")}
                   </p>
                 </div>
               </div>
@@ -373,32 +326,40 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold primary-text mb-12">
-                Rakamlarla YqUnion
+                {t("about.statistics")}
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div className="p-6">
                   <div className="text-4xl md:text-5xl font-bold secondary-text mb-2">
                     500+
                   </div>
-                  <p className="text-gray-600">Başarılı Proje</p>
+                  <p className="text-gray-600">
+                    {t("about.statistics_projects")}
+                  </p>
                 </div>
                 <div className="p-6">
                   <div className="text-4xl md:text-5xl font-bold secondary-text mb-2">
                     50+
                   </div>
-                  <p className="text-gray-600">Mutlu Müşteri</p>
+                  <p className="text-gray-600">
+                    {t("about.statistics_customer")}
+                  </p>
                 </div>
                 <div className="p-6">
                   <div className="text-4xl md:text-5xl font-bold secondary-text mb-2">
                     20
                   </div>
-                  <p className="text-gray-600">Yıl Deneyim</p>
+                  <p className="text-gray-600">
+                    {t("about.statistics_experience")}
+                  </p>
                 </div>
                 <div className="p-6">
                   <div className="text-4xl md:text-5xl font-bold secondary-text mb-2">
                     24/7
                   </div>
-                  <p className="text-gray-600">Müşteri Desteği</p>
+                  <p className="text-gray-600">
+                    {t("about.statistics_support")}
+                  </p>
                 </div>
               </div>
             </div>
@@ -412,7 +373,7 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold primary-text mb-12 text-center">
-                Hizmet Alanlarımız
+                {t("about.serviceAreas")}
               </h2>
               <div className="grid md:grid-cols-4 gap-8">
                 <div className="bg-white p-8 rounded-lg shadow-lg text-center">
@@ -432,11 +393,10 @@ export default function AboutPage() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold primary-text mb-4">
-                    İthalat ve Gümrük Hizmetleri
+                    {t("about.serviceAreasCard_1_title")}
                   </h3>
                   <p className="text-gray-600">
-                    Çin'den Türkiye'ye güvenli ve hızlı ithalat çözümleri
-                    sunuyoruz.
+                    {t("about.serviceAreasCard_1_text")}
                   </p>
                 </div>
                 <div className="bg-white p-8 rounded-lg shadow-lg text-center">
@@ -456,11 +416,10 @@ export default function AboutPage() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold primary-text mb-4">
-                    Kalite Kontrol
+                    {t("about.serviceAreasCard_2_title")}
                   </h3>
                   <p className="text-gray-600">
-                    Ürünlerinizin kalitesini garanti altına alan profesyonel
-                    kontrol süreçleri.
+                    {t("about.serviceAreasCard_2_text")}
                   </p>
                 </div>
                 <div className="bg-white p-8 rounded-lg shadow-lg text-center">
@@ -480,11 +439,10 @@ export default function AboutPage() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold primary-text mb-4">
-                    Danışmanlık
+                    {t("about.serviceAreasCard_3_title")}
                   </h3>
                   <p className="text-gray-600">
-                    Dış ticaret süreçlerinde uzman danışmanlık ve rehberlik
-                    hizmetleri.
+                    {t("about.serviceAreasCard_3_text")}
                   </p>
                 </div>
                 <div className="bg-white p-8 rounded-lg shadow-lg text-center">
@@ -504,11 +462,10 @@ export default function AboutPage() {
                     </svg>
                   </div>
                   <h3 className="text-xl font-bold primary-text mb-4">
-                    Ürün Tedariği
+                    {t("about.serviceAreasCard_4_title")}
                   </h3>
                   <p className="text-gray-600">
-                    İhtiyacınıza uygun ürünleri güvenilir tedarikçilerden temin
-                    ediyoruz.
+                    {t("about.serviceAreasCard_4_text")}
                   </p>
                 </div>
               </div>
@@ -519,28 +476,25 @@ export default function AboutPage() {
 
       {/* İletişim CTA */}
       <AnimatedSection animationType="fadeInUp" delay={0.6}>
-        <section className="py-16">
+        <section className="py-16 bg-gradient-to-r from-primary to-secondary text-white">
           <div className="container mx-auto px-4 text-center">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-bold primary-text mb-6">
-                Bizimle İletişime Geçin
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                {t("about.contactUs")}
               </h2>
-              <p className="text-xl text-gray-600 mb-8">
-                Dış ticaret ihtiyaçlarınız için profesyonel çözümler sunmaya
-                hazırız
-              </p>
+              <p className="text-xl mb-8">{t("about.contactUsText")}</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/contact"
-                  className="px-8 py-4 secondary-bg text-white rounded-lg font-semibold hover:opacity-90 transition-opacity"
+                  className="px-8 py-4 bg-[#dc143c] text-white rounded-lg font-semibold hover:bg-[#ff093e] transition-all duration-300"
                 >
-                  İletişim Bilgileri
+                  {t("about.contactUsButtonLeft")}
                 </Link>
                 <Link
                   href="/whyus"
-                  className="px-8 py-4 border-2 border-primary-color primary-text rounded-lg font-semibold hover:primary-bg hover:text-white transition-all"
+                  className="px-8 py-4 border-2 border-white text-white rounded-lg font-semibold hover:bg-white hover:text-primary transition-all duration-300"
                 >
-                  Neden Bizimle Çalışmalısınız?
+                  {t("about.contactUsButtonRight")}
                 </Link>
               </div>
             </div>

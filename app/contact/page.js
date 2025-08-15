@@ -496,7 +496,7 @@ export default function ContactPage() {
                             Çalışma Saatleri:
                           </p>
                           <p className="text-gray-600">
-                            Pazartesi - Cuma: 09:00 - 17:00
+                            Pazartesi - Cuma: 09:00 - 18:00
                             <br />
                             (Beijing Saati GMT+8)
                           </p>

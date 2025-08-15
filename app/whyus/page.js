@@ -9,34 +9,32 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 export default function WhyUsPage() {
+  const { t } = useTranslation();
   const mainAdvantages = [
     {
-      title: "Uluslararası Deneyim",
-      description:
-        "20+ yıllık Türkiye-Çin dış ticaret deneyimi ile güvenilir ortaklık. Kültürel köprü kurarak işlerinizi kolaylaştırıyoruz.",
+      title: t("whyUs.mainAdvantagesCard_1_title"),
+      description: t("whyUs.mainAdvantagesCard_1_text"),
       icon: <FaGlobe />,
       color: "from-blue-500 to-blue-600",
     },
     {
-      title: "Güvenilir Süreçler",
-      description:
-        "ISO sertifikalı kalite yönetimi ve şeffaf iş süreçleri. Her adımda güvenli ve kontrollü ticaret deneyimi.",
+      title: t("whyUs.mainAdvantagesCard_2_title"),
+      description: t("whyUs.mainAdvantagesCard_2_text"),
       icon: <FaShieldAlt />,
       color: "from-green-500 to-green-600",
     },
     {
-      title: "Uzman Danışmanlık",
-      description:
-        "Alanında uzman kadro ile 7/24 destek. Dış ticaretin tüm aşamalarında profesyonel rehberlik.",
+      title: t("whyUs.mainAdvantagesCard_3_title"),
+      description: t("whyUs.mainAdvantagesCard_3_text"),
       icon: <FaHandshake />,
       color: "from-purple-500 to-purple-600",
     },
     {
-      title: "Hızlı Çözümler",
-      description:
-        "Modern teknoloji ve etkili süreç yönetimi ile hızlı sonuç. Zamanınızı en verimli şekilde kullanın.",
+      title: t("whyUs.mainAdvantagesCard_4_title"),
+      description: t("whyUs.mainAdvantagesCard_4_text"),
       icon: <FaClock />,
       color: "from-orange-500 to-orange-600",
     },
@@ -44,20 +42,19 @@ export default function WhyUsPage() {
 
   const detailedBenefits = [
     {
-      category: "İş Ortaklığı",
+      category: t("whyUs.offeredValuesCard_1_CardTitle"),
       items: [
         {
-          title: "Güvenilir Tedarikçi Ağı",
-          description:
-            "Çin'de doğrulanmış ve güvenilir tedarikçilerle çalışıyoruz",
+          title: t("whyUs.offeredValuesCard_1_subtitle_1"),
+          description: t("whyUs.offeredValuesCard_1_text_1"),
         },
         {
-          title: "Kalite Kontrol",
-          description: "Ürün kalitesi ve standartlarını garanti ediyoruz",
+          title: t("whyUs.offeredValuesCard_1_subtitle_2"),
+          description: t("whyUs.offeredValuesCard_1_text_2"),
         },
         {
-          title: "Rekabetçi Fiyatlar",
-          description: "En uygun fiyatlarla kaliteli ürünlere ulaşım",
+          title: t("whyUs.offeredValuesCard_1_subtitle_3"),
+          description: t("whyUs.offeredValuesCard_1_text_3"),
         },
       ],
     },
@@ -75,19 +72,19 @@ export default function WhyUsPage() {
     //   ],
     // },
     {
-      category: "Destek & Hizmet",
+      category: t("whyUs.offeredValuesCard_2_CardTitle"),
       items: [
         {
-          title: "After-Sales Destek",
-          description: "Satış sonrası sürekli destek ve takip",
+          title: t("whyUs.offeredValuesCard_2_subtitle_1"),
+          description: t("whyUs.offeredValuesCard_2_text_1"),
         },
         {
-          title: "Gümrük İşlemleri",
-          description: "Tüm gümrük formaliteleri bizden",
+          title: t("whyUs.offeredValuesCard_2_subtitle_2"),
+          description: t("whyUs.offeredValuesCard_2_text_2"),
         },
         {
-          title: "Yerel Ofisler",
-          description: "Çin ve Türkiyede yerel ofisler",
+          title: t("whyUs.offeredValuesCard_2_subtitle_3"),
+          description: t("whyUs.offeredValuesCard_2_text_3"),
         },
       ],
     },
@@ -101,7 +98,7 @@ export default function WhyUsPage() {
           <div className="container mx-auto px-4 text-center text-white">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4">
               <span className="flex items-center gap-2 sm:gap-4">
-                Neden
+                {t("whyUs.heroTitle")}
                 <Image
                   src="/assets/yqunionlogo.png"
                   alt="YqUnion Logo"
@@ -113,18 +110,21 @@ export default function WhyUsPage() {
               </span>
             </h1>
             <p className="text-xl lg:text-2xl mb-8 opacity-90 max-w-4xl mx-auto">
-              Türkiye-Çin dış ticaretinde 20+ yıllık deneyimimiz ve binlerce
-              başarılı projeyle sizin de güvenilir çözüm ortağınızız
+              {t("whyUs.heroSubText")}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
-                <span className="font-semibold">✓ ISO 9001 Sertifikalı</span>
+                <span className="font-semibold">✓ {t("whyUs.heroButton")}</span>
               </div>
               <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
-                <span className="font-semibold">✓ 7/24 Destek</span>
+                <span className="font-semibold">
+                  ✓ {t("whyUs.heroButton2")}
+                </span>
               </div>
               <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
-                <span className="font-semibold">✓ Güvenli Ticaret</span>
+                <span className="font-semibold">
+                  ✓ {t("whyUs.heroButton3")}
+                </span>
               </div>
             </div>
           </div>
@@ -145,11 +145,11 @@ export default function WhyUsPage() {
                     height={80}
                     className="inline-block invert"
                   />
-                  ile İthalat Süreciniz
+                  {t("whyUs.importProcess")}
                 </span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Adım adım yol haritası
+                {t("whyUs.importProcessText")}
               </p>
             </div>
 
@@ -162,23 +162,12 @@ export default function WhyUsPage() {
                       1
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
-                      Ürün Tespiti ve Numune
+                      {t("whyUs.importProcessCard_1_title")}
                     </h3>
-                    <ul className="text-gray-600 space-y-2 text-[14px]">
-                      <li>
-                        • Sizden istediğiniz ürünün numunesini veya teknik
-                        verilerini alıyoruz.
-                      </li>
-                      <li>
-                        • Elimizdeki veriler doğrultusunda Çin’ ofisimizle
-                        bağlantıya geçip ürünün birebir aynısını, en yakın
-                        alternatifi veya daha kaliteli bir versiyonunu tespit
-                        ediyoruz.
-                      </li>
-                      <li>
-                        • İlk numunenin görselini hazırlatıp onayınıza
-                        sunuyoruz.
-                      </li>
+                    <ul className="text-gray-600 space-y-2 text-[16px]">
+                      <li>• {t("whyUs.importProcessCard_1_text_1")}</li>
+                      <li>• {t("whyUs.importProcessCard_1_text_2")}</li>
+                      <li>• {t("whyUs.importProcessCard_1_text_3")}</li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -190,21 +179,12 @@ export default function WhyUsPage() {
                       2
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
-                      Fiyatlandırma ve Teklif
+                      {t("whyUs.importProcessCard_2_title")}
                     </h3>
                     <ul className="text-gray-600 space-y-2 text-[16px]">
-                      <li>
-                        • Ürün fiyatı, vergiler ve diğer maliyetler gümrüksel
-                        işleyiş netleştiriliyor.
-                      </li>
-                      <li>
-                        • İsterseniz İthalat işlemlerini siz yürütürsünüz
-                        tamamen.
-                      </li>
-                      <li>
-                        • Ya da Tüm ithalatı biz gerçekleştirir, ürünlerinizi
-                        deponuza teslim size ulaştırıyoruz.
-                      </li>
+                      <li>• {t("whyUs.importProcessCard_2_text_1")}</li>
+                      <li>• {t("whyUs.importProcessCard_2_text_2")}</li>
+                      <li>• {t("whyUs.importProcessCard_2_text_3")}</li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -216,21 +196,12 @@ export default function WhyUsPage() {
                       3
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
-                      Numune Onayı ve Revizyon
+                      {t("whyUs.importProcessCard_3_title")}
                     </h3>
-                    <ul className="text-gray-600 space-y-2 text-[18px]">
-                      <li>
-                        • Numuneyi inceliyor, onaylıyor veya ek taleplerinizi
-                        bize iletiyorsunuz.
-                      </li>
-                      <li>
-                        • Özel istekleriniz doğrultusunda revize numune
-                        hazırlanıyor ve tekrar size sunuluyor.
-                      </li>
-                      <li>
-                        • “Tamam, bu ürün” dediğiniz anda üretim süreci
-                        başlıyor.
-                      </li>
+                    <ul className="text-gray-600 space-y-2 text-[16px]">
+                      <li>• {t("whyUs.importProcessCard_3_text_1")}</li>
+                      <li>• {t("whyUs.importProcessCard_3_text_2")}</li>
+                      <li>• {t("whyUs.importProcessCard_3_text_3")}</li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -242,17 +213,11 @@ export default function WhyUsPage() {
                       4
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
-                      Üretim Süreci Takibi
+                      {t("whyUs.importProcessCard_4_title")}
                     </h3>
                     <ul className="text-gray-600 space-y-2 text-[16px]">
-                      <li>
-                        • Çin’deki profesyonel ekibimiz üretimin her aşamasını
-                        denetler.
-                      </li>
-                      <li>
-                        • Üretici izin verdiği ölçüde fotoğraf ve videolarla
-                        sizi bilgilendiririz.
-                      </li>
+                      <li>• {t("whyUs.importProcessCard_4_text_1")}</li>
+                      <li>• {t("whyUs.importProcessCard_4_text_2")}</li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -264,18 +229,11 @@ export default function WhyUsPage() {
                       5
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
-                      Özel Marka ve Ambalaj
+                      {t("whyUs.importProcessCard_5_title")}
                     </h3>
                     <ul className="text-gray-600 space-y-2 text-[16px]">
-                      <li>
-                        • Hacimli siparişlerde kendi markanız, ürün kodunuz ve
-                        barkodunuz kullanılabilir.
-                      </li>
-                      <li>
-                        • Etiket, kutu ve koli tasarımlarınızı isterseniz bizim
-                        grafikerimiz hazırlar, isterseniz kendi tasarımcınızdan
-                        alıp bize iletebilirsiniz.
-                      </li>
+                      <li>• {t("whyUs.importProcessCard_5_text_1")}</li>
+                      <li>• {t("whyUs.importProcessCard_5_text_2")}</li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -287,16 +245,11 @@ export default function WhyUsPage() {
                       6
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
-                      Yükleme ve Nakliye
+                      {t("whyUs.importProcessCard_6_title")}
                     </h3>
                     <ul className="text-gray-600 space-y-2 text-[16px]">
-                      <li>
-                        • Ürünler, güvenilir ve uygun maliyetli uluslararası
-                        nakliye firmalarıyla yüklenir.
-                      </li>
-                      <li>
-                        • Yükleme aşamaları size fotoğraf ve video ile iletilir.
-                      </li>
+                      <li>• {t("whyUs.importProcessCard_6_text_1")}</li>
+                      <li>• {t("whyUs.importProcessCard_6_text_2")}</li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -308,15 +261,12 @@ export default function WhyUsPage() {
                       7
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
-                      Türkiye Gümrük İşlemleri
+                      {t("whyUs.importProcessCard_7_title")}
                     </h3>
                     <ul className="text-gray-600 space-y-2 text-[16px]">
-                      <li>• Yükünüz Türkiye’deki limana ulaştığında:</li>
-                      <li>
-                        • İsterseniz tüm gümrük işlemlerini biz tamamlar ve
-                        deponuza teslim ederiz.
-                      </li>
-                      <li>• İsterseniz işlemleri siz yürütürsünüz.</li>
+                      <li>• {t("whyUs.importProcessCard_7_text_1")}</li>
+                      <li>• {t("whyUs.importProcessCard_7_text_2")}</li>
+                      <li>• {t("whyUs.importProcessCard_7_text_3")}</li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -328,17 +278,11 @@ export default function WhyUsPage() {
                       8
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
-                      Satış Sonrası Destek
+                      {t("whyUs.importProcessCard_8_title")}
                     </h3>
                     <ul className="text-gray-600 space-y-2 text-[16px]">
-                      <li>
-                        • Her türlü sorun ve şikayetinizde tek muhatabınız biz
-                        oluruz.
-                      </li>
-                      <li>
-                        • Ürünün yapısal veya teknik sorunlarında değişim ve
-                        iade işlemlerini biz çözeriz.
-                      </li>
+                      <li>• {t("whyUs.importProcessCard_8_text_1")}</li>
+                      <li>• {t("whyUs.importProcessCard_8_text_2")}</li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -350,13 +294,10 @@ export default function WhyUsPage() {
                       9
                     </div>
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
-                      Yüz Yüze Görüşme
+                      {t("whyUs.importProcessCard_9_title")}
                     </h3>
                     <ul className="text-gray-600 space-y-2 text-[16px]">
-                      <li>
-                        • Tüm ayrıntıları netleştirmek isterseniz sizi Türkiye
-                        veya Çin ofislerimizde ağırlayabilir misafir edebiliriz.
-                      </li>
+                      <li>• {t("whyUs.importProcessCard_9_text_1")}</li>
                     </ul>
                   </div>
                 </AnimatedSection>
@@ -366,12 +307,10 @@ export default function WhyUsPage() {
               <div className="text-center mt-12">
                 <div className="bg-gradient-to-r from-primary to-secondary text-white rounded-xl p-8">
                   <h3 className="text-2xl font-bold mb-4">
-                    YQUnion – Çin'den Türkiye'ye İthalat Projelerinizde
-                    Güvenilir Çözüm Ortağınız
+                    {t("whyUs.importProcessSubTextTitle")}
                   </h3>
                   <p className="text-lg opacity-90">
-                    9 adımda profesyonel süreç yönetimi ile işinizi güvence
-                    altına alıyoruz
+                    {t("whyUs.importProcessSubTextText")}
                   </p>
                 </div>
               </div>
@@ -386,11 +325,13 @@ export default function WhyUsPage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-800 mb-4">
-                Temel <span className="secondary-text">Avantajlarımız</span>
+                {t("whyUs.mainAdvantagesTitle_Left")}{" "}
+                <span className="secondary-text">
+                  {t("whyUs.mainAdvantagesTitle_Right")}
+                </span>
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Dış ticaret süreçlerinizde size değer katacak temel
-                özelliklerimiz
+                {t("whyUs.mainAdvantagesText")}
               </p>
             </div>
 
@@ -428,10 +369,13 @@ export default function WhyUsPage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-800 mb-4">
-                Size Sunduğumuz <span className="secondary-text">Değerler</span>
+                {t("whyUs.offeredValuesTitle_Left")}{" "}
+                <span className="secondary-text">
+                  {t("whyUs.offeredValuesTitle_Right")}
+                </span>
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Her aşamada yanınızda olarak işlerinizi kolaylaştırıyoruz
+                {t("whyUs.offeredValuesText")}
               </p>
             </div>
 
@@ -475,25 +419,23 @@ export default function WhyUsPage() {
         <section className="py-20 bg-gradient-to-r from-primary to-secondary text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold mb-6">
-              Başarılı Dış Ticaret Deneyimi İçin
+              {t("whyUs.SuccessfullTradeBottomCardTitle")}
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-              Profesyonel ekibimiz ve kanıtlanmış deneyimimizle dış ticaret
-              hedeflerinize güvenle ulaşın. Hemen bizimle iletişime geçin ve
-              farkı yaşayın.
+              {t("whyUs.SuccessfullTradeBottomCardText")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
                 className="bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors duration-300 inline-block"
               >
-                Hemen İletişime Geçin
+                {t("whyUs.SuccessfullTradeBottomCardButtonLeft")}
               </Link>
               <Link
                 href="/about"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 inline-block"
               >
-                Hakkımızda
+                {t("whyUs.SuccessfullTradeBottomCardButtonRight")}
               </Link>
             </div>
           </div>

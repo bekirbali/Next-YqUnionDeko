@@ -27,29 +27,25 @@ const TestimonialsSlider = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Ahmet Yılmaz",
-      company: "ABC İthalat Ltd.",
+      name: "A*** Y***",
       text: "YqUnion ile çalışmaya başladığımızdan beri Çin'den ithalatımız çok daha güvenli ve hızlı hale geldi. Profesyonel yaklaşımları için teşekkürler.",
       rating: 5,
     },
     {
       id: 2,
-      name: "Fatma Demir",
-      company: "Demir Tekstil",
+      name: "F*** D***",
       text: "15 yıldır dış ticaretle uğraşıyorum, bu kadar güvenilir bir firma ile hiç karşılaşmamıştım. Kesinlikle tavsiye ederim.",
       rating: 5,
     },
     {
       id: 3,
-      name: "Mehmet Kaya",
-      company: "Kaya Elektronik",
+      name: "M*** K***",
       text: "Lojistik süreçlerini çok iyi yönetiyorlar. Siparişlerimiz zamanında ve hasarsız ulaşıyor. Mükemmel bir hizmet.",
       rating: 5,
     },
     {
       id: 4,
-      name: "Zeynep Öz",
-      company: "Öz Makina",
+      name: "Z*** Ö***",
       text: "Dil bariyeri olmadan, kültürler arası ticaret yapmanın ne kadar kolay olabileceğini gösterdiler. Harika bir ekip!",
       rating: 5,
     },
@@ -98,9 +94,6 @@ const TestimonialsSlider = () => {
                     <h4 className="font-semibold text-gray-800 text-sm sm:text-base">
                       {testimonial.name}
                     </h4>
-                    <p className="text-xs sm:text-sm text-gray-500">
-                      {testimonial.company}
-                    </p>
                   </div>
                 </motion.div>
               </div>

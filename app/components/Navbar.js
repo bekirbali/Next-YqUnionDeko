@@ -51,7 +51,7 @@ export default function Navbar() {
             <Image
               src="/assets/yqunionlogo.png"
               alt="YqUnion Logo"
-              width={180}
+              width={200}
               height={90}
               className="object-contain"
               priority={true}
@@ -60,7 +60,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-8 items-center">
+        <div className="hidden md:flex gap-8 items-center text-lg">
           <Link
             href="/"
             className="text-white hover:text-red-300 transition-colors duration-200 font-medium"
