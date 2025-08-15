@@ -3,8 +3,10 @@ import React from "react";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const HeroSlider = () => {
+  const { t } = useTranslation();
   const settings = {
     dots: true,
     infinite: true,
@@ -29,18 +31,16 @@ const HeroSlider = () => {
   const slides = [
     {
       id: 1,
-      title: "Türkiye ve Çin Arasındaki Güven Köprüsü",
-      subtitle: "Bizimle Çalışın Güvenli İthalatın Başarısını Yakalayın",
-      description:
-        "20 yıllık deneyimimizle Türkiye ve Çin arasında güvenli ticaret köprüsü kuruyoruz.",
+      title: t("homePage.heroSlider_Slide_1_Title"),
+      subtitle: t("homePage.heroSlider_Slide_1_Subtitle"),
+      description: t("homePage.heroSlider_Slide_1_Text"),
       image: "/assets/futureexport.jpg",
     },
     {
       id: 2,
-      title: "Kaliteli Ürünler, Güvenli Teslimat",
-      subtitle: "Güvenilir ve Profesyonel Hizmet",
-      description:
-        "Her adımda yanınızdayız. Siparişten teslimata kadar tam kontrol.",
+      title: t("homePage.heroSlider_Slide_2_Title"),
+      subtitle: t("homePage.heroSlider_Slide_2_Subtitle"),
+      description: t("homePage.heroSlider_Slide_2_Text"),
       image: "/assets/balonluheroslider.jpg",
     },
     // {

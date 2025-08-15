@@ -1,8 +1,10 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="bg-[#0A2562] text-white">
       <div className="container mx-auto px-8 py-12">
@@ -19,8 +21,7 @@ export default function Footer() {
                 sizes="180px"
               />
               <p className="text-gray-300  text-center md:text-left leading-relaxed">
-                YqUnion olarak, güvenilir ve kaliteli hizmet anlayışımızla
-                müşterilerimize en iyi çözümleri sunmaya devam ediyoruz.
+                {t("footer.yqUnionText")}
               </p>
             </div>
           </div>
@@ -28,7 +29,7 @@ export default function Footer() {
           {/* Hızlı Linkler */}
           <div className="md:col-span-1">
             <h3 className="text-xl font-semibold mb-4 text-white">
-              Hızlı Linkler
+              {t("footer.quickLinks")}
             </h3>
             <ul className="space-y-2">
               <li>
@@ -36,7 +37,7 @@ export default function Footer() {
                   href="/"
                   className="text-gray-300 hover:text-red-300 transition-colors duration-200 "
                 >
-                  Ana Sayfa
+                  {t("navigation.home")}
                 </Link>
               </li>
               <li>
@@ -44,7 +45,7 @@ export default function Footer() {
                   href="/about"
                   className="text-gray-300 hover:text-red-300 transition-colors duration-200 "
                 >
-                  Hakkımızda
+                  {t("navigation.about")}
                 </Link>
               </li>
               <li>
@@ -52,7 +53,15 @@ export default function Footer() {
                   href="/whyus"
                   className="text-gray-300 hover:text-red-300 transition-colors duration-200 "
                 >
-                  Neden Bizimle Çalışmalısınız?
+                  {t("navigation.whyUs")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/activity-areas"
+                  className="text-gray-300 hover:text-red-300 transition-colors duration-200 "
+                >
+                  {t("navigation.activityAreas")}
                 </Link>
               </li>
               <li>
@@ -60,7 +69,7 @@ export default function Footer() {
                   href="/announcements"
                   className="text-gray-300 hover:text-red-300 transition-colors duration-200 "
                 >
-                  Duyurular
+                  {t("navigation.announcements")}
                 </Link>
               </li>
             </ul>
@@ -68,7 +77,9 @@ export default function Footer() {
 
           {/* İletişim Bilgileri */}
           <div className="md:col-span-1">
-            <h3 className="text-xl font-semibold mb-4 text-white">İletişim</h3>
+            <h3 className="text-xl font-semibold mb-4 text-white">
+              {t("footer.contact")}
+            </h3>
             <div className="space-y-3 ">
               <div className="flex items-start space-x-3">
                 <svg
@@ -109,7 +120,7 @@ export default function Footer() {
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                <p className="text-gray-300">deko@dekoelektrik.com.tr</p>
+                <p className="text-gray-300">suat.kucuk@yqunion.com.tr</p>
               </div>
             </div>
           </div>
@@ -117,7 +128,7 @@ export default function Footer() {
           {/* Sosyal Medya ve Ek Bilgiler */}
           <div className="md:col-span-1">
             <h3 className="text-xl font-semibold mb-4 text-white">
-              Bizi Takip Edin
+              {t("footer.followUs")}
             </h3>
             <div className="flex space-x-4 mb-6">
               <a
@@ -162,7 +173,7 @@ export default function Footer() {
                 href="/contact"
                 className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 rounded-lg transition-colors duration-200 font-medium inline-block"
               >
-                Bizimle İletişime Geçin
+                {t("footer.getInTouch")}
               </Link>
             </div>
           </div>

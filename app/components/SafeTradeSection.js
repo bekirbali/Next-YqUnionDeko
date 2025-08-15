@@ -1,25 +1,24 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 export default function SafeTradeSection() {
+  const { t } = useTranslation();
   const [activeTab, setActiveTab] = useState("mission");
 
   const tabs = {
     mission: {
-      title: "Misyon",
-      content:
-        "Çin'den ithalat yapmak isteyen girişimciler ve firmalara, ürün araştırmasından kalite kontrolüne, fiyat pazarlığından lojistiğe kadar her aşamada profesyonel destek sunmak.",
+      title: t("homePage.safeTradeSection_Mission"),
+      content: t("homePage.safeTradeSection_MissionText"),
     },
     vision: {
-      title: "Vizyon",
-      content:
-        "Türkiye'deki ithalatçıların Çin'den ürün tedarik ederken zaman kaybetmeden, güvenle ve en uygun şartlarla işlem yapabildiği bir sistemin parçası olmak.",
+      title: t("homePage.safeTradeSection_Vision"),
+      content: t("homePage.safeTradeSection_VisionText"),
     },
     values: {
-      title: "Değerler",
-      content:
-        "Güvenilirlik, şeffaflık, müşteri odaklılık ve sürekli gelişim temel değerlerimizdir. Her projede bu ilkelerle hareket ederiz.",
+      title: t("homePage.safeTradeSection_Values"),
+      content: t("homePage.safeTradeSection_ValuesText"),
     },
   };
 
@@ -31,15 +30,15 @@ export default function SafeTradeSection() {
           <div className="space-y-8">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
-                Bizim Deneyimimizle{" "}
-                <span className="secondary-text">Ticaretiniz Güvende</span>
+                {t("homePage.safeTradeSection_Title_1")}{" "}
+                <span className="secondary-text">
+                  {t("homePage.safeTradeSection_Title_2")}
+                </span>
               </h2>
             </div>
 
             <p className="text-lg text-gray-600 leading-relaxed">
-              Sektördeki farklılıkları benimsiyor, uzman kadromuz, ürün ve
-              sistem kalitemiz, hızlı teslimat süreleri ve ekonomik
-              çözümlerimizle tam müşteri memnuniyeti sağlıyoruz.
+              {t("homePage.safeTradeSection_Text")}
             </p>
 
             {/* Tab Menüsü */}
@@ -73,7 +72,7 @@ export default function SafeTradeSection() {
           <div className="relative">
             <div className="relative h-96 lg:h-[550px] rounded-lg overflow-hidden flex items-center justify-center">
               <Image
-                src="/assets/world.png"
+                src="/assets/importexport.jpg"
                 alt="Güvenli Ticaret"
                 fill
                 className="object-contain"

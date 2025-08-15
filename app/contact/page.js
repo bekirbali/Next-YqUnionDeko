@@ -2,8 +2,10 @@
 import { useState } from "react";
 import AnimatedSection from "../components/AnimatedSection";
 import { toast } from "react-toastify";
+import { useTranslation } from "react-i18next";
 
 export default function ContactPage() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -129,9 +131,11 @@ export default function ContactPage() {
       <AnimatedSection animationType="fadeInUp" delay={0.1}>
         <section className="relative bg-gradient-to-br from-primary via-primary-light to-secondary text-white py-20">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">İletişim</h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              {t("contact.heroTitle")}
+            </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-              Türkiye ve Çin ofislerimizden bizimle iletişime geçin
+              {t("contact.heroSubText")}
             </p>
             {/* Hızlı İletişim Kartları */}
             <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
@@ -154,8 +158,12 @@ export default function ContactPage() {
                     ></path>
                   </svg>
                 </div>
-                <h3 className="font-bold text-white mb-1 text-sm">Telefon</h3>
-                <p className="text-xs text-white/80">Anında bağlantı</p>
+                <h3 className="font-bold text-white mb-1 text-sm">
+                  {t("contact.heroQuickMenuCard_1_title")}
+                </h3>
+                <p className="text-xs text-white/80">
+                  {t("contact.heroQuickMenuCard_1_text")}
+                </p>
               </a>
 
               <a
@@ -177,8 +185,12 @@ export default function ContactPage() {
                     ></path>
                   </svg>
                 </div>
-                <h3 className="font-bold text-white mb-1 text-sm">E-posta</h3>
-                <p className="text-xs text-white/80">24 saat içinde yanıt</p>
+                <h3 className="font-bold text-white mb-1 text-sm">
+                  {t("contact.heroQuickMenuCard_2_title")}
+                </h3>
+                <p className="text-xs text-white/80">
+                  {t("contact.heroQuickMenuCard_2_text")}
+                </p>
               </a>
 
               <a
@@ -196,8 +208,12 @@ export default function ContactPage() {
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.306" />
                   </svg>
                 </div>
-                <h3 className="font-bold text-white mb-1 text-sm">WhatsApp</h3>
-                <p className="text-xs text-white/80">Hızlı mesajlaşma</p>
+                <h3 className="font-bold text-white mb-1 text-sm">
+                  {t("contact.heroQuickMenuCard_3_title")}
+                </h3>
+                <p className="text-xs text-white/80">
+                  {t("contact.heroQuickMenuCard_3_text")}
+                </p>
               </a>
 
               <div className="bg-white/10 backdrop-blur-sm p-4 rounded-lg text-center border border-white/20">
@@ -217,9 +233,11 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <h3 className="font-bold text-white mb-1 text-sm">
-                  Çalışma Saatleri
+                  {t("contact.heroQuickMenuCard_4_title")}
                 </h3>
-                <p className="text-xs text-white/80">Pzt-Cum: 09:00-17:00</p>
+                <p className="text-xs text-white/80">
+                  {t("contact.heroQuickMenuCard_4_text")}
+                </p>
               </div>
             </div>
           </div>
@@ -232,7 +250,7 @@ export default function ContactPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold primary-text mb-12 text-center">
-                Ofis Lokasyonlarımız
+                {t("contact.officeLocations_Title")}
               </h2>
               <div className="grid md:grid-cols-2 gap-12">
                 {/* Türkiye Ofisi */}
@@ -254,7 +272,7 @@ export default function ContactPage() {
                         />
                       </div>
                       <h3 className="text-2xl font-bold text-white drop-shadow-lg">
-                        Türkiye Ofisi
+                        {t("contact.officeLocationsTurkey")}
                       </h3>
                     </div>
                   </div>
@@ -283,7 +301,9 @@ export default function ContactPage() {
                           ></path>
                         </svg>
                         <div>
-                          <p className="font-semibold text-gray-800">Adres:</p>
+                          <p className="font-semibold text-gray-800">
+                            {t("contact.address")}:
+                          </p>
                           <p className="text-gray-600">
                             Finanskent Mah. Finans Cad. Sarphan Finans Park
                             Sitesi
@@ -311,7 +331,7 @@ export default function ContactPage() {
                         </svg>
                         <div className="flex-grow">
                           <p className="font-semibold text-gray-800">
-                            Telefon:
+                            {t("contact.phone")}:
                           </p>
                           <p className="text-gray-600">+90 532 473 48 97</p>
                           <p className="text-gray-600">+90 216 771 49 11</p>
@@ -339,7 +359,7 @@ export default function ContactPage() {
                         </svg>
                         <div>
                           <p className="font-semibold text-gray-800">
-                            E-posta:
+                            {t("contact.email")}:
                           </p>
                           <p className="text-gray-600">
                             suat.kucuk@yqunion.com.tr
@@ -363,7 +383,7 @@ export default function ContactPage() {
                         </svg>
                         <div>
                           <p className="font-semibold text-gray-800">
-                            Çalışma Saatleri:
+                            {t("contact.heroQuickMenuCard_4_title")}:
                           </p>
                           <p className="text-gray-600">
                             Pazartesi - Cuma: 09:00 - 17:00
@@ -393,7 +413,7 @@ export default function ContactPage() {
                         />
                       </div>
                       <h3 className="text-2xl font-bold text-white drop-shadow-lg">
-                        Çin Ofisi
+                        {t("contact.officeLocationsChina")}
                       </h3>
                     </div>
                   </div>
@@ -422,7 +442,9 @@ export default function ContactPage() {
                           ></path>
                         </svg>
                         <div>
-                          <p className="font-semibold text-gray-800">Adres:</p>
+                          <p className="font-semibold text-gray-800">
+                            {t("contact.address")}:
+                          </p>
                           <p className="text-gray-600">
                             No.241-245 Longxianger RD North Baixiang
                             <br />
@@ -447,7 +469,7 @@ export default function ContactPage() {
                         </svg>
                         <div>
                           <p className="font-semibold text-gray-800">
-                            Telefon:
+                            {t("contact.phone")}:
                           </p>
                           <p className="text-gray-600">
                             +86 577 627 16066 / 62867666
@@ -471,7 +493,7 @@ export default function ContactPage() {
                         </svg>
                         <div>
                           <p className="font-semibold text-gray-800">
-                            E-posta:
+                            {t("contact.email")}:
                           </p>
                           <p className="text-gray-600">union@unionele.com</p>
                         </div>
@@ -493,7 +515,7 @@ export default function ContactPage() {
                         </svg>
                         <div>
                           <p className="font-semibold text-gray-800">
-                            Çalışma Saatleri:
+                            {t("contact.heroQuickMenuCard_4_title")}:
                           </p>
                           <p className="text-gray-600">
                             Pazartesi - Cuma: 09:00 - 18:00
@@ -517,11 +539,10 @@ export default function ContactPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold primary-text mb-8 text-center">
-                Bize Mesaj Gönderin
+                {t("contact.formTitle")}
               </h2>
               <p className="text-lg text-gray-700 text-center mb-12">
-                Dış ticaret ihtiyaçlarınız hakkında bilgi almak için formu
-                doldurun
+                {t("contact.formSubTitle")}
               </p>
 
               <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -532,7 +553,7 @@ export default function ContactPage() {
                         htmlFor="name"
                         className="block font-medium text-gray-700 mb-2"
                       >
-                        Ad Soyad *
+                        {t("contact.name")} *
                       </label>
                       <input
                         type="text"
@@ -542,7 +563,7 @@ export default function ContactPage() {
                         value={formData.name}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all text-gray-900 placeholder-gray-500"
-                        placeholder="Adınız ve soyadınız"
+                        placeholder={t("contact.name")}
                       />
                     </div>
                     <div>
@@ -550,7 +571,7 @@ export default function ContactPage() {
                         htmlFor="email"
                         className="block font-medium text-gray-700 mb-2"
                       >
-                        E-posta *
+                        {t("contact.email")} *
                       </label>
                       <input
                         type="email"
@@ -571,7 +592,7 @@ export default function ContactPage() {
                         htmlFor="phone"
                         className="block font-medium text-gray-700 mb-2"
                       >
-                        Telefon
+                        {t("contact.phone")}
                       </label>
                       <input
                         type="tel"
@@ -588,7 +609,7 @@ export default function ContactPage() {
                         htmlFor="company"
                         className="block font-medium text-gray-700 mb-2"
                       >
-                        Şirket
+                        {t("contact.company")}
                       </label>
                       <input
                         type="text"
@@ -597,7 +618,7 @@ export default function ContactPage() {
                         value={formData.company}
                         onChange={handleChange}
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all text-gray-900 placeholder-gray-500"
-                        placeholder="Şirket adınız"
+                        placeholder={t("contact.company")}
                       />
                     </div>
                   </div>
@@ -607,7 +628,7 @@ export default function ContactPage() {
                       htmlFor="subject"
                       className="block font-medium text-gray-700 mb-2"
                     >
-                      Konu *
+                      {t("contact.subject")} *
                     </label>
                     <select
                       id="subject"
@@ -617,15 +638,17 @@ export default function ContactPage() {
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all text-gray-900"
                     >
-                      <option value="">Konu seçin</option>
-                      <option value="ithalat">İthalat Hizmetleri</option>
-                      <option value="ihracat">İhracat Hizmetleri</option>
-                      <option value="kalite-kontrol">Kalite Kontrol</option>
-                      <option value="danışmanlık">
-                        Dış Ticaret Danışmanlığı
+                      <option value="">{t("contact.selectSubject")}</option>
+                      <option value="ithalat">{t("contact.subject_1")}</option>
+                      <option value="ihracat">{t("contact.subject_2")}</option>
+                      <option value="kalite-kontrol">
+                        {t("contact.subject_3")}
                       </option>
-                      <option value="lojistik">Lojistik Çözümleri</option>
-                      <option value="diğer">Diğer</option>
+                      <option value="danışmanlık">
+                        {t("contact.subject_4")}
+                      </option>
+                      <option value="lojistik">{t("contact.subject_5")}</option>
+                      <option value="diğer">{t("contact.subject_6")}</option>
                     </select>
                   </div>
 
@@ -634,7 +657,7 @@ export default function ContactPage() {
                       htmlFor="message"
                       className="block font-medium text-gray-700 mb-2"
                     >
-                      Mesaj *
+                      {t("contact.message")} *
                     </label>
                     <textarea
                       id="message"
@@ -644,16 +667,16 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-color focus:border-transparent outline-none transition-all resize-none text-gray-900 placeholder-gray-500"
-                      placeholder="Mesajınızı buraya yazın..."
+                      placeholder={t("contact.messagePlaceholder")}
                     ></textarea>
                   </div>
 
                   {/* Resim Yükleme Alanı */}
                   <div>
                     <label className="block font-medium text-gray-700 mb-2">
-                      Ürün Resimleri
+                      {t("contact.productImages")}
                       <span className="text-gray-500 text-sm ml-2">
-                        (Opsiyonel, en fazla 5 dosya)
+                        {t("contact.imagesOptional")}
                       </span>
                     </label>
 
@@ -683,12 +706,12 @@ export default function ContactPage() {
                           </svg>
                           <p className="text-gray-600 mb-2">
                             <span className="font-semibold text-primary-color">
-                              Dosya seç
+                              {t("contact.selectFile_1")}
                             </span>{" "}
-                            veya sürükle bırak
+                            {t("contact.selectFile_2")}
                           </p>
                           <p className="text-sm text-gray-500">
-                            PNG, JPG, JPEG (maks. 5MB)
+                            {t("contact.fileSize")}
                           </p>
                         </div>
                       </label>
@@ -698,7 +721,8 @@ export default function ContactPage() {
                     {formData.images.length > 0 && (
                       <div className="mt-4">
                         <p className="text-sm font-medium text-gray-700 mb-3">
-                          Seçilen Dosyalar ({formData.images.length})
+                          {t("contact.selectedFiles")} ({formData.images.length}
+                          )
                         </p>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                           {formData.images.map((file, index) => (
@@ -760,7 +784,7 @@ export default function ContactPage() {
                           d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
                         ></path>
                       </svg>
-                      Mesaj Gönder
+                      {t("contact.sendMessageButton")}
                     </button>
                   </div>
                 </form>
