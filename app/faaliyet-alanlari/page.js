@@ -18,175 +18,166 @@ import {
   FaPowerOff,
 } from "react-icons/fa";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 export default function FaaliyetAlanlariPage() {
+  const { t } = useTranslation();
+
   const faaliyetAlanlari = [
     {
-      title: "Alçak-Orta-Yüksek Gerilim Devre Kesiciler",
-      description:
-        "Güvenli elektrik dağıtımı için profesyonel devre kesici sistemleri. Endüstriyel ve ticari tesisler için güvenlik odaklı çözümler.",
+      title: t("activityAreas.activityAreasCard_1_title"),
+      description: t("activityAreas.activityAreasCard_1_text"),
       icon: <FaPlug />,
       color: "from-red-500 to-red-600",
       cardbg: "from-red-50 to-red-100",
       details: [
-        "Alçak Gerilim Devre Kesiciler",
-        "Orta Gerilim Sistemleri",
-        "Yüksek Gerilim Çözümleri",
-        "Koruma ve Kontrol Sistemleri",
+        t("activityAreas.activityAreasCard_1_product_1"),
+        t("activityAreas.activityAreasCard_1_product_2"),
+        t("activityAreas.activityAreasCard_1_product_3"),
+        t("activityAreas.activityAreasCard_1_product_4"),
       ],
     },
     {
-      title: "Makineler",
-      description:
-        "Endüstriyel makineler, üretim ekipmanları ve otomasyonel sistemler. Yüksek kaliteli Çin üretimi makinelerle üretim verimliliğinizi artırın.",
+      title: t("activityAreas.activityAreasCard_2_title"),
+      description: t("activityAreas.activityAreasCard_2_text"),
       icon: <FaCog />,
       color: "from-blue-500 to-blue-600",
       cardbg: "from-blue-50 to-blue-100",
       details: [
-        "CNC Makineleri",
-        "Paketleme Makineleri",
-        "Tekstil Makineleri",
-        "Gıda İşleme Makineleri",
+        t("activityAreas.activityAreasCard_2_product_1"),
+        t("activityAreas.activityAreasCard_2_product_2"),
+        t("activityAreas.activityAreasCard_2_product_3"),
+        t("activityAreas.activityAreasCard_2_product_4"),
       ],
     },
     {
-      title: "Elektrikli Araç Şarj Üniteleri",
-      description:
-        "Elektrikli araçlar için modern şarj çözümleri. Hızlı, güvenli ve verimli şarj istasyonları ile geleceğin mobilite çözümlerini sunuyoruz.",
+      title: t("activityAreas.activityAreasCard_3_title"),
+      description: t("activityAreas.activityAreasCard_3_text"),
       icon: <FaChargingStation />,
       color: "from-purple-500 to-purple-600",
       cardbg: "from-purple-50 to-purple-100",
       details: [
-        "AC Şarj İstasyonları",
-        "DC Hızlı Şarj Ünitleri",
-        "Akıllı Şarj Sistemleri",
-        "Ev Tipi Şarj Çözümleri",
+        t("activityAreas.activityAreasCard_3_product_1"),
+        t("activityAreas.activityAreasCard_3_product_2"),
+        t("activityAreas.activityAreasCard_3_product_3"),
+        t("activityAreas.activityAreasCard_3_product_4"),
       ],
     },
     {
-      title: "Güneş Enerjisi Sistemleri",
-      description:
-        "Yenilenebilir enerji çözümleri ile sürdürülebilir gelecek. Yüksek verimli güneş panelleri ve tam entegre sistemler ile enerji maliyetlerinizi düşürün.",
+      title: t("activityAreas.activityAreasCard_4_title"),
+      description: t("activityAreas.activityAreasCard_4_text"),
       icon: <FaSolarPanel />,
       color: "from-amber-500 to-amber-600",
       cardbg: "from-amber-50 to-amber-100",
       details: [
-        "Güneş Panelleri (Monokristal/Polykristal)",
-        "Solar İnverterler",
-        "Akü Sistemleri",
-        "Montaj ve Kurulum Ekipmanları",
+        t("activityAreas.activityAreasCard_4_product_1"),
+        t("activityAreas.activityAreasCard_4_product_2"),
+        t("activityAreas.activityAreasCard_4_product_3"),
+        t("activityAreas.activityAreasCard_4_product_4"),
       ],
     },
     {
-      title: "Yapısal Malzemeler",
-      description:
-        "İnşaat ve endüstriyel projeler için dayanıklı yapısal malzemeler. Kaliteli çelik, beton ve kompozit malzemelerle projelerinizi güçlendirin.",
+      title: t("activityAreas.activityAreasCard_5_title"),
+      description: t("activityAreas.activityAreasCard_5_text"),
       icon: <FaBuilding />,
       color: "from-gray-500 to-gray-600",
       cardbg: "from-teal-50 to-teal-100",
       details: [
-        "Çelik Konstrüksiyon",
-        "Prefabrik Sistemler",
-        "İzolasyon Malzemeleri",
-        "Kompozit Yapı Elemanları",
+        t("activityAreas.activityAreasCard_5_product_1"),
+        t("activityAreas.activityAreasCard_5_product_2"),
+        t("activityAreas.activityAreasCard_5_product_3"),
+        t("activityAreas.activityAreasCard_5_product_4"),
       ],
     },
     {
-      title: "Jeneratörler ve Trafolar",
-      description:
-        "Güvenilir enerji üretimi ve dağıtımı için profesyonel çözümler. Endüstriyel jeneratörler ve trafo sistemleri ile kesintisiz enerji sağlayın.",
+      title: t("activityAreas.activityAreasCard_6_title"),
+      description: t("activityAreas.activityAreasCard_6_text"),
       icon: <FaIndustry />,
       color: "from-indigo-500 to-indigo-600",
       cardbg: "from-indigo-50 to-indigo-100",
       details: [
-        "Dizel ve Benzinli Jeneratörler",
-        "Güç Trafoları",
-        "Dağıtım Trafoları",
-        "Jeneratör Yedek Parçaları",
+        t("activityAreas.activityAreasCard_6_product_1"),
+        t("activityAreas.activityAreasCard_6_product_2"),
+        t("activityAreas.activityAreasCard_6_product_3"),
+        t("activityAreas.activityAreasCard_6_product_4"),
       ],
     },
     {
-      title: "Elektrik Motorları",
-      description:
-        "Endüstriyel uygulamalar için yüksek performanslı elektrik motorları. AC/DC motorlar, servo motorlar ve özel motor çözümleri ile üretim verimliliğinizi artırın.",
+      title: t("activityAreas.activityAreasCard_7_title"),
+      description: t("activityAreas.activityAreasCard_7_text"),
       icon: <FaCogs />,
       color: "from-cyan-500 to-cyan-600",
       cardbg: "from-cyan-50 to-cyan-100",
       details: [
-        "AC Asenkron Motorlar",
-        "DC Motorlar",
-        "Servo Motorlar",
-        "Motor Kontrol Sistemleri",
+        t("activityAreas.activityAreasCard_7_product_1"),
+        t("activityAreas.activityAreasCard_7_product_2"),
+        t("activityAreas.activityAreasCard_7_product_3"),
+        t("activityAreas.activityAreasCard_7_product_4"),
       ],
     },
     {
-      title: "Aydınlatma Ürünleri",
-      description:
-        "Modern ve enerji tasarruflu aydınlatma çözümleri. LED teknolojisi ile endüstriyel, ticari ve konut aydınlatma ihtiyaçlarınızı karşılayın.",
+      title: t("activityAreas.activityAreasCard_8_title"),
+      description: t("activityAreas.activityAreasCard_8_text"),
       icon: <FaLightbulb />,
       color: "from-yellow-400 to-yellow-500",
       cardbg: "from-yellow-50 to-yellow-100",
       details: [
-        "Endüstriyel LED Aydınlatma",
-        "Sokak ve Park Aydınlatması",
-        "Ticari Aydınlatma Sistemleri",
-        "Aydınlatma Kontrol Sistemleri",
+        t("activityAreas.activityAreasCard_8_product_1"),
+        t("activityAreas.activityAreasCard_8_product_2"),
+        t("activityAreas.activityAreasCard_8_product_3"),
+        t("activityAreas.activityAreasCard_8_product_4"),
       ],
     },
     {
-      title: "Demir-Çelik Malzemeleri",
-      description:
-        "Yapısal ve endüstriyel projeler için kaliteli demir-çelik ürünleri. Çeşitli profiller, saclar ve özel kesim malzemelerle projelerinizi güçlendirin.",
+      title: t("activityAreas.activityAreasCard_9_title"),
+      description: t("activityAreas.activityAreasCard_9_text"),
       icon: <FaCubes />,
       color: "from-slate-500 to-slate-600",
       cardbg: "from-slate-50 to-slate-100",
       details: [
-        "Çelik Profiller ve Kirişler",
-        "Sac ve Levhalar",
-        "Çelik Borular",
-        "Özel Kesim ve İşleme",
+        t("activityAreas.activityAreasCard_9_product_1"),
+        t("activityAreas.activityAreasCard_9_product_2"),
+        t("activityAreas.activityAreasCard_9_product_3"),
+        t("activityAreas.activityAreasCard_9_product_4"),
       ],
     },
     {
-      title: "Güç Dağıtım Panoları",
-      description:
-        "Güvenli ve verimli elektrik dağıtımı için profesyonel panel sistemleri. Endüstriyel ve ticari tesisler için özel tasarım güç dağıtım çözümleri.",
+      title: t("activityAreas.activityAreasCard_10_title"),
+      description: t("activityAreas.activityAreasCard_10_text"),
       icon: <FaServer />,
       color: "from-emerald-500 to-emerald-600",
       cardbg: "from-emerald-50 to-emerald-100",
       details: [
-        "Ana Dağıtım Panoları",
-        "Alt Dağıtım Panoları",
-        "Güç Faktörü Düzeltici Panolar",
-        "Otomasyon Entegrasyonlu Panolar",
+        t("activityAreas.activityAreasCard_10_product_1"),
+        t("activityAreas.activityAreasCard_10_product_2"),
+        t("activityAreas.activityAreasCard_10_product_3"),
+        t("activityAreas.activityAreasCard_10_product_4"),
       ],
     },
     {
-      title: "Elektrik Test Cihazları",
-      description:
-        "Profesyonel elektrik ölçüm ve test ekipmanları. Güvenlik ve kalite kontrol için gerekli tüm test cihazları ile elektrik sistemlerinizi güvenle test edin.",
+      title: t("activityAreas.activityAreasCard_11_title"),
+      description: t("activityAreas.activityAreasCard_11_text"),
       icon: <FaTachometerAlt />,
       color: "from-rose-500 to-rose-600",
       cardbg: "from-rose-50 to-rose-100",
       details: [
-        "Multimetreler ve Ampermetreler",
-        "Topraklama Test Cihazları",
-        "İzolasyon Test Cihazları",
-        "Güç Analizörleri",
+        t("activityAreas.activityAreasCard_11_product_1"),
+        t("activityAreas.activityAreasCard_11_product_2"),
+        t("activityAreas.activityAreasCard_11_product_3"),
+        t("activityAreas.activityAreasCard_11_product_4"),
       ],
     },
     {
-      title: "Sanayi Tipi Fişler ve Prizler",
-      description:
-        "Endüstriyel uygulamalar için güvenli ve dayanıklı elektrik bağlantı elemanları. Yüksek akım kapasiteli fiş-priz sistemleri ile güvenli elektrik bağlantıları kurun.",
+      title: t("activityAreas.activityAreasCard_12_title"),
+      description: t("activityAreas.activityAreasCard_12_text"),
       icon: <FaPowerOff />,
       color: "from-violet-500 to-violet-600",
       cardbg: "from-violet-50 to-violet-100",
       details: [
-        "Endüstriyel Fiş-Priz Sistemleri",
-        "Yüksek Akım Bağlantı Elemanları",
-        "Su Geçirmez Fiş-Prizler",
-        "Özel Uygulama Bağlantıları",
+        t("activityAreas.activityAreasCard_12_product_1"),
+        t("activityAreas.activityAreasCard_12_product_2"),
+        t("activityAreas.activityAreasCard_12_product_3"),
+        t("activityAreas.activityAreasCard_12_product_4"),
       ],
     },
   ];
@@ -206,23 +197,27 @@ export default function FaaliyetAlanlariPage() {
                   height={105}
                   className="object-contain w-32 h-16 sm:w-32 sm:h-16 lg:w-[250px] lg:h-[105px]"
                 />
-                Faaliyet Alanlarımız
+                {t("activityAreas.heroTitle")}
               </span>
             </h1>
             <p className="text-xl lg:text-2xl mb-8 opacity-90 max-w-4xl mx-auto">
-              Çin'den Türkiye'ye geniş ürün yelpazesi ile sizlere hizmet
-              veriyoruz. Endüstriyel çözümlerden modern teknolojilere kadar her
-              alanda güvenilir ortağınızız.
+              {t("activityAreas.heroText")}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
-                <span className="font-semibold">✓ Geniş Ürün Yelpazesi</span>
+                <span className="font-semibold">
+                  ✓ {t("activityAreas.heroSubtext_1")}
+                </span>
               </div>
               <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
-                <span className="font-semibold">✓ Kaliteli Tedarik</span>
+                <span className="font-semibold">
+                  ✓ {t("activityAreas.heroSubtext_2")}
+                </span>
               </div>
               <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
-                <span className="font-semibold">✓ Uzman Danışmanlık</span>
+                <span className="font-semibold">
+                  ✓ {t("activityAreas.heroSubtext_3")}
+                </span>
               </div>
             </div>
           </div>
@@ -235,12 +230,13 @@ export default function FaaliyetAlanlariPage() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-800 mb-4">
-                <span className="secondary-text">Hizmet Verdiğimiz</span>{" "}
-                Alanlar
+                <span className="secondary-text">
+                  {t("activityAreas.activityAreasTitle_1")}{" "}
+                </span>
+                {t("activityAreas.activityAreasTitle_2")}
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Endüstriyel ihtiyaçlarınızdan modern teknoloji çözümlerine kadar
-                geniş bir yelpazede kaliteli ürünler sunuyoruz
+                {t("activityAreas.activityAreasText")}
               </p>
             </div>
 
@@ -270,7 +266,7 @@ export default function FaaliyetAlanlariPage() {
                     {/* Detay Listesi */}
                     <div className="border-t pt-4">
                       <h4 className="font-semibold text-gray-700 mb-3">
-                        Başlıca Ürünler:
+                        {t("activityAreas.activityAreasCard_GeneralSubTitle")}:
                       </h4>
                       <ul className="text-gray-600 space-y-1">
                         {alan.details.map((detail, detailIndex) => (
@@ -323,11 +319,10 @@ export default function FaaliyetAlanlariPage() {
                 <div className="bg-gray-50 p-6 rounded-b-xl">
                   <div className="text-center">
                     <h3 className="text-xl font-bold text-gray-800 mb-2">
-                      DEKO Electrics - Türkiye'nin Yükselen Yıldızı
+                      {t("activityAreas.activityAreasVideoTitle")}
                     </h3>
                     <p className="text-gray-600">
-                      Alçak gerilim endüstrisinde 20+ yıllık deneyimimiz ve
-                      profesyonel hizmet anlayışımız
+                      {t("activityAreas.activityAreasVideoText")}
                     </p>
                   </div>
                 </div>
@@ -366,25 +361,23 @@ export default function FaaliyetAlanlariPage() {
         <section className="py-20 bg-gradient-to-r from-primary to-secondary text-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-4xl font-bold mb-6">
-              Aradığınız Ürünü Bulamadınız mı?
+              {t("activityAreas.activityAreasSubCardTitle")}
             </h2>
             <p className="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
-              Geniş tedarikçi ağımız ve deneyimli ekibimizle ihtiyacınız olan
-              her türlü ürünü Çin'den tedarik edebiliriz. Özel talepleriniz için
-              bizimle iletişime geçin.
+              {t("activityAreas.activityAreasSubCardText")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
                 className="bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition-colors duration-300 inline-block"
               >
-                Özel Teklif İsteyin
+                {t("activityAreas.activityAreasSubCardButton_Left")}
               </Link>
               <Link
                 href="/whyus"
                 className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 inline-block"
               >
-                Neden YqUnion?
+                {t("activityAreas.activityAreasSubCardButton_Right")}
               </Link>
             </div>
           </div>
