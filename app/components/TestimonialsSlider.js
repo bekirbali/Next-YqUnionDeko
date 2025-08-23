@@ -30,25 +30,25 @@ const TestimonialsSlider = () => {
     {
       id: 1,
       name: "A*** Y***",
-      text: "YqUnion ile çalışmaya başladığımızdan beri Çin'den ithalatımız çok daha güvenli ve hızlı hale geldi. Profesyonel yaklaşımları için teşekkürler.",
+      text: t("testimonials.testimonial_1"),
       rating: 5,
     },
     {
       id: 2,
       name: "F*** D***",
-      text: "15 yıldır dış ticaretle uğraşıyorum, bu kadar güvenilir bir firma ile hiç karşılaşmamıştım. Kesinlikle tavsiye ederim.",
+      text: t("testimonials.testimonial_2"),
       rating: 5,
     },
     {
       id: 3,
       name: "M*** K***",
-      text: "Lojistik süreçlerini çok iyi yönetiyorlar. Siparişlerimiz zamanında ve hasarsız ulaşıyor. Mükemmel bir hizmet.",
+      text: t("testimonials.testimonial_3"),
       rating: 5,
     },
     {
       id: 4,
       name: "Z*** Ö***",
-      text: "Dil bariyeri olmadan, kültürler arası ticaret yapmanın ne kadar kolay olabileceğini gösterdiler. Harika bir ekip!",
+      text: t("testimonials.testimonial_4"),
       rating: 5,
     },
   ];

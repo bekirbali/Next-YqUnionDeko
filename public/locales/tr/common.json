@@ -141,11 +141,11 @@
   },
   "about": {
     "ourStory": "Şirket Hikayemiz",
-    "ourStoryParagraph_1": " Firmamız, Çin ile Türkiye arasında dış ticaret faaliyetleri yürütmek amacıyla kurulmuş, güvenilir ve çözüm odaklı bir ithalat–ihracat şirketidir. Hem Türkiye'de hem de Çin'de aktif olarak faaliyet gösteren, eğitimli ve profesyonel ekiplerimiz ile her iki ülkede de ofislerimiz bulunmaktadır. Ayrıca Türkiye'de yatırımlara sahip güçlü bir ortaklık yapımız vardır. Bu ortaklıkların başında Deko Otomasyon Elektrik ve Elektronik Sanayi ve Ticaret A.Ş. gelmektedir. Deko Elk.te Alçak gerilim devre kesilerin üretimi yapılmakta ve Türkiye ve dünyaya pazarlanmaktadır.",
-    "ourStoryParagraph_2": " Amacımız; Çin'den yüksek kaliteye sahip ürünleri rekabetçi fiyatlarla temin ederek Türk pazarına değer katmak, aynı zamanda yerli üretimlerimizi dünya pazarına taşıyarak ihracatta sürdürülebilir büyüme sağlamaktır.",
-    "ourStoryParagraph_3": "Gelişen küresel ticaret dinamiklerine hızla uyum sağlayan yapımız sayesinde; tedarik, kalite kontrol, lojistik ve gümrük işlemleri dahil olmak üzere tüm süreçlerde iş ortaklarımıza uçtan uca profesyonel hizmet sunuyoruz. Çin'deki güçlü üretici ağımız ve yerel iş birliklerimiz ile güvenli, hızlı ve verimli tedarik zinciri çözümleri oluşturuyoruz.",
-    "ourStoryParagraph_4": "Müşteri memnuniyetini temel prensip olarak benimseyerek, şeffaflık, dürüstlük ve süreklilik ilkeleri doğrultusunda hareket ediyoruz. Hedefimiz; iş ortaklarımızla uzun vadeli ve güvene dayalı ilişkiler kurmak, Çin ile yapılan ticarette karşılaşılan riskleri minimize ederek onlara rekabet avantajı sağlamaktır.",
-    "ourStoryParagraph_5": "Çin'den ithalat veya ihracat yapmak isteyen tüm firmalara, doğru yönlendirme ve sorunsuz operasyon süreçleriyle güvenilir çözüm ortağı olmayı taahhüt ediyoruz.",
+    "ourStoryParagraph_1": " Firmamız, Çin ile Türkiye arasında dış ticaret faaliyetleri yürütmek amacıyla kurulmuş, güvenilir ve çözüm odaklı bir ithalat–ihracat şirketidir. Hem Türkiye’de hem de Çin’de aktif olarak faaliyet gösteren, eğitimli ve profesyonel ekiplerimiz ile her iki ülkede de ofislerimiz bulunmaktadır. Ayrıca Türkiye’de yatırımlara sahip güçlü bir ortaklık yapımız vardır. Bu ortaklıkların başında Deko Otomasyon Elektrik ve Elektronik Sanayi ve Ticaret A.Ş. gelmektedir. Deko Elektrik’te Alçak gerilim devre kesicilerinin üretimi yapılmakta ve Türkiye ve dünyaya pazarlanmaktadır.",
+    "ourStoryParagraph_2": " Amacımız, Çin’den yüksek kaliteye sahip ürünleri rekabetçi fiyatlarla temin ederek, Türk pazarına değer katmak ve aynı zamanda yerli üretimlerimizi dünya pazarına taşıyarak ihracat alanında sürdürülebilir büyüme sağlamaktır.",
+    "ourStoryParagraph_3": "Gelişen küresel ticaret dinamiklerine hızla uyum sağlayan yapımız sayesinde; tedarik, kalite kontrol, lojistik ve gümrük işlemleri dahil olmak üzere tüm süreçlerde iş ortaklarımıza uçtan uca profesyonel hizmet sunuyoruz. Çin’deki güçlü üretici ağımız ve yerel iş birliklerimiz ile güvenli, hızlı ve verimli tedarik zinciri çözümleri sağlıyoruz.",
+    "ourStoryParagraph_4": "Müşteri memnuniyetini temel prensip olarak benimseyerek, şeffaflık, dürüstlük ve süreklilik ilkeleri doğrultusunda hareket ediyoruz. Hedefimiz, iş ortaklarımızla uzun vadeli ve güvene dayalı ilişkiler kurmak; Çin ile yapılan ticarette karşılaşılan riskleri minimize ederek onlara rekabet avantajı sağlamaktır.",
+    "ourStoryParagraph_5": "Çin’den ithalat veya ihracat yapmak isteyen tüm firmalara, doğru yönlendirme ve sorunsuz operasyon süreçleriyle güvenilir çözüm ortağı olmayı taahhüt ediyoruz.",
     "videoTitle": "Tanıtım Videomuz",
     "videoDoesNotSupport": "Tarayıcınız video elementini desteklemiyor.",
     "mission": "Misyonumuz",
@@ -354,6 +354,15 @@
     "quickLinks": "Hızlı Linkler",
     "contact": "İletişim",
     "followUs": "Bizi Takip Edin",
-    "getInTouch": "Bizimle İletişime Geçin"
+    "getInTouch": "Bizimle İletişime Geçin",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfUse": "Kullanım Şartları",
+    "allRightsReserved": "Tüm hakları saklıdır"
+  },
+  "testimonials": {
+    "testimonial_1": "YqUnion ile çalışmaya başladığımızdan beri Çin'den ithalatımız çok daha güvenli ve hızlı hale geldi. Profesyonel yaklaşımları için teşekkürler.",
+    "testimonial_2": "15 yıldır dış ticaretle uğraşıyorum, bu kadar güvenilir bir firma ile hiç karşılaşmamıştım. Kesinlikle tavsiye ederim.",
+    "testimonial_3": "Lojistik süreçlerini çok iyi yönetiyorlar. Siparişlerimiz zamanında ve hasarsız ulaşıyor. Mükemmel bir hizmet.",
+    "testimonial_4": "Dil bariyeri olmadan, kültürler arası ticaret yapmanın ne kadar kolay olabileceğini gösterdiler. Harika bir ekip!"
   }
 }

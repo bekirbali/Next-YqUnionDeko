@@ -109,7 +109,7 @@ export default function Footer() {
                 >
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
-                <p className="text-gray-300">+90 216 208 92 03</p>
+                <p className="text-gray-300">+90 216 771 49 11</p>
               </div>
               <div className="flex items-center space-x-3">
                 <svg
@@ -183,20 +183,20 @@ export default function Footer() {
         <div className="border-t border-gray-600 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              Copyright © 2025 YqUnion - Tüm hakları saklıdır.
+              Copyright © 2025 YqUnion - {t("footer.allRightsReserved")}
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link
                 href="#"
                 className="text-gray-400 hover:text-red-300 text-sm transition-colors duration-200"
               >
-                Gizlilik Politikası
+                {t("footer.privacyPolicy")}
               </Link>
               <Link
                 href="#"
                 className="text-gray-400 hover:text-red-300 text-sm transition-colors duration-200"
               >
-                Kullanım Şartları
+                {t("footer.termsOfUse")}
               </Link>
             </div>
           </div>
