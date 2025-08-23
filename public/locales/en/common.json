@@ -354,6 +354,15 @@
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "followUs": "Follow Us",
-    "getInTouch": "Get in Touch"
+    "getInTouch": "Get in Touch",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use",
+    "allRightsReserved": "All Rights Reserved"
+  },
+  "testimonials": {
+    "testimonial_1": "Working with YqUnion has made our imports from China much safer and faster. Thank you for your professional approach.",
+    "testimonial_2": "I've been in foreign trade for 15 years, and I've never had a company as reliable as this one. I highly recommend it.",
+    "testimonial_3": "They manage logistics processes very well. Our orders arrive on time and without damage. Excellent service.",
+    "testimonial_4": "Without language barriers, they showed us how easy it can be to do cross-cultural trade. A great team!"
   }
 }

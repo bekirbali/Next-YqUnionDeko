@@ -336,11 +336,11 @@ export default function ContactPage() {
                           <p className="text-gray-600">+90 532 473 48 97</p>
                           <p className="text-gray-600">+90 216 771 49 11</p>
                         </div>
-                        <img
+                        {/* <img
                           src="/assets/barkod.jpg"
                           alt="Türkiye Ofisi Telefon Numarası Karekod"
                           className="w-10 h-10 rounded-md object-cover ml-4"
-                        />
+                        /> */}
                       </div>
 
                       <div className="flex items-center">
@@ -389,6 +389,22 @@ export default function ContactPage() {
                             Pazartesi - Cuma: 09:00 - 17:00
                           </p>
                         </div>
+                      </div>
+                    </div>
+                    <div className="flex justify-center border-t border-gray-200 pt-4">
+                      <div className="text-center">
+                        <p className="text-sm text-gray-600 mb-2">
+                          QR Kod ile İletişim
+                        </p>
+                        <img
+                          src="/assets/yqunionqr.png"
+                          alt="Türkiye Ofisi Telefon Numarası Karekod"
+                          className="w-36 h-36 mx-auto rounded-lg shadow-md"
+                          style={{
+                            imageRendering: "crisp-edges",
+                            imageRendering: "-webkit-optimize-contrast",
+                          }}
+                        />
                       </div>
                     </div>
                   </div>
