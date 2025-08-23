@@ -213,7 +213,7 @@ export default function OfficeLocationsPage() {
                           <p className="text-gray-600">+90 216 771 49 11</p>
                         </div>
                         <img
-                          src="/assets/barkod.jpg"
+                          src="/assets/yqunionqr.png"
                           alt="Türkiye Ofisi Telefon Numarası Karekod"
                           className="w-10 h-10 rounded-md object-cover ml-4"
                         />
