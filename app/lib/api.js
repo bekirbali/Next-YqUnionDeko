@@ -156,6 +156,11 @@ class ApiService {
 
 export const apiService = new ApiService();
 
+// Sitemap için getActiveAnnouncements fonksiyonunu dışa aktar
+export const getActiveAnnouncements = async (language = "tr") => {
+  return await apiService.getActiveAnnouncements(language);
+};
+
 // Image URL utility function
 export const getImageUrl = (imagePath) => {
   if (!imagePath) return "/assets/placeholder-news.svg";
