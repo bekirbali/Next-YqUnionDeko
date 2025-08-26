@@ -44,12 +44,13 @@ export default function AnnouncementsPage() {
       <div className="font-sans min-h-screen bg-white">
         <div className="container mx-auto px-4 py-8">
           <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">
-            Haberler
+            {i18n.language === "en" ? "News" : "Haberler"}
           </h1>
           <div className="text-center mb-10">
             <p className="text-lg text-gray-600">
-              YQ Union ile ilgili en güncel haberler, duyurular ve gelişmeler
-              hakkında bilgi alın.
+              {i18n.language === "en"
+                ? "Get the latest news, announcements and developments about YQ Union."
+                : "YQ Union ile ilgili en güncel haberler, duyurular ve gelişmeler hakkında bilgi alın."}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -82,12 +83,13 @@ export default function AnnouncementsPage() {
       <div className="font-sans min-h-screen bg-white">
         <div className="container mx-auto px-4 py-8">
           <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">
-            Haberler
+            {i18n.language === "en" ? "News" : "Haberler"}
           </h1>
           <div className="text-center mb-10">
             <p className="text-lg text-gray-600">
-              YQ Union ile ilgili en güncel haberler, duyurular ve gelişmeler
-              hakkında bilgi alın.
+              {i18n.language === "en"
+                ? "Get the latest news, announcements and developments about YQ Union."
+                : "YQ Union ile ilgili en güncel haberler, duyurular ve gelişmeler hakkında bilgi alın."}
             </p>
           </div>
           <div className="text-center py-16">
@@ -105,14 +107,14 @@ export default function AnnouncementsPage() {
               />
             </svg>
             <h3 className="text-xl font-medium text-gray-900 mb-2">
-              Bir hata oluştu
+              {i18n.language === "en" ? "An error occurred" : "Bir hata oluştu"}
             </h3>
             <p className="text-gray-500 mb-4">{error}</p>
             <button
               onClick={() => window.location.reload()}
               className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
             >
-              Tekrar Dene
+              {i18n.language === "en" ? "Try Again" : "Tekrar Dene"}
             </button>
           </div>
         </div>
