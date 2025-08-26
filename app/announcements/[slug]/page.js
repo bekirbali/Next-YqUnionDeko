@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 
 // Backend URL configuration
-const BACKEND_URL = "http://localhost:8000";
+const BACKEND_URL = "https://yqunion.pythonanywhere.com";
 
 export default function AnnouncementDetailPage() {
   const { i18n } = useTranslation();

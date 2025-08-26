@@ -1,7 +1,8 @@
 // 🔧 Geliştirme ayarı: true = mock data, false = localhost backend
-const USE_MOCK_DATA = true;
+const USE_MOCK_DATA = false;
 
-const API_BASE_URL = "http://localhost:8000/api";
+// const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://yqunion.pythonanywhere.com/api";
 
 // Mock data for development
 const MOCK_ANNOUNCEMENTS = {
@@ -18,31 +19,31 @@ const MOCK_ANNOUNCEMENTS = {
       additional_images: [
         {
           id: 1,
-          image: "/assets/exhibition/sergi1.png",
+          image: "/assets/exhibition/sergi1.JPG",
           caption: "Dünya ticareti",
           order: 1,
         },
         {
           id: 2,
-          image: "/assets/exhibition/sergi2.png",
+          image: "/assets/exhibition/sergi2.JPG",
           caption: "Dünya ticareti",
           order: 2,
         },
         {
           id: 3,
-          image: "/assets/exhibition/sergi3.png",
+          image: "/assets/exhibition/sergi3.JPG",
           caption: "Dünya ticareti",
           order: 3,
         },
         {
           id: 4,
-          image: "/assets/exhibition/sergi4.png",
+          image: "/assets/exhibition/sergi4.JPG",
           caption: "Dünya ticareti",
           order: 4,
         },
         {
           id: 5,
-          image: "/assets/exhibition/sergi5.png",
+          image: "/assets/exhibition/sergi5.JPG",
           caption: "Dünya ticareti",
           order: 5,
         },
