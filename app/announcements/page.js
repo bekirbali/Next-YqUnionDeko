@@ -32,7 +32,11 @@ export default function AnnouncementsPage() {
       }
     };
 
-    fetchAnnouncements();
+    const timer = setTimeout(() => {
+      fetchAnnouncements();
+    }, 1000); // 1 saniye bekle
+
+    return () => clearTimeout(timer); // component unmount olduğunda timer'ı temizle
   }, [i18n.isInitialized, i18n.language]); // i18n.language değiştiğinde yeniden fetch et
 
   const formatDate = (dateString) => {
