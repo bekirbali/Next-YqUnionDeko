@@ -58,7 +58,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/activity-areas"
+                  href="/faaliyet-alanlari"
                   className="text-gray-300 hover:text-red-300 transition-colors duration-200 "
                 >
                   {t("navigation.activityAreas")}
