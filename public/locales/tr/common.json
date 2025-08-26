@@ -364,5 +364,20 @@
     "testimonial_2": "15 yıldır dış ticaretle uğraşıyorum, bu kadar güvenilir bir firma ile hiç karşılaşmamıştım. Kesinlikle tavsiye ederim.",
     "testimonial_3": "Lojistik süreçlerini çok iyi yönetiyorlar. Siparişlerimiz zamanında ve hasarsız ulaşıyor. Mükemmel bir hizmet.",
     "testimonial_4": "Dil bariyeri olmadan, kültürler arası ticaret yapmanın ne kadar kolay olabileceğini gösterdiler. Harika bir ekip!"
+  },
+  "announcements": {
+    "title": "Haberler",
+    "subText": "YQ Union ile ilgili en güncel haberler, duyurular ve gelişmeler hakkında bilgi alın.",
+    "allNews": "Tüm Haberler",
+    "additionalImages": "Ek Görseller",
+    "error": "Bir hata oluştu",
+    "reload": "Tekrar Dene",
+    "readMore": "Devamını Oku",
+    "noNews": "Henüz haber bulunmuyor",
+    "newNews": "Yeni haberler eklendiğinde burada görünecektir.",
+    "subCardTitle": "Daha Fazla Bilgi İçin",
+    "subCardText": "Haberlerle ilgili sorularınız veya daha detaylı bilgi almak için bizimle iletişime geçin",
+    "contactUs": "İletişime Geç",
+    "backToNews": "Haberler Sayfasına Dön"
   }
 }

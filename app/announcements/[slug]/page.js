@@ -112,7 +112,7 @@ export default function AnnouncementDetailPage() {
               href="/announcements"
               className="text-blue-600 hover:text-blue-800 transition-colors"
             >
-              ← Haberler
+              ← {i18n.language === "en" ? "News" : "Haberler"}
             </Link>
           </nav>
 
@@ -131,14 +131,18 @@ export default function AnnouncementDetailPage() {
               />
             </svg>
             <h3 className="text-xl font-medium text-gray-900 mb-2">
-              Duyuru bulunamadı
+              {i18n.language === "en"
+                ? "Announcement not found."
+                : "Duyuru bulunamadı."}
             </h3>
             <p className="text-gray-500 mb-4">{error}</p>
             <Link
               href="/announcements"
               className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
             >
-              Haberler Sayfasına Dön
+              {i18n.language === "en"
+                ? "Back to News"
+                : "Haberler Sayfasına Dön"}
             </Link>
           </div>
         </div>
@@ -159,7 +163,7 @@ export default function AnnouncementDetailPage() {
             href="/announcements"
             className="text-blue-600 hover:text-blue-800 transition-colors"
           >
-            ← Haberler
+            ← {i18n.language === "en" ? "News" : "Haberler"}
           </Link>
         </nav>
 
@@ -214,7 +218,9 @@ export default function AnnouncementDetailPage() {
             announcement.additional_images.length > 0 && (
               <div className="mb-8">
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">
-                  Ek Görseller
+                  {i18n.language === "en"
+                    ? "Additional Images"
+                    : "Ek Görseller"}
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {announcement.additional_images.map((image) => (
@@ -260,7 +266,7 @@ export default function AnnouncementDetailPage() {
                   d="M15 19l-7-7 7-7"
                 />
               </svg>
-              Tüm Haberler
+              {i18n.language === "en" ? "All News" : "Tüm Haberler"}
             </Link>
           </div>
         </article>
@@ -268,17 +274,20 @@ export default function AnnouncementDetailPage() {
         {/* Contact CTA */}
         <div className="mt-16 bg-blue-600 rounded-2xl p-8 text-center max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold text-white mb-4">
-            Daha Fazla Bilgi İçin
+            {i18n.language === "en"
+              ? "For More Information"
+              : "Daha Fazla Bilgi İçin"}
           </h3>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-            Bu haber ile ilgili sorularınız veya daha detaylı bilgi almak için
-            bizimle iletişime geçin
+            {i18n.language === "en"
+              ? "For more information, please contact us."
+              : "Bu haber ile ilgili sorularınız veya daha detaylı bilgi almak için bizimle iletişime geçin."}
           </p>
           <Link
             href="/contact"
             className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200 inline-block"
           >
-            İletişime Geç
+            {i18n.language === "en" ? "Contact Us" : "İletişime Geç"}
           </Link>
         </div>
       </div>
