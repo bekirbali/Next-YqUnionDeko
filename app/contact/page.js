@@ -3,6 +3,7 @@ import { useState } from "react";
 import AnimatedSection from "../components/AnimatedSection";
 import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
+import ProtectedEmail from "../components/ProtectedEmail";
 
 export default function ContactPage() {
   const API_BASE_URL = "https://yqunion.pythonanywhere.com/api";
@@ -143,7 +144,7 @@ export default function ContactPage() {
             {/* Hızlı İletişim Kartları */}
             <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
               <a
-                href="tel:+905551234567"
+                href="tel:+905324734897"
                 className="bg-white/10 backdrop-blur-sm p-4 rounded-lg text-center hover:bg-white/20 transition-all border border-white/20 group"
               >
                 <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform">
@@ -197,7 +198,7 @@ export default function ContactPage() {
               </a>
 
               <a
-                href="https://wa.me/905551234567"
+                href="https://wa.me/905324734897"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-white/10 backdrop-blur-sm p-4 rounded-lg text-center hover:bg-white/20 transition-all border border-white/20 group"
@@ -364,9 +365,13 @@ export default function ContactPage() {
                           <p className="font-semibold text-gray-800">
                             {t("contact.email")}:
                           </p>
-                          <p className="text-gray-600">
-                            suat.kucuk@yqunion.com.tr
-                          </p>
+                          <div className="text-gray-600">
+                            <ProtectedEmail
+                              encodedEmail="c3VhdC5rdWN1a0B5cXVuaW9uLmNvbS50cg=="
+                              className="text-gray-600"
+                              method="css"
+                            />
+                          </div>
                         </div>
                       </div>
 
