@@ -92,10 +92,13 @@ export default function ContactPage() {
       });
 
       // API'ye gönder
-      const response = await fetch("http://localhost:8000/api/contact/", {
-        method: "POST",
-        body: submitData, // FormData kullanıyoruz, Content-Type header'ı otomatik
-      });
+      const response = await fetch(
+        "https://yqunion.pythonanywhere.com/api/contact/",
+        {
+          method: "POST",
+          body: submitData, // FormData kullanıyoruz, Content-Type header'ı otomatik
+        }
+      );
 
       const result = await response.json();
 
