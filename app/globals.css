@@ -112,6 +112,42 @@ body {
   color: #0a2562;
 }
 
+.latest-news-container .slick-prev {
+  left: -20px;
+}
+
+.latest-news-container .slick-next {
+  right: -20px;
+}
+
+.latest-news-container .slick-prev:before,
+.latest-news-container .slick-next:before {
+  color: #0a2562;
+}
+
+.latest-news-container .slick-prev:hover:before,
+.latest-news-container .slick-next:hover:before {
+  color: #dc143c;
+}
+
+.testimonials-slider-container .slick-prev {
+  left: -20px;
+}
+
+.testimonials-slider-container .slick-next {
+  right: -20px;
+}
+
+.testimonials-slider-container .slick-prev:before,
+.testimonials-slider-container .slick-next:before {
+  color: #0a2562;
+}
+
+.testimonials-slider-container .slick-prev:hover:before,
+.testimonials-slider-container .slick-next:hover:before {
+  color: #dc143c;
+}
+
 .testimonials-slider-container .slick-dots li.slick-active button:before {
   color: #dc143c;
 }

@@ -5,6 +5,9 @@ import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
 
 export default function ContactFormPage() {
+  const API_BASE_URL = "https://yqunion.pythonanywhere.com/api";
+  // const API_BASE_URL = "http://localhost:8000/api";
+
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
@@ -92,7 +95,7 @@ export default function ContactFormPage() {
       });
 
       // API'ye gönder
-      const response = await fetch("http://localhost:8000/api/contact/", {
+      const response = await fetch(`${API_BASE_URL}/contact/`, {
         method: "POST",
         body: submitData, // FormData kullanıyoruz, Content-Type header'ı otomatik
       });
