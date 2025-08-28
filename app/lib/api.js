@@ -120,7 +120,6 @@ class ApiService {
   // Announcement API methods
   async getAnnouncements(language = "tr") {
     if (USE_MOCK_DATA) {
-      console.log("📋 Mock data kullanılıyor");
       return MOCK_ANNOUNCEMENTS;
     }
     return this.request("/announcements/", {}, language);
@@ -128,7 +127,6 @@ class ApiService {
 
   async getActiveAnnouncements(language = "tr") {
     if (USE_MOCK_DATA) {
-      console.log("📋 Mock data kullanılıyor");
       return MOCK_ANNOUNCEMENTS;
     }
     return this.request("/announcements/active/", {}, language);
@@ -136,7 +134,6 @@ class ApiService {
 
   async getLatestAnnouncements(language = "tr") {
     if (USE_MOCK_DATA) {
-      console.log("📋 Mock data kullanılıyor");
       return MOCK_ANNOUNCEMENTS;
     }
     return this.request("/announcements/latest/", {}, language);
@@ -144,7 +141,6 @@ class ApiService {
 
   async getAnnouncement(id, language = "tr") {
     if (USE_MOCK_DATA) {
-      console.log("📋 Mock data kullanılıyor");
       const announcement = MOCK_ANNOUNCEMENTS.results.find(
         (a) => a.id === parseInt(id)
       );
@@ -203,7 +199,6 @@ export const createSlug = (title) => {
 
 export const findAnnouncementBySlug = async (slug, language = "tr") => {
   if (USE_MOCK_DATA) {
-    console.log("📋 Mock data kullanılıyor - slug arama");
     const announcement = MOCK_ANNOUNCEMENTS.results.find(
       (a) => a.slug === slug
     );

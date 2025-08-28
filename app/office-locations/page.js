@@ -1,6 +1,7 @@
 "use client";
 import AnimatedSection from "../components/AnimatedSection";
 import { useTranslation } from "react-i18next";
+import ProtectedEmail from "../components/ProtectedEmail";
 
 export default function OfficeLocationsPage() {
   const { t } = useTranslation();
@@ -237,9 +238,13 @@ export default function OfficeLocationsPage() {
                           <p className="font-semibold text-gray-800">
                             {t("contact.email")}:
                           </p>
-                          <p className="text-gray-600">
-                            suat.kucuk@yqunion.com.tr
-                          </p>
+                          <div className="text-gray-600">
+                            <ProtectedEmail
+                              encodedEmail="c3VhdC5rdWN1a0B5cXVuaW9uLmNvbS50cg=="
+                              className="text-gray-600"
+                              method="css"
+                            />
+                          </div>
                         </div>
                       </div>
 
