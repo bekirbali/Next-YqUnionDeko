@@ -20,7 +20,7 @@ export const metadata = {
   metadataBase: new URL("https://www.yqunion.com.tr"),
   title: "YqUnion - Türkiye-Çin Dış Ticaret",
   description:
-    "YqUnion ile Türkiye-Çin arasında güvenilir dış ticaret çözümleri. Profesyonel ithalat, ihracat, lojistik ve gümrükleme hizmetleri. 15 yıllık deneyimimizle iş ortaklarımıza kaliteli ve hızlı hizmet sunuyoruz.",
+    "YqUnion ile Türkiye-Çin arasında güvenilir dış ticaret çözümleri. Profesyonel ithalat, ihracat, lojistik ve gümrükleme hizmetleri. 20 yıllık deneyimimizle iş ortaklarımıza kaliteli ve hızlı hizmet sunuyoruz.",
   keywords:
     "dış ticaret, Çin, Türkiye, ithalat, ihracat, YqUnion, lojistik, gümrükleme, yq union, çinden güvenilir ithalat, türkiye çin ithalat, türkiye çin lojistik, çinden ithalat",
   author: "YqUnion",
@@ -32,7 +32,7 @@ export const metadata = {
   openGraph: {
     title: "YqUnion - Türkiye-Çin Dış Ticaret",
     description:
-      "YqUnion ile Türkiye-Çin arasında güvenilir dış ticaret çözümleri. Profesyonel ithalat, ihracat, lojistik ve gümrükleme hizmetleri. 15 yıllık deneyimimizle iş ortaklarımıza kaliteli ve hızlı hizmet sunuyoruz.",
+      "YqUnion ile Türkiye-Çin arasında güvenilir dış ticaret çözümleri. Profesyonel ithalat, ihracat, lojistik ve gümrükleme hizmetleri. 20 yıllık deneyimimizle iş ortaklarımıza kaliteli ve hızlı hizmet sunuyoruz.",
     url: "https://www.yqunion.com.tr",
     siteName: "YqUnion",
     images: [
@@ -50,7 +50,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "YqUnion - Türkiye-Çin Dış Ticaret",
     description:
-      "YqUnion ile Türkiye-Çin arasında güvenilir dış ticaret çözümleri. Profesyonel ithalat, ihracat, lojistik ve gümrükleme hizmetleri. 15 yıllık deneyimimizle iş ortaklarımıza kaliteli ve hızlı hizmet sunuyoruz.",
+      "YqUnion ile Türkiye-Çin arasında güvenilir dış ticaret çözümleri. Profesyonel ithalat, ihracat, lojistik ve gümrükleme hizmetleri. 20 yıllık deneyimimizle iş ortaklarımıza kaliteli ve hızlı hizmet sunuyoruz.",
     images: ["/assets/yqunionlogo.png"],
   },
 };

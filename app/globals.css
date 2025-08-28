@@ -176,6 +176,16 @@ body {
   color: #dc143c;
 }
 
+/* Hide slider arrows on mobile for Testimonials and Latest News */
+@media (max-width: 767px) {
+  .testimonials-slider-container .slick-prev,
+  .testimonials-slider-container .slick-next,
+  .latest-news-container .slick-prev,
+  .latest-news-container .slick-next {
+    display: none !important;
+  }
+}
+
 /* Rich Text Content Stillers */
 .rich-text-content {
   line-height: 1.7;
