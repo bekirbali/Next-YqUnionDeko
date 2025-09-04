@@ -24,9 +24,13 @@ export const metadata = {
   keywords:
     "dış ticaret, Çin, Türkiye, ithalat, ihracat, YqUnion, lojistik, gümrükleme, yq union, çinden güvenilir ithalat, türkiye çin ithalat, türkiye çin lojistik, çinden ithalat",
   author: "YqUnion",
+  manifest: "/site.webmanifest",
   icons: {
-    icon: "/assets/YQ.png",
-    shortcut: "/assets/YQ.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/assets/YQ.png", type: "image/png", sizes: "32x32" },
+    ],
+    shortcut: "/favicon.ico",
     apple: "/assets/YQ.png",
   },
   openGraph: {

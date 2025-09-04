@@ -156,55 +156,49 @@ export default function WhyUsPage() {
             <div className="">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {/* 1. Ürün Tespiti ve Numune */}
-                <AnimatedSection animationType="fadeInUp" delay={0.1}>
-                  <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col items-center">
-                    <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
-                      1
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-800 mb-3">
-                      {t("whyUs.importProcessCard_1_title")}
-                    </h3>
-                    <ul className="text-gray-600 space-y-2 text-[16px]">
-                      <li>• {t("whyUs.importProcessCard_1_text_1")}</li>
-                      <li>• {t("whyUs.importProcessCard_1_text_2")}</li>
-                      <li>• {t("whyUs.importProcessCard_1_text_3")}</li>
-                    </ul>
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col items-center">
+                  <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
+                    1
                   </div>
-                </AnimatedSection>
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">
+                    {t("whyUs.importProcessCard_1_title")}
+                  </h3>
+                  <ul className="text-gray-600 space-y-2 text-[16px]">
+                    <li>• {t("whyUs.importProcessCard_1_text_1")}</li>
+                    <li>• {t("whyUs.importProcessCard_1_text_2")}</li>
+                    <li>• {t("whyUs.importProcessCard_1_text_3")}</li>
+                  </ul>
+                </div>
 
                 {/* 2. Fiyatlandırma ve Teklif */}
-                <AnimatedSection animationType="fadeInUp" delay={0.2}>
-                  <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col items-center">
-                    <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
-                      2
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-800 mb-3">
-                      {t("whyUs.importProcessCard_2_title")}
-                    </h3>
-                    <ul className="text-gray-600 space-y-2 text-[16px]">
-                      <li>• {t("whyUs.importProcessCard_2_text_1")}</li>
-                      <li>• {t("whyUs.importProcessCard_2_text_2")}</li>
-                      <li>• {t("whyUs.importProcessCard_2_text_3")}</li>
-                    </ul>
+                <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col items-center">
+                  <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
+                    2
                   </div>
-                </AnimatedSection>
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">
+                    {t("whyUs.importProcessCard_2_title")}
+                  </h3>
+                  <ul className="text-gray-600 space-y-2 text-[16px]">
+                    <li>• {t("whyUs.importProcessCard_2_text_1")}</li>
+                    <li>• {t("whyUs.importProcessCard_2_text_2")}</li>
+                    <li>• {t("whyUs.importProcessCard_2_text_3")}</li>
+                  </ul>
+                </div>
 
                 {/* 3. Numune Onayı */}
-                <AnimatedSection animationType="fadeInUp" delay={0.3}>
-                  <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col items-center">
-                    <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
-                      3
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-800 mb-3">
-                      {t("whyUs.importProcessCard_3_title")}
-                    </h3>
-                    <ul className="text-gray-600 space-y-2 text-[16px]">
-                      <li>• {t("whyUs.importProcessCard_3_text_1")}</li>
-                      <li>• {t("whyUs.importProcessCard_3_text_2")}</li>
-                      <li>• {t("whyUs.importProcessCard_3_text_3")}</li>
-                    </ul>
+                <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col items-center">
+                  <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4">
+                    3
                   </div>
-                </AnimatedSection>
+                  <h3 className="text-xl font-bold text-gray-800 mb-3">
+                    {t("whyUs.importProcessCard_3_title")}
+                  </h3>
+                  <ul className="text-gray-600 space-y-2 text-[16px]">
+                    <li>• {t("whyUs.importProcessCard_3_text_1")}</li>
+                    <li>• {t("whyUs.importProcessCard_3_text_2")}</li>
+                    <li>• {t("whyUs.importProcessCard_3_text_3")}</li>
+                  </ul>
+                </div>
 
                 {/* 4. Üretim Takibi */}
                 <AnimatedSection animationType="fadeInUp" delay={0.1}>

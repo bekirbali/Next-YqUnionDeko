@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Favicon
+Allow: /favicon.ico
+Allow: /assets/YQ.png
+
 Sitemap: https://www.yqunion.com/sitemap.xml

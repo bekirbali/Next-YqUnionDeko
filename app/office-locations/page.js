@@ -272,22 +272,6 @@ export default function OfficeLocationsPage() {
                         </div>
                       </div>
                     </div>
-                    <div className="flex justify-center border-t border-gray-200 pt-4">
-                      <div className="text-center">
-                        <p className="text-sm text-gray-600 mb-2">
-                          QR Kod ile İletişim
-                        </p>
-                        <img
-                          src="/assets/yqunionqr.png"
-                          alt="Türkiye Ofisi Telefon Numarası Karekod"
-                          className="w-36 h-36 mx-auto rounded-lg shadow-md"
-                          style={{
-                            imageRendering: "crisp-edges",
-                            imageRendering: "-webkit-optimize-contrast",
-                          }}
-                        />
-                      </div>
-                    </div>
                   </div>
                 </div>
 

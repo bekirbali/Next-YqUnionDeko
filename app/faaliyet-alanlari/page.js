@@ -241,45 +241,87 @@ export default function FaaliyetAlanlariPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {faaliyetAlanlari.map((alan, index) => (
-                <AnimatedSection
-                  key={index}
-                  animationType="scaleIn"
-                  delay={0.1}
-                  className="h-full"
-                >
-                  <div
-                    className={`bg-gradient-to-br ${alan.cardbg} rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col`}
+              {faaliyetAlanlari.map((alan, index) => {
+                // İlk 3 kartı animasyon olmadan göster
+                if (index < 3) {
+                  return (
+                    <div
+                      key={index}
+                      className={`bg-gradient-to-br ${alan.cardbg} rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col`}
+                    >
+                      <div
+                        className={`w-16 h-16 rounded-full bg-gradient-to-r ${alan.color} flex items-center justify-center text-white text-2xl mb-6 mx-auto`}
+                      >
+                        {alan.icon}
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
+                        {alan.title}
+                      </h3>
+                      <p className="text-gray-600 text-center leading-relaxed mb-6 flex-grow">
+                        {alan.description}
+                      </p>
+
+                      {/* Detay Listesi */}
+                      <div className="border-t pt-4">
+                        <h4 className="font-semibold text-gray-700 mb-3">
+                          {t("activityAreas.activityAreasCard_GeneralSubTitle")}
+                          :
+                        </h4>
+                        <ul className="text-gray-600 space-y-1">
+                          {alan.details.map((detail, detailIndex) => (
+                            <li key={detailIndex} className="flex items-center">
+                              <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0"></span>
+                              {detail}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  );
+                }
+
+                // Kalan kartları animasyonlu göster
+                return (
+                  <AnimatedSection
+                    key={index}
+                    animationType="scaleIn"
+                    delay={0.1}
+                    className="h-full"
                   >
                     <div
-                      className={`w-16 h-16 rounded-full bg-gradient-to-r ${alan.color} flex items-center justify-center text-white text-2xl mb-6 mx-auto`}
+                      className={`bg-gradient-to-br ${alan.cardbg} rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:-translate-y-2 h-full flex flex-col`}
                     >
-                      {alan.icon}
-                    </div>
-                    <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
-                      {alan.title}
-                    </h3>
-                    <p className="text-gray-600 text-center leading-relaxed mb-6 flex-grow">
-                      {alan.description}
-                    </p>
+                      <div
+                        className={`w-16 h-16 rounded-full bg-gradient-to-r ${alan.color} flex items-center justify-center text-white text-2xl mb-6 mx-auto`}
+                      >
+                        {alan.icon}
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
+                        {alan.title}
+                      </h3>
+                      <p className="text-gray-600 text-center leading-relaxed mb-6 flex-grow">
+                        {alan.description}
+                      </p>
 
-                    {/* Detay Listesi */}
-                    <div className="border-t pt-4">
-                      <h4 className="font-semibold text-gray-700 mb-3">
-                        {t("activityAreas.activityAreasCard_GeneralSubTitle")}:
-                      </h4>
-                      <ul className="text-gray-600 space-y-1">
-                        {alan.details.map((detail, detailIndex) => (
-                          <li key={detailIndex} className="flex items-center">
-                            <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0"></span>
-                            {detail}
-                          </li>
-                        ))}
-                      </ul>
+                      {/* Detay Listesi */}
+                      <div className="border-t pt-4">
+                        <h4 className="font-semibold text-gray-700 mb-3">
+                          {t("activityAreas.activityAreasCard_GeneralSubTitle")}
+                          :
+                        </h4>
+                        <ul className="text-gray-600 space-y-1">
+                          {alan.details.map((detail, detailIndex) => (
+                            <li key={detailIndex} className="flex items-center">
+                              <span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 flex-shrink-0"></span>
+                              {detail}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
-                  </div>
-                </AnimatedSection>
-              ))}
+                  </AnimatedSection>
+                );
+              })}
             </div>
           </div>
         </section>
